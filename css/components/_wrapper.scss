@@ -1,0 +1,9 @@
+.wrapper {
+    width: 100%;
+
+    @include flex-center;
+
+    &-content {
+        max-width: 550px;
+    }
+}

@@ -1,0 +1,51 @@
+footer {
+    @extend .full;
+
+    font-family: var(--mywebsite-html-font);
+    background: var(--mywebsite-color-footer);
+
+    &.footer {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .footerContent {
+        @extend .flex;
+
+        color: var(--mywebsite-color-base);
+    }
+
+    .footerItem {
+        @extend .full;
+
+        max-width: calc(100% / 25%);
+
+        .footerItem_title {
+            margin-bottom: 1.5rem;
+
+            h3 {
+                font-size: var(--mywebsite-h3-font-size);
+            }
+        }
+
+        .footerItem-content p {
+            line-height: 1.6rem;
+        }
+
+        .footerItem-content_menu {
+            color: var(--mywebsite-color-footer-paragraph);
+
+            li {
+                line-height: 3rem;
+            }
+        }
+
+        .footerTextContent {
+            padding: 1.5rem 0;
+
+            p {
+                color: var(--mywebsite-color-footer-paragraph);
+            }
+        }
+    }
+}

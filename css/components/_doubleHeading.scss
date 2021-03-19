@@ -1,0 +1,49 @@
+/*  DoubleHeading */
+
+.doubleHeading {
+    position: relative;
+
+    &-subtitle {
+        display: inline-block;
+        padding: .5rem .8rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        background-color: var(--mywebsite-color-base);
+        text-transform: uppercase;
+
+        span {
+            @extend .flex;
+
+            @extend .align-center;
+
+            &::before {
+                content: '';
+                width: .5rem;
+                height: .5rem;
+
+                @extend .flex;
+
+                background-color: var(--system-color-green-10);
+                border-radius: 50px;
+                margin-right: .5rem;
+            }
+        }
+    }
+
+    &-title {
+        position: relative;
+        z-index: 1;
+        line-height: 0;
+    }
+
+    &-content {
+        margin: 1.1rem 0;
+
+        p {
+            line-height: 1.618rem;
+            color: var(--mywebsite-global-color-text);
+        }
+    }
+}
+
+/* Fin DoubleHeading */

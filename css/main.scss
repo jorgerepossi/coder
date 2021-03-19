@@ -1,0 +1,183 @@
+@import "colors/colors";
+@import "fonts/fontsizes";
+@import "fonts/fontfamily";
+
+:root {
+    @each $color, $shades in $colors {
+        @each $shade, $value in $shades {
+            --system-color-#{$color}-#{$shade}: #{$value};
+        }
+    }
+
+    @each $size, $value in $fonts {
+        --system-font-size-#{$size}: #{$value};
+    }
+
+    @each $font, $value in $fontfamily {
+        --system-font-family-#{$font}: #{$value};
+    }
+
+    --system-color-red-20-outline: #ed1b24;
+    --mywebsite-color-base: var(--system-color-white-10);
+    --mywebsite-color-footer: #1c1427;
+    --mywebsite-color-footer-paragraph: #BAC4E1;
+    --mywebsite-color-border: var(--system-color-white-20);
+    --mywebsite-border-radius: 5px;
+    --mywebsite-border-radius-circle: 50px;
+    --mywebsite-global-color-text: #415674;
+    --mywebsite-contant-transition: 0.5s;
+    --mywebsite-h1-font-size: 2.5rem;
+    --mywebsite-h2-font-size: 2rem;
+    --mywebsite-h3-font-size: 1.8rem;
+    --mywebsite-h1-font: 'Lato', sans-serif;
+    --mywebsite-h2-font: 'Lato', sans-serif;
+    --mywebsite-h3-font: 'Open Sans', sans-serif;
+    --mywebsite-padding-big: 5rem 1rem;
+    --mywebsite-padding-small: 2rem 0;
+    --mywebsite-title-small: .8rem;
+    --mywebsite-title-big: 3rem;
+    --mywebsite-shadow-primary: 0px 8px 16px -4px rgba(#ed1b24, 0.25);
+}
+
+/** RESET */
+
+* {
+    box-sizing: border-box;
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+
+    @content;
+}
+
+html, body, div, span, applet, object, iframe, table, caption, tbody, tfoot, thead, tr, th, td, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
+    margin: 0;
+    border: 0;
+    outline: 0;
+    padding: 0;
+    font-size: 16px;
+    color: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+    vertical-align: baseline;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: var(--system-font-family-text);
+}
+
+.divider {
+    height: 5rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.full {
+    width: 100%;
+}
+
+.sectionContent {
+    padding: var(--mywebsite-padding-big);
+}
+
+.sectionInnerContent {
+    margin: var(--mywebsite-padding-small);
+}
+
+.center {
+    @extend .full;
+
+    max-width: 1400px;
+    margin: 0px auto;
+}
+
+@import "atoms/text";
+@import "atoms/title";
+@import "atoms/boxshadows";
+@import "atoms/borderRadius";
+@import "atoms/buttons";
+@import "atoms/card";
+
+@import "components/doubleHeading";
+@import "components/breadcrumbs";
+@import "components/wrapper";
+
+.newsContentWrapper {
+    @extend .full;
+
+    @include flex-center;
+
+    .newsContentWrapper-content {
+        max-width: 550px;
+    }
+}
+
+.buttonWrapper {
+    padding: 1rem 2rem;
+    border-radius: var(--mywebsite-border-radius);
+    background-color: var(--system-color-green-10);
+    color: var(--mywebsite-color-base);
+    transition: var(--mywebsite-contant-transition) ease-in-out;
+    text-transform: uppercase;
+    box-shadow: 0px 10px 5px -5px rgba(#66cfa9, 0.45);
+    font-size: 10pt;
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--system-color-red-20);
+        box-shadow: 0px 15px 20px -8px rgba(#ed1b24, 0.45);
+    }
+}
+
+img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.fullWidth {
+    @extend .full;
+
+    max-width: 100%;
+    height: auto;
+}
+
+.imgWrapper {
+    @extend .full;
+}
+
+.formGroup input, .formGroup textarea {
+    @extend .full;
+
+    border: 1px solid var(--system-color-bluelight-20);
+}
+
+/** HEADER */
+
+@import "layouts/header";
+
+/** FIN HEADER */
+
+/** MAIN */
+@import "pages/index";
+@import "_productos.scss";
+@import "_producto.scss";
+@import "_contactOurContact.scss";
+@import "atoms/input";
+
+/** FIN MAIN */
+
+/** FOOTER */
+@import "layouts/footer";
+
+/** FIN FOOTER */

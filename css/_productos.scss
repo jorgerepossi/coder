@@ -1,0 +1,111 @@
+/* PRODUCTOS  */
+#productos {
+    .sectionHeading {
+        text-align: center;
+
+        h3 {
+            font-size: 2.5rem;
+            margin: 1.1rem 0;
+            font-weight: 900;
+            color: var(--system-color-red-20-outline);
+        }
+    }
+
+    .minWidth {
+        /* uso del flex  */
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        margin: 0px auto;
+        max-width: 500px;
+    }
+
+    ul {
+        &.productosWrapper-ul.center {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        li {
+            &.productosWrapper-li {
+                display: block;
+                border-radius: 10px;
+                overflow: hidden;
+
+                img {
+                    transform: scale(1);
+                    transition: transform .3s ease-in-out;
+                }
+
+                .imagenWrapper {
+                    position: relative;
+                    overflow: hidden;
+
+                    &-text {
+                        position: absolute;
+                        top: 0px;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        color: #fff;
+
+                        &::before {
+                            content: '';
+                            width: 100%;
+                            height: 100%;
+                            background-color: rgba(0, 0, 0, 0.7);
+                            display: flex;
+                            position: absolute;
+                        }
+                    }
+
+                    &-text_inner {
+                        @extend .flex;
+
+                        @extend .align-center;
+
+                        margin-top: 20px;
+                        margin-left: 20px;
+                        position: relative;
+                        z-index: 1;
+
+                        span {
+                            width: 50px;
+                            height: 50px;
+                            background-color: var(--system-color-red-20);
+                            border-radius: 50px;
+                            margin-right: 20px;
+                            background-image: url(../img/logo.jpg);
+                            background-size: cover;
+                            padding: 10px;
+                        }
+                    }
+                }
+
+                .textContainer {
+                    padding: 20px 30px 30px;
+                    text-transform: uppercase;
+                }
+
+                &:hover {
+                    transform: translateY(-15px);
+                    box-shadow: 0px 25px 40px -30px rgba(0, 0, 0, 0.35);
+                    transition: all .4s ease-in-out;
+                }
+
+                &:hover img {
+                    transform: scale(1.1);
+                    transition: transform .3s ease-in-out;
+                }
+            }
+
+            transition: all .4s ease-in-out;
+        }
+    }
+}
+
+/* FIN PRODUCTOS  */

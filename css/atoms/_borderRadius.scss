@@ -1,0 +1,12 @@
+@mixin border-radius($radius){
+    border-radius: $radius;
+}
+
+.borderRadiusSmall{
+    @include border-radius(var(--mywebsite-border-radius));
+
+}
+
+.borderRadiusBig{
+    @include border-radius(var(--mywebsite-border-radius-circle));
+}

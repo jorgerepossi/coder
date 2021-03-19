@@ -1,0 +1,70 @@
+%button {
+    outline: none;
+    appearance: none;
+    font-size: 10pt;
+    padding: 1rem 2rem;
+    border-radius: var(--mywebsite-border-radius);
+    color: var(--system-color-red-20);
+    transition: var(--mywebsite-contant-transition) ease-in-out;
+    text-transform: uppercase;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 8px 16px -4px, rgba(9, 30, 66, 0.31) 0px 0px 1px;
+    border: 1px solid var(--system-color-red-20-outline);
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--system-color-green-10);
+        box-shadow: 0px 15px 20px -8px rgba(102, 207, 169, 0.45);
+        color: var(--mywebsite-color-base);
+        border: 1px solid var(--system-color-green-10);
+    }
+}
+
+%shadow {
+    box-shadow: 0px 10px 20px -8px rgba(#ed1b24, 0.45);
+}
+
+@mixin box-shadowi($x-axis: 0, $y-axis: 1px, $blur: 2px, $color: $default) {}
+
+@mixin box-shadow($shadow...) {
+    -webkit-box-shadow: $shadow;
+    -moz-box-shadow: $shadow;
+    box-shadow: $shadow;
+}
+
+@mixin button-content($color, $bg, $shadow, $bgh, $shadowh) {
+    @extend %button;
+
+    color: $color;
+    background-color: $bg;
+
+    @include box-shadow($shadow);
+
+    &:hover {
+        background-color: $bgh;
+
+        @include box-shadow($shadowh);
+    }
+}
+
+button {
+    @extend %button;
+
+    background-color: var(--mywebsite-color-base);
+    margin: .2rem;
+}
+
+.button {
+    @extend %button;
+
+    &-primary {
+        @include button-content(var(--mywebsite-color-base), var(--system-color-red-20), 0px 8px 16px -4px rgba(#ed1b24, 0.25), var(--system-color-green-10), 0px 15px 20px -8px rgba(102, 207, 169, 0.45));
+    }
+
+    &-secondary {
+        @include button-content(var(--mywebsite-color-base), var(--system-color-green-10), 0px 15px 20px -8px rgba(102, 207, 169, 0.45), var(--system-color-green-10), 0px 15px 20px -8px rgba(#4b83fc, 0.45));
+
+        &:hover {
+            background-color: var(--system-color-green-10);
+        }
+    }
+}

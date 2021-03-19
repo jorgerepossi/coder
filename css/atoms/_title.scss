@@ -1,0 +1,17 @@
+.superBigTitle {
+    font-size: 70px;
+    line-height: 70px;
+    font-weight: 900;
+    span{
+        font-size: 70px;
+        display: block;
+    }
+}
+.bigTitle {
+    font-size: var(--mywebsite-title-big);
+    line-height: 1.3334em;
+    font-weight: 900;
+}
+.smallTitle{
+    font-size: var(--mywebsite-title-small);
+}

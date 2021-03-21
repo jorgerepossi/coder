@@ -1,37 +1,37 @@
 {
-	"name": "Entrega",
-	"version": "1.0.0",
-	"description": "",
-	"main": "index.js",
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"prepare": "husky install",
-		"precommit": "pretty-quick --staged",
-		"postcommit": "git update-index -g",
-		"pretty": "prettier --write \"./**/*.{js,jsx,json}\""
-	},
-	"keywords": [],
-	"author": "",
-	"license": "ISC",
-	"devDependencies": {
-		"husky": "^5.2.0",
-		"prettier": "2.2.1",
-		"pretty-quick": "^3.1.0",
-		"sass": "^1.32.8"
-	},
-	"dependencies": {
-		"lint-staged": "^10.5.4"
-	},
-	"husky": {
-		"hooks": {
-			"pre-commit": "lint-staged"
-		}
-	},
-	"lint-staged": {
-		"*.{js,json,css,md,html}": [
-			"npm run lint:fix",
-			"prettier --single-quote --write",
-			"git add"
-		]
-	}
+    "name": "Entrega",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "prepare": "husky install",
+        "pre-commit": "pretty-quick --staged",
+        "postcommit": "git update-index -g",
+        "pretty": "prettier --write \"./**/*.{js,jsx,json}\""
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "husky": "^5.2.0",
+        "prettier": "2.2.1",
+        "pretty-quick": "^3.1.0",
+        "sass": "^1.32.8"
+    },
+    "dependencies": {
+        "lint-staged": "^10.5.4"
+    },
+    "husky": {
+        "hooks": {
+            			"pre-commit": "lint-staged"
+        }
+    },
+    "lint-staged": {
+        "*.{js,json,css,md,html}": [
+            "npm run lint:fix",
+            "prettier --single-quote --write",
+            "git add"
+        ]
+    }
 }

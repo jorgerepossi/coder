@@ -124,8 +124,9 @@ body {
 
 .bigTitle {
   font-size: var(--mywebsite-title-big);
-  line-height: 1.3334em;
+  line-height: 1em;
   font-weight: 900;
+  color: var(--system-color-red-20-outline);
 }
 
 .smallTitle {
@@ -794,3 +795,4 @@ footer .footerItem .footerTextContent p {
 }
 
 /** FIN FOOTER */
+/*# sourceMappingURL=main.css.map */

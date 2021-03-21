@@ -1,61 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-  <style>
-header {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-}
-.navBar ul{ 
-    display: flex;
-    list-style: none;
-}
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
 
-.navBar  ul li {
-    margin: 1rem;
-}
-  </style>
+        section {
+            width: 1170px;
+            margin: 0px auto;
+        }
+
+        .photoContent {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            flex-direction: row-reverse;
+        }
+
+        .sobreMi {
+            padding: 20px;
+        }
+
+        .galeria {
+            width: 100%;
+            margin: 10px;
+        }
+
+        .galeria img {
+            width: 500px;
+            height: 500px;
+        }
+    </style>
 </head>
+
 <body>
-    <header>
-        <section>
-            <div>
-                <img src="images/LOGO2021.png" alt="Logo Reaper" id="logoReap">
-                <h1 class="nomEstudio">Art Studio</h1>
+    <section>
+        <article class="photoContent">
+
+            <div class="sobreMi">
+                <h2>sobre mi </h2>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sint iste quidem assumenda autem amet
+                    inventore, dolore maiores veniam omnis provident explicabo sunt eos blanditiis modi ut in quisquam!
+                    Reprehenderit.</p>
             </div>
-        </section>
 
-        <!--Comienza el menú--> 
-        <Nav>
-            <ul class="menu">
-                <li><a href="index.html">Inicio</a></li>
-                <li class="subMenu"><a href="trabajos.html">Trabajos</a> 
-                    <ul class="ulsubMenu">
-                        <li><a href="tattooart.html">Tattoo Art</a></li>
-                        <li><a href="pintura.html">Pintura</a></li>                            
-                        <li><a href="dibujos.html">Dibujos</a></li>
-                    </ul>
-                </li>
-                <li><a href="estudio.html">Estudio</a></li>
-                <li><a href="sobremi.html">Sobre Mi</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </Nav>
-        <!--fin de menú-->
-    </header>
-   <main>
-       <section>
+            <div class="imageContent">
+                <img src="https://picsum.photos/200/200" alt="tattoo1">
 
-       </section>
-   </main>
-   <footer>
-       footer
-   </footer>
+            </div>
+        </article>
+    </section>
 </body>
+
 </html>

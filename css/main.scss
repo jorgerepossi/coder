@@ -170,9 +170,9 @@ img {
 
 /** MAIN */
 @import "pages/index";
-@import "_productos.scss";
-@import "_producto.scss";
-@import "_contactOurContact.scss";
+@import "pages/productos";
+@import "pages/producto";
+@import "pages/contactOurContact";
 @import "atoms/input";
 
 /** FIN MAIN */

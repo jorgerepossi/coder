@@ -2,4 +2,7 @@
 *sass-cache/*
 *husky/*
 *.zip
-*.scss
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map

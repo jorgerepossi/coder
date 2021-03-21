@@ -17,9 +17,9 @@
         "components/_wrapper.scss",
         "layouts/_header.scss",
         "pages/_index.scss",
-        "_productos.scss",
-        "_producto.scss",
-        "_contactOurContact.scss",
+        "pages/_productos.scss",
+        "pages/_producto.scss",
+        "pages/_contactOurContact.scss",
         "atoms/_input.scss",
         "layouts/_footer.scss"
     ],

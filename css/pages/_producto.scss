@@ -21,24 +21,24 @@
             }
         }
     }
-    #infoContentWrapper{
+
+    #infoContentWrapper {
         background-color: var(--mywebsite-color-base);
         width: 100%;
         max-width: calc(100% - 760px);
-        .contentWrapper-title{
-            .title{
+
+        .contentWrapper-title {
+            .title {
                 font-size: var(--mywebsite-h2-font-size);
             }
         }
     }
 
-   
     .tagged_as {
-    
         overflow: hidden;
         display: block;
         padding: 10px;
-    
+
         .tagItems {
             padding: .5rem 1rem;
             background-color: #BAC4E1;
@@ -47,7 +47,6 @@
             border-radius: 50px;
         }
     }
-    
 }
 
 /* FIN PRODUCTO  */

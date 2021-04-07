@@ -2,18 +2,34 @@
     font-size: 70px;
     line-height: 70px;
     font-weight: 900;
-    span{
+
+    span {
         font-size: 70px;
         display: block;
     }
 }
+
 .bigTitle {
-    font-size: var(--mywebsite-title-big);
+    font-size: 2rem;
     line-height: 1em;
     font-weight: 900;
     color: var(--system-color-red-20-outline);
 
+    @include mq(small, medium) {
+        font-size: 1.9rem;
+    }
+
+
+    @include mq(medium, large) {
+        font-size: 2.1rem;
+    }
+
+
+    @include mq(xlarge, xlarge) {
+        font-size: 3rem;
+    }
 }
-.smallTitle{
+
+.smallTitle {
     font-size: var(--mywebsite-title-small);
 }

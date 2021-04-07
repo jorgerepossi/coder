@@ -1,3 +1,5 @@
+@import "../queries/_media-queries.scss";
+
 header {
     position: fixed;
     background-color: var(--mywebsite-color-base);
@@ -11,6 +13,13 @@ header {
 #headerWrapper {
     @include flex-center {
         align-items: center;
+    }
+
+
+    padding: 0 2em;
+
+    @include mq(medium, large) {
+        padding: 0;
     }
 
 

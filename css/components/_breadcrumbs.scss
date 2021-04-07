@@ -1,12 +1,13 @@
 #breadcrumbs {
     border-bottom: 1px solid var(--mywebsite-color-border);
     background-image: url(../img/newsletter-bg.png);
-
 }
+
 .breadcrumbWrapper {
     @include flex-center {
         align-items: center;
     }
+
 
     min-height: 300px;
 

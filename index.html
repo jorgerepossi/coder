@@ -6,11 +6,11 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Web Page</title>
-	<link rel="preconnect" href="https://fonts.gstatic.com" />
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link
-		href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,900&family=Open+Sans&display=swap"
-		rel="stylesheet">
+	<link rel="icon" href="img/cropped-favicon-1-32x32.png" sizes="32x32">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+		integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
 	<link rel="stylesheet" href="css/main.css" />
 </head>
 
@@ -67,6 +67,15 @@
 								<span>
 									<span class="menu-item-link">
 										Nosotros
+									</span>
+								</span>
+							</a>
+						</li>
+						<li class="menu-item">
+							<a href="noticias.html" title="Noticias">
+								<span>
+									<span class="menu-item-link">
+										Noticias
 									</span>
 								</span>
 							</a>
@@ -248,11 +257,12 @@
 		<!-- #About Us -->
 		<section id="about" class="sectionContent">
 			<div class="center">
-				<div class="flex">
+
+				<div class="sectionContent-wrapper">
 					<div class="imgWrapper">
-						<img src="img/imagen.jpg" alt=" imagen about us" class="fullWidth" />
+						<img src="img/about.jpg" alt=" imagen about us" class="fullWidth" />
 					</div>
-					<div class="wrapper">
+					<div class="sectionContent-wrapper_content">
 						<div class="wrapper-content">
 
 							<div class="doubleHeading">
@@ -269,7 +279,7 @@
 
 								</div>
 								<div class="doubleHeading-content">
-									<p>
+									<p class="globalText">
 										Nuestro objetivo es brindarle la mejor experiencia de conducción,
 										a través de materiales y producción de alta calidad.
 									</p>
@@ -288,7 +298,7 @@
 										Lorem Ipsum -
 									</div>
 									<div class="inner">
-										<p>
+										<p class="globalText">
 
 											El galardonado diseñador industrial Nimrod Sapir
 											lidera el equipo de R&D, logrando revolucionarias
@@ -301,7 +311,7 @@
 										Lorem Ipsum +
 									</div>
 									<div class="inner">
-										<p>Nuestros scooters destacan en desempeño,
+										<p class="globalText">Nuestros scooters destacan en desempeño,
 											con gran potencia, alcance,
 											y compatibilidad. </p>
 									</div>
@@ -311,6 +321,7 @@
 					</div>
 				</div>
 			</div>
+
 		</section>
 
 		<!-- #Newsletter -->
@@ -334,7 +345,7 @@
 
 									</div>
 									<div class="doubleHeading-content">
-										<p>
+										<p class="globalText">
 											Quisque sit amet
 											mauris in turpis
 											tincidunt vestibulum
@@ -364,58 +375,56 @@
 		<!-- #Section-->
 		<section id="newsWrapper" class="sectionContent">
 			<div class="center">
-				<div class="newsWrapperContent">
-					<div class="wrapper">
-						<div class="wrapper-content">
-							<div class="doubleHeading">
-								<div class="doubleHeading-subtitle boxShadows borderRadiusBig">
-									<span class="smallTitle">
-										LOREM IPSUM DOLOR
-									</span>
-								</div>
-								<div class="doubleHeading-title">
-									<h2 class="bigTitle">
-										Lorem Ipsum Dolor
-										Sit Amet...
-									</h2>
+				<div class="sectionContent-wrapper">
+					<div class="sectionContent-wrapper_content">
+						<div class="doubleHeading">
+							<div class="doubleHeading-subtitle boxShadows borderRadiusBig">
+								<span class="smallTitle">
+									LOREM IPSUM DOLOR
+								</span>
+							</div>
+							<div class="doubleHeading-title">
+								<h2 class="bigTitle">
+									Lorem Ipsum Dolor
+									Sit Amet...
+								</h2>
 
-								</div>
-								<div class="doubleHeading-content">
-									<p>
-										Vestibulum sit amet
-										convallis nisi.
-										Morbi a orci ex.
-										Duis fringilla
-										libero a est
-										interdum egestas.
-										Class aptent taciti
-										sociosqu ad litora
-										torquent per conubia
-										nostra, per inceptos
-										himenaeos. Aenean ut
-										auctor quam, vel
-										maximus nibh.
-										Praesent pulvinar
-										faucibus risus, ut
-										iaculis tortor
-										fermentum in.
-										Aliquam erat
-										volutpat.
-									</p>
-								</div>
-								<div>
-									<button class="button button-primary">
-										CTA BTN
-									</button>
-								</div>
+							</div>
+							<div class="doubleHeading-content">
+								<p class="globalText">
+									Vestibulum sit amet
+									convallis nisi.
+									Morbi a orci ex.
+									Duis fringilla
+									libero a est
+									interdum egestas.
+									Class aptent taciti
+									sociosqu ad litora
+									torquent per conubia
+									nostra, per inceptos
+									himenaeos. Aenean ut
+									auctor quam, vel
+									maximus nibh.
+									Praesent pulvinar
+									faucibus risus, ut
+									iaculis tortor
+									fermentum in.
+									Aliquam erat
+									volutpat.
+								</p>
+							</div>
+							<div>
+								<button class="button button-primary">
+									CTA BTN
+								</button>
 							</div>
 						</div>
 					</div>
-
 					<div class="imgWrapper">
 						<img src="img/imagen.jpg" alt=" imagen NEWSContent" />
 					</div>
 				</div>
+
 			</div>
 		</section>
 	</main>
@@ -426,35 +435,29 @@
 		<div class="divider"></div>
 		<section id="footerCentralSectionWrapper-content" class="center">
 			<section class="footerContent">
-				<div class="footerItem">
+				<div class="footerItem brand">
 					<div class="footerLogoMain">
-						<img src="" alt="Brand Logo Footer" title=" Brand Logo Footer " />
+						<img src="/img/footer.svg" alt="Brand Logo Footer" title=" Brand Logo Footer " />
 					</div>
 
 					<div class="footerTextContent">
 						<p class="globalText">
-							Praesent pulvinar
-							faucibus risus, ut
-							iaculis tortor fermentum
-							in. Aliquam erat
-							volutpat. Nulla ut
-							ullamcorper urna, et
-							hendrerit est. Praesent
-							id mattis ante.
+							Scooter eléctrico para el transporte personal. Reduce el consumo de automóviles en entornos
+							urbanos. Único en diseño y gran desempeño. liderando el mercado de la movilidad sustentable.
 						</p>
 					</div>
 
 					<div class="footerSocialIcons">
 						<a href="https://www.facebook.com/" title="Facebook" target="_blank" rel="noopener">
-							Facebook</a>
+							<i class="fab fa-facebook-f"></i></a>
 						<a href="https://www.instagram.com/" title="Instagram" target="_blank" rel="noopener">
-							Instagram</a>
+							<i class="fab fa-instagram"></i></a>
 						<a href="https://www.linkedin.com/" title="LinkedIn" target="_blank" rel="noopener">
-							LinkedIn</a>
+							<i class="fab fa-linkedin-in"></i></a>
 					</div>
 				</div>
 
-				<div class="footerItem">
+				<div class="footerItem contact">
 					<div class="footerItem_title">
 						<h3>
 							<span> CONTACTO</span>
@@ -478,7 +481,7 @@
 					</div>
 				</div>
 
-				<div class="footerItem">
+				<div class="footerItem sitemap">
 					<div class="footerItem_title">
 						<h3>
 							<span> SITEMAP</span>
@@ -502,7 +505,7 @@
 					</div>
 				</div>
 
-				<div class="footerItem">
+				<div class="footerItem lastNews">
 					<div class="footerItem_title">
 						<h3>
 							<span>
@@ -536,20 +539,20 @@
 			</section>
 			<div class="divider"></div>
 			<section class="bottomFooterContent">
-				<div>
-					<p>
-						Terms of use | Privacy
-						Environmental Policy
-					</p>
-					<p>
-						Copyright © 2021 website
-						by
-						<a href="#">
-							WebDeveloper
-						</a>
-						All Rights Reserved.
-					</p>
-				</div>
+
+				<p>
+					Terms of use | Privacy
+					Environmental Policy
+				</p>
+				<p>
+					Copyright © 2021 website
+					by
+					<a href="#">
+						WebDeveloper
+					</a>
+					All Rights Reserved.
+				</p>
+
 			</section>
 		</section>
 	</footer>

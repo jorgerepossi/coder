@@ -1,0 +1,36 @@
+:root {
+    @each $color, $shades in $colors {
+        @each $shade, $value in $shades {
+            --system-color-#{$color}-#{$shade}: #{$value};
+        }
+    }
+
+    @each $size, $value in $fonts {
+        --system-font-size-#{$size}: #{$value};
+    }
+
+    @each $font, $value in $fontfamily {
+        --system-font-family-#{$font}: #{$value};
+    }
+
+    --system-color-red-20-outline: #ed1b24;
+    --mywebsite-color-base: var(--system-color-white-10);
+    --mywebsite-color-footer: var(--system-color-black-10);
+    --mywebsite-color-footer-paragraph: #BAC4E1;
+    --mywebsite-color-border: var(--system-color-white-20);
+    --mywebsite-border-radius: 5px;
+    --mywebsite-border-radius-circle: 50px;
+    --mywebsite-global-color-text: #333;
+    --mywebsite-contant-transition: 0.5s;
+    --mywebsite-h1-font-size: 2.5rem;
+    --mywebsite-h2-font-size: 2rem;
+    --mywebsite-h3-font-size: 1.8rem;
+    --mywebsite-h1-font: 'Lato', sans-serif;
+    --mywebsite-h2-font: 'Lato', sans-serif;
+    --mywebsite-h3-font: 'Open Sans', sans-serif;
+    --mywebsite-padding-big: 5rem 1rem;
+    --mywebsite-padding-small: 2rem 0;
+    --mywebsite-title-small: .8rem;
+    --mywebsite-title-big: 3rem;
+    --mywebsite-shadow-primary: 0px 8px 16px -4px rgba(#ed1b24, 0.25);
+}

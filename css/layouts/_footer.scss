@@ -1,8 +1,8 @@
 footer {
-    background:  linear-gradient(250deg, #211f1f, #000000);
+    background: linear-gradient(250deg, #211f1f, #000000);
     color: var(--system-color-bluelight-10);
     animation: footerAnimation 10s infinite;
-    transition: animation .3s  ease-in-out; 
+    transition: animation 0.3s ease-in-out;
     background-size: 400%;
     position: relative;
 }
@@ -36,13 +36,13 @@ footer {
         }
 
         &-content_item span {
-            opacity: .8;
-            font-size: .8rem;
+            opacity: 0.8;
+            font-size: 0.8rem;
         }
     }
 
-    &LogoMain{
-        img{
+    &LogoMain {
+        img {
             max-width: 180px;
         }
     }
@@ -56,7 +56,7 @@ footer {
         max-width: 250px;
         overflow: hidden;
         grid-row: 4 / 6;
-    
+
         a {
             width: 40px;
             height: 40px;
@@ -69,8 +69,6 @@ footer {
     }
 }
 
-
-
 .bottomFooterContent {
     display: flex;
     justify-content: space-between;
@@ -79,7 +77,7 @@ footer {
 
     p {
         font-size: var(--system-font-size-xsmall);
-        opacity: .8;
+        opacity: 0.8;
 
         a {
             font-weight: bolder;
@@ -91,15 +89,13 @@ footer {
 .brand {
     grid-column: 1 / 8;
 
-    @include mq(small ,  medium) {
+    @include mq(small, medium) {
         grid-column: 1 / 16;
     }
 
-
-    @include mq(medium , large) {
+    @include mq(medium, large) {
         grid-column: 1 / 16;
     }
-
 
     @include mq(large, xlarge) {
         grid-column: 1 / span 5;
@@ -113,11 +109,9 @@ footer {
         grid-column: 1 / 16;
     }
 
-
     @include mq(medium, large) {
         grid-column: 1 / 5;
     }
-
 
     @include mq(large, xlarge) {
         grid-column: 6 / span 3;
@@ -132,14 +126,12 @@ footer {
     }
 
     @include mq(small, medium) {
-        grid-column: 1 /  16;
+        grid-column: 1 / 16;
     }
-
 
     @include mq(medium, large) {
         grid-column: 6 / 10;
     }
-
 
     @include mq(large, xlarge) {
         grid-column: 9 / span 2;
@@ -153,26 +145,23 @@ footer {
         grid-column: 1 / 16;
     }
 
-
     @include mq(medium, large) {
         grid-column: 11 / 16;
     }
-
 
     @include mq(large, xlarge) {
         grid-column: 11 / 16;
     }
 }
 
-
 @keyframes footerAnimation {
     0% {
-      background-position: 0% 50%;
+        background-position: 0% 50%;
     }
     50% {
-      background-position: 100% 50%;
+        background-position: 100% 50%;
     }
     100% {
-      background-position: 0% 50%;
+        background-position: 0% 50%;
     }
-  }
+}

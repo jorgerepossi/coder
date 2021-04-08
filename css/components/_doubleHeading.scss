@@ -5,7 +5,7 @@
 
     &-subtitle {
         display: inline-block;
-        padding: .5rem .8rem;
+        padding: 0.5rem 0.8rem;
         font-weight: 600;
         margin-bottom: 1rem;
         background-color: var(--mywebsite-color-base);
@@ -18,14 +18,14 @@
 
             &::before {
                 content: '';
-                width: .5rem;
-                height: .5rem;
+                width: 0.5rem;
+                height: 0.5rem;
 
                 @extend .flex;
 
                 background-color: var(--system-color-green-10);
                 border-radius: 50px;
-                margin-right: .5rem;
+                margin-right: 0.5rem;
             }
         }
     }

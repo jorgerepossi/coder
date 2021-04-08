@@ -38,7 +38,7 @@
 
                 img {
                     transform: scale(1);
-                    transition: transform .3s ease-in-out;
+                    transition: transform 0.3s ease-in-out;
                 }
 
                 .imagenWrapper {
@@ -94,16 +94,16 @@
                 &:hover {
                     transform: translateY(-15px);
                     box-shadow: 0px 25px 40px -30px rgba(0, 0, 0, 0.35);
-                    transition: all .4s ease-in-out;
+                    transition: all 0.4s ease-in-out;
                 }
 
                 &:hover img {
                     transform: scale(1.1);
-                    transition: transform .3s ease-in-out;
+                    transition: transform 0.3s ease-in-out;
                 }
             }
 
-            transition: all .4s ease-in-out;
+            transition: all 0.4s ease-in-out;
         }
     }
 }

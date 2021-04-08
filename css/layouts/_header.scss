@@ -1,4 +1,4 @@
-@import "../queries/_media-queries.scss";
+@import '../queries/_media-queries.scss';
 
 header {
     position: fixed;
@@ -15,16 +15,14 @@ header {
         align-items: center;
     }
 
-
     padding: 0 2em;
 
     @include mq(medium, large) {
         padding: 0;
     }
 
-
     justify-content: space-between;
-    letter-spacing: .02rem;
+    letter-spacing: 0.02rem;
     height: 100px;
 
     .headerItem {
@@ -75,7 +73,8 @@ header {
                                 font-size: 14px;
                             }
 
-                            &.active, &:hover {
+                            &.active,
+                            &:hover {
                                 color: var(--system-color-red-20);
                             }
                         }
@@ -105,7 +104,7 @@ header {
                             li {
                                 a {
                                     &.navSubMenuContent-li-a {
-                                        padding: .5rem 0 .5rem;
+                                        padding: 0.5rem 0 0.5rem;
                                         text-align: center;
 
                                         span {
@@ -156,7 +155,7 @@ header {
     }
 
     li {
-        margin: .5rem 0;
+        margin: 0.5rem 0;
 
         a {
             span {
@@ -165,12 +164,12 @@ header {
                 height: 15px;
                 background-color: var(--system-color-red-20);
                 border-radius: 50px;
-                transition: all .2s ease-in-out;
+                transition: all 0.2s ease-in-out;
                 transform: scale(1);
 
                 &:hover {
                     transform: scale(1.2);
-                    transition: all .2s ease-in-out;
+                    transition: all 0.2s ease-in-out;
                 }
             }
         }

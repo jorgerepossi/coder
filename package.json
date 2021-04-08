@@ -9,7 +9,7 @@
         "postcommit": "git update-index -g",
         "pretty": "prettier --write \"./**/*.{css,scss,html,js,jsx,json}\"",
         "format": "prettier --write .",
-        "go": "pretty-quick --staged format pretty"
+        "go": " pretty-quick --staged && format && pretty"
     },
     "keywords": [],
     "author": "",
@@ -22,7 +22,7 @@
     },
     "husky": {
         "hooks": {
-            "pre-commit": "lint-staged"
+            "pre-commit": "lint-staged && yarn format && git add -A ."
         }
     },
     "dependencies": {

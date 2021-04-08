@@ -6,13 +6,13 @@
 * typos
 * 
 */
-@import url("https://fonts.googleapis.com/sass2?family=Inter:wght@200;300;400;600&display=swap");
+@import url('https://fonts.googleapis.com/sass2?family=Inter:wght@200;300;400;600&display=swap');
 
-@import "queries/media-queries";
-@import "colors/colors";
-@import "fonts/fontsizes";
-@import "fonts/fontfamily";
-@import "atoms/root";
+@import 'queries/media-queries';
+@import 'colors/colors';
+@import 'fonts/fontsizes';
+@import 'fonts/fontfamily';
+@import 'atoms/root';
 
 %content {
     content: '';
@@ -24,7 +24,9 @@
     display: inline-flex;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box !important;
 }
 
@@ -103,7 +105,8 @@ legend {
 }
 
 body {
-    font-family: 'Inter', sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, Arial !important;
+    font-family: 'Inter', sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue,
+        Helvetica, Arial !important;
 }
 
 .container {
@@ -148,7 +151,7 @@ button {
     }
 }
 
-@import "../sass/atoms/_input";
+@import '../sass/atoms/_input';
 
 .title-wrapper {
     text-transform: uppercase;
@@ -303,7 +306,6 @@ main {
         align-items: center;
     }
 
-
     min-height: 300px;
 
     .breadcrumbs-content {
@@ -311,16 +313,16 @@ main {
     }
 }
 
-@import "../sass/queries/media-queries";
-@import "../sass/atoms/text";
-@import "../sass/atoms/title";
-@import "../sass/atoms/boxshadows";
-@import "../sass/atoms/borderRadius";
-@import "../sass/atoms/card";
+@import '../sass/queries/media-queries';
+@import '../sass/atoms/text';
+@import '../sass/atoms/title';
+@import '../sass/atoms/boxshadows';
+@import '../sass/atoms/borderRadius';
+@import '../sass/atoms/card';
 
-@import "../sass/components/doubleHeading";
-@import "../sass/components/breadcrumbs";
-@import "../sass/components/wrapper";
+@import '../sass/components/doubleHeading';
+@import '../sass/components/breadcrumbs';
+@import '../sass/components/wrapper';
 
 /* Fin  Main */
 
@@ -422,7 +424,7 @@ main {
 
                 &::before {
                     counter-increment: items;
-                    content: counter(items) ". ";
+                    content: counter(items) '. ';
                 }
             }
         }
@@ -439,7 +441,8 @@ main {
 
 /*  Sidebar  */
 #categorias {
-    ul {}
+    ul {
+    }
 
     li {
         border-bottom: 1px solid var(--system-color-white-30);

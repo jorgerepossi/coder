@@ -23,7 +23,8 @@
     box-shadow: 0px 10px 20px -8px rgba(#ed1b24, 0.45);
 }
 
-@mixin box-shadowi($x-axis: 0, $y-axis: 1px, $blur: 2px, $color: $default) {}
+@mixin box-shadowi($x-axis: 0, $y-axis: 1px, $blur: 2px, $color: $default) {
+}
 
 @mixin box-shadow($shadow...) {
     -webkit-box-shadow: $shadow;
@@ -57,11 +58,23 @@ button {
     @extend %button;
 
     &-primary {
-        @include button-content(var(--mywebsite-color-base), var(--system-color-red-20), 0px 8px 16px -4px rgba(#ed1b24, 0.25), var(--system-color-green-10), 0px 15px 20px -8px rgba(102, 207, 169, 0.45));
+        @include button-content(
+            var(--mywebsite-color-base),
+            var(--system-color-red-20),
+            0px 8px 16px -4px rgba(#ed1b24, 0.25),
+            var(--system-color-green-10),
+            0px 15px 20px -8px rgba(102, 207, 169, 0.45)
+        );
     }
 
     &-secondary {
-        @include button-content(var(--mywebsite-color-base), var(--system-color-green-10), 0px 15px 20px -8px rgba(102, 207, 169, 0.45), var(--system-color-green-10), 0px 15px 20px -8px rgba(#4b83fc, 0.45));
+        @include button-content(
+            var(--mywebsite-color-base),
+            var(--system-color-green-10),
+            0px 15px 20px -8px rgba(102, 207, 169, 0.45),
+            var(--system-color-green-10),
+            0px 15px 20px -8px rgba(#4b83fc, 0.45)
+        );
 
         &:hover {
             background-color: var(--system-color-green-10);

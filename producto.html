@@ -1,263 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Web Page | Producto</title>
 
-        <link
-            rel="stylesheet"
-            href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
-            integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
-            crossorigin="anonymous"
-        />
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Page | Producto</title>
 
-        <link rel="stylesheet" href="css/main.css" />
-    </head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous" />
 
-    <body>
-        <!-- Header Nav Section -->
-        <header id="headerNav">
-            <section id="headerWrapper" class="center">
-                <div class="headerItem">
-                    <a href="index.html">
-                        <img src="/img/logo_text.png" alt="Logo Brand" title="Logo Brand" />
-                    </a>
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+    <!-- Header Nav Section -->
+    <header id="headerNav">
+        <section id="headerWrapper" class="center">
+            <div class="headerItem">
+                <a href="index.html">
+                    <img src="/img/logo_text.png" alt="Logo Brand" title="Logo Brand" />
+                </a>
+            </div>
+
+            <div class="headerItem">
+                <nav class="navWrapper">
+                    <ul class="navMenuContent">
+                        <li class="menu-item">
+                            <a href="index.html">
+                                <span>
+                                    <span class="menu-item-link"> Home </span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="productos.html" class="active" title="Nuestros Productos">
+                                <span>
+                                    <span class="menu-item-link"> Productos </span>
+                                </span>
+                            </a>
+                            <ul class="navSubMenuContent">
+                                <li>
+                                    <a href="producto.html" class="navSubMenuContent-li-a">
+                                        <span> producto 1</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="producto.html" class="navSubMenuContent-li-a">
+                                        <span> producto 2</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="producto.html" class="navSubMenuContent-li-a">
+                                        <span> producto 3</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <a href="nosotros.html" title="Quienes somos">
+                                <span>
+                                    <span class="menu-item-link"> Nosotros </span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="noticias.html" title="Noticias">
+                                <span>
+                                    <span class="menu-item-link"> Noticias </span>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="headerItem">
+                <div class=" ">
+                    <a href="contacto.html" class="buttonWrapper">Contacto</a>
                 </div>
+            </div>
+        </section>
+    </header>
+    <!-- Main Section -->
+    <main>
+        <section id="breadcrumbs">
+            <div class="center">
+                <section class="breadcrumbWrapper">
+                    <div class="breadcrumbs-content">
+                        <h1 class="">PRODUCTO</h1>
+                        <div class="breadcrumbs">
+                            <div class="">
+                                <a class="home" href="/"> HOME</a>
+                                <span class="divider"></span>
+                                <span class="current">PRODUCTOS </span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
 
-                <div class="headerItem">
-                    <nav class="navWrapper">
-                        <ul class="navMenuContent">
-                            <li class="menu-item">
-                                <a href="index.html">
-                                    <span>
-                                        <span class="menu-item-link"> Home </span>
-                                    </span>
-                                </a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="productos.html" class="active" title="Nuestros Productos">
-                                    <span>
-                                        <span class="menu-item-link"> Productos </span>
-                                    </span>
-                                </a>
-                                <ul class="navSubMenuContent">
+        <section id="producto" class="sectionContent">
+            <div class="center">
+                <div class="flex">
+                    <section id="imagenContentWrapper">
+                        <div class="contentWrapper">
+                            <div class="contentWrapper-widget">
+                                <div class="contentWrapper-image">
+                                    <img src="img/imagen.jpg" alt=" imagen contacto" />
+                                </div>
+                            </div>
+
+                            <div class="tinyImagenWrapper">
+                                <ul class="tinyimagenWrapper_ul">
                                     <li>
-                                        <a href="producto.html" class="navSubMenuContent-li-a">
-                                            <span> producto 1</span>
-                                        </a>
+                                        <img src="img/imagen.jpg" alt=" imagen contacto" />
                                     </li>
                                     <li>
-                                        <a href="producto.html" class="navSubMenuContent-li-a">
-                                            <span> producto 2</span>
-                                        </a>
+                                        <img src="img/imagen.jpg" alt=" imagen contacto" />
                                     </li>
                                     <li>
-                                        <a href="producto.html" class="navSubMenuContent-li-a">
-                                            <span> producto 3</span>
-                                        </a>
+                                        <img src="img/imagen.jpg" alt=" imagen contacto" />
+                                    </li>
+                                    <li>
+                                        <img src="img/imagen.jpg" alt=" imagen contacto" />
                                     </li>
                                 </ul>
-                            </li>
-                            <li class="menu-item">
-                                <a href="nosotros.html" title="Quienes somos">
-                                    <span>
-                                        <span class="menu-item-link"> Nosotros </span>
-                                    </span>
-                                </a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="noticias.html" title="Noticias">
-                                    <span>
-                                        <span class="menu-item-link"> Noticias </span>
-                                    </span>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
+                            </div>
+                        </div>
+                    </section>
 
-                <div class="headerItem">
-                    <div class=" ">
-                        <a href="contacto.html" class="buttonWrapper">Contacto</a>
-                    </div>
-                </div>
-            </section>
-        </header>
-        <!-- Main Section -->
-        <main>
-            <section id="breadcrumbs">
-                <div class="center">
-                    <section class="breadcrumbWrapper">
-                        <div class="breadcrumbs-content">
-                            <h1 class="">PRODUCTO</h1>
-                            <div class="breadcrumbs">
-                                <div class="">
-                                    <a class="home" href="/"> HOME</a>
-                                    <span class="divider"></span>
-                                    <span class="current">PRODUCTOS </span>
+                    <section id="infoContentWrapper">
+                        <div class="wrapper">
+                            <div class="wrapper-content">
+                                <div class="contentWrapper">
+                                    <div class="contentWrapper-title">
+                                        <h2 class="bigTitle">Lorem, ipsum dolor.</h2>
+                                    </div>
+                                    <div class="contentWrapper-price">
+                                        <p>$ 99.999</p>
+                                    </div>
+                                    <div class="contentWrapper-description sectionInnerContent">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus eum
+                                            asperiores delectus suscipit dignissimos quas unde aperiam aut
+                                            doloremque totam cupiditate, repudiandae tenetur, minus, natus officia
+                                            porro qui laudantium commodi ea atque facilis. Placeat quae quaerat
+                                            magnam officiis eligendi fuga? Libero sit quaerat dicta.
+                                        </p>
+                                    </div>
+                                    <div class="sectionInnerContent">
+                                        <ul style="padding: 0">
+                                            <li>Digital project planning and resourcing</li>
+                                            <li>In-House digital consulting</li>
+                                            <li>Permanent and contract recruitement</li>
+                                        </ul>
+                                    </div>
+                                    <div class="sectionInnerContent">
+                                        <form action="">
+                                            <fieldset>
+                                                <legend>Choose your color</legend>
+
+                                                <select name="materials" class="inputForm">
+                                                    <option value="" selected>Colors</option>
+                                                    <option value="material1">Black</option>
+                                                    <option value="material3">Beige</option>
+
+                                                    <option value="material2">Grey</option>
+                                                </select>
+                                                <div class="sectionInnerContent">
+                                                    <h3>Choose the quantity</h3>
+                                                    <label for="quantity_100">
+                                                        1 units
+                                                        <input type="radio" name="quantity" id="quantity_100" />
+                                                    </label>
+                                                    <label for="quantity_500">
+                                                        5 units
+                                                        <input type="radio" name="quantity" id="quantity_500" />
+                                                    </label>
+                                                    <label for="quantity_1000">
+                                                        10 units
+                                                        <input type="radio" name="quantity" id="quantity_1000" />
+                                                    </label>
+                                                </div>
+                                                <div>
+                                                    <button type="button">SEND BTN</button>
+                                                </div>
+                                            </fieldset>
+                                        </form>
+                                    </div>
+                                    <div class="productMeta">
+                                        <div class="full">
+                                            <p class="sku_wrapper">
+                                                SKU:
+                                                <span class="sku">harbour-bar-chair</span>
+                                            </p>
+                                        </div>
+                                        <div class="full">
+                                            <p class="posted_in">
+                                                Category:
+                                                <span> Chairs </span>
+                                            </p>
+                                        </div>
+                                        <div class="full">
+                                            <div class="tagged_as">
+                                                Tags:
+                                                <span class="tagItems"> architecture </span>
+                                                <span class="tagItems"> ideas </span>
+                                                <span class="tagItems"> interior </span>
+                                                <span class="tagItems"> planing </span>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </section>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section id="producto" class="sectionContent">
-                <div class="center">
-                    <div class="flex">
-                        <section id="imagenContentWrapper">
-                            <div class="contentWrapper">
-                                <div class="contentWrapper-widget">
-                                    <div class="contentWrapper-image">
-                                        <img src="img/imagen.jpg" alt=" imagen contacto" />
-                                    </div>
-                                </div>
-
-                                <div class="tinyImagenWrapper">
-                                    <ul class="tinyImagenWrapper-ul">
-                                        <li>
-                                            <img src="img/imagen.jpg" alt=" imagen contacto" />
-                                        </li>
-                                        <li>
-                                            <img src="img/imagen.jpg" alt=" imagen contacto" />
-                                        </li>
-                                        <li>
-                                            <img src="img/imagen.jpg" alt=" imagen contacto" />
-                                        </li>
-                                        <li>
-                                            <img src="img/imagen.jpg" alt=" imagen contacto" />
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </section>
-
-                        <section id="infoContentWrapper">
-                            <div class="wrapper">
-                                <div class="wrapper-content">
-                                    <div class="contentWrapper">
-                                        <div class="contentWrapper-title">
-                                            <h2 class="bigTitle">Lorem, ipsum dolor.</h2>
-                                        </div>
-                                        <div class="contentWrapper-price">
-                                            <p>$ 99.999</p>
-                                        </div>
-                                        <div class="contentWrapper-description sectionInnerContent">
-                                            <p>
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus eum
-                                                asperiores delectus suscipit dignissimos quas unde aperiam aut
-                                                doloremque totam cupiditate, repudiandae tenetur, minus, natus officia
-                                                porro qui laudantium commodi ea atque facilis. Placeat quae quaerat
-                                                magnam officiis eligendi fuga? Libero sit quaerat dicta.
-                                            </p>
-                                        </div>
-                                        <div class="sectionInnerContent">
-                                            <ul style="padding: 0">
-                                                <li>Digital project planning and resourcing</li>
-                                                <li>In-House digital consulting</li>
-                                                <li>Permanent and contract recruitement</li>
-                                            </ul>
-                                        </div>
-                                        <div class="sectionInnerContent">
-                                            <form action="">
-                                                <fieldset>
-                                                    <legend>Choose your color</legend>
-
-                                                    <select name="materials" class="inputForm">
-                                                        <option value="" selected>Colors</option>
-                                                        <option value="material1">Black</option>
-                                                        <option value="material3">Beige</option>
-
-                                                        <option value="material2">Grey</option>
-                                                    </select>
-                                                    <div class="sectionInnerContent">
-                                                        <h3>Choose the quantity</h3>
-                                                        <label for="quantity_100">
-                                                            1 units
-                                                            <input type="radio" name="quantity" id="quantity_100" />
-                                                        </label>
-                                                        <label for="quantity_500">
-                                                            5 units
-                                                            <input type="radio" name="quantity" id="quantity_500" />
-                                                        </label>
-                                                        <label for="quantity_1000">
-                                                            10 units
-                                                            <input type="radio" name="quantity" id="quantity_1000" />
-                                                        </label>
-                                                    </div>
-                                                    <div>
-                                                        <button type="button">SEND BTN</button>
-                                                    </div>
-                                                </fieldset>
-                                            </form>
-                                        </div>
-                                        <div class="productMeta">
-                                            <div class="full">
-                                                <p class="sku_wrapper">
-                                                    SKU:
-                                                    <span class="sku">harbour-bar-chair</span>
-                                                </p>
-                                            </div>
-                                            <div class="full">
-                                                <p class="posted_in">
-                                                    Category:
-                                                    <span> Chairs </span>
-                                                </p>
-                                            </div>
-                                            <div class="full">
-                                                <div class="tagged_as">
-                                                    Tags:
-                                                    <span class="tagItems"> architecture </span>
-                                                    <span class="tagItems"> ideas </span>
-                                                    <span class="tagItems"> interior </span>
-                                                    <span class="tagItems"> planing </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
+        <section id="productos" class="sectionContent">
+            <section class="center">
+                <div class="sectionHeading">
+                    <h3>Related products</h3>
+                    <p>Quisque sit amet mauris in turpis tincidunt vestibulum ut sed risus.</p>
                 </div>
             </section>
 
-            <section id="productos" class="sectionContent">
-                <section class="center">
-                    <div class="sectionHeading">
-                        <h3>Related products</h3>
-                        <p>Quisque sit amet mauris in turpis tincidunt vestibulum ut sed risus.</p>
-                    </div>
-                </section>
-
-                <section class="productosWrapper-content sectionContent">
-                    <ul class="productosWrapper-ul center">
-                        <li class="productosWrapper-li">
-                            <a href="producto.html">
-                                <div class="itemimagen productosItem">
-                                    <div class="imagenWrapper">
-                                        <img src="img/imagen-small.jpg" alt="imagen productos fullWidth" />
-                                        <div class="imagenWrapper-text">
-                                            <div class="imagenWrapper-text_inner">
-                                                <span> </span>
-                                                <p>Quisque sit amet mauris 1</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="textContainer">
-                                        <p>Quisque sit amet mauris in turpis tincidunt bulum ut sed risus.</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="productosWrapper-li">
+            <section class="productosWrapper-content sectionContent">
+                <ul class="productosWrapper-ul center">
+                    <li class="productosWrapper-li">
+                        <a href="producto.html">
                             <div class="itemimagen productosItem">
                                 <div class="imagenWrapper">
                                     <img src="img/imagen-small.jpg" alt="imagen productos fullWidth" />
-                                    <div class="imagenWrapper-text">
-                                        <div class="imagenWrapper-text_inner">
+                                    <div class="imagenWrapper_text">
+                                        <div class="imagenWrapper_text_inner">
                                             <span> </span>
                                             <p>Quisque sit amet mauris 1</p>
                                         </div>
@@ -267,127 +247,142 @@
                                     <p>Quisque sit amet mauris in turpis tincidunt bulum ut sed risus.</p>
                                 </div>
                             </div>
-                        </li>
-                        <li class="productosWrapper-li">
-                            <div class="itemimagen productosItem">
-                                <div class="imagenWrapper">
-                                    <img src="img/imagen-small.jpg" alt="imagen productos fullWidth" />
-                                    <div class="imagenWrapper-text">
-                                        <div class="imagenWrapper-text_inner">
-                                            <span> </span>
-                                            <p>Quisque sit amet mauris 1</p>
-                                        </div>
+                        </a>
+                    </li>
+                    <li class="productosWrapper-li">
+                        <div class="itemimagen productosItem">
+                            <div class="imagenWrapper">
+                                <img src="img/imagen-small.jpg" alt="imagen productos fullWidth" />
+                                <div class="imagenWrapper_text">
+                                    <div class="imagenWrapper_text_inner">
+                                        <span> </span>
+                                        <p>Quisque sit amet mauris 1</p>
                                     </div>
                                 </div>
-                                <div class="textContainer">
-                                    <p>Quisque sit amet mauris in turpis tincidunt bulum ut sed risus.</p>
+                            </div>
+                            <div class="textContainer">
+                                <p>Quisque sit amet mauris in turpis tincidunt bulum ut sed risus.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="productosWrapper-li">
+                        <div class="itemimagen productosItem">
+                            <div class="imagenWrapper">
+                                <img src="img/imagen-small.jpg" alt="imagen productos fullWidth" />
+                                <div class="imagenWrapper_text">
+                                    <div class="imagenWrapper_text_inner">
+                                        <span> </span>
+                                        <p>Quisque sit amet mauris 1</p>
+                                    </div>
                                 </div>
                             </div>
-                        </li>
-                    </ul>
-                </section>
+                            <div class="textContainer">
+                                <p>Quisque sit amet mauris in turpis tincidunt bulum ut sed risus.</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </section>
-        </main>
+        </section>
+    </main>
 
-        <!-- Footer Section -->
-        <footer id="footerCentralSectionWrapper" class="footer">
+    <!-- Footer Section -->
+    <footer id="footerCentralSectionWrapper" class="footer">
+        <div class="divider"></div>
+        <section id="footerCentralSectionWrapper-content" class="center">
+            <section class="footerContent">
+                <div class="footerItem brand">
+                    <div class="footerLogoMain">
+                        <img src="" alt="Brand Logo Footer" title=" Brand Logo Footer " />
+                    </div>
+
+                    <div class="footerTextContent">
+                        <p class="globalText">
+                            Praesent pulvinar faucibus risus, ut iaculis tortor fermentum in. Aliquam erat volutpat.
+                            Nulla ut ullamcorper urna, et hendrerit est. Praesent id mattis ante.
+                        </p>
+                    </div>
+
+                    <div class="footerSocialIcons">
+                        <a href="https://www.facebook.com/" title="Facebook" target="_blank" rel="noopener">
+                            <i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/" title="Instagram" target="_blank" rel="noopener">
+                            <i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/" title="LinkedIn" target="_blank" rel="noopener">
+                            <i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="footerItem contact">
+                    <div class="footerItem_title">
+                        <h3>
+                            <span> CONTACTO</span>
+                        </h3>
+                    </div>
+                    <div class="footerItem-content">
+                        <p>Calle falsa 123 - Buenos Aires</p>
+                        <p>
+                            <a href="mailto:info@webmail.com "> info@webmail.com </a>
+                        </p>
+                        <p>
+                            <a href="tel:++5491145556677"> +54911 4555 6677 </a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="footerItem sitemap">
+                    <div class="footerItem_title">
+                        <h3>
+                            <span> SITEMAP</span>
+                        </h3>
+                    </div>
+                    <div class="footerItem-content">
+                        <ul class="footerItem-content_menu">
+                            <li>
+                                <a href="/">Home</a>
+                            </li>
+                            <li>
+                                <a href="nosotros.html">Nosotros</a>
+                            </li>
+                            <li>
+                                <a href="productos.html">Productos</a>
+                            </li>
+                            <li>
+                                <a href="contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footerItem lastNews">
+                    <div class="footerItem_title">
+                        <h3>
+                            <span> ÚLTIMAS NOTICIAS </span>
+                        </h3>
+                    </div>
+                    <div class="footerItem-content">
+                        <div class="footerItem-content_item">
+                            <p>Maecenas quis porttitor lorem, quis egestas tortor.</p>
+                            <span> Febrero 03, 2021 </span>
+                        </div>
+                        <div class="footerItem-content_item">
+                            <p>Maecenas quis porttitor lorem, quis egestas tortor.</p>
+                            <span> Febrero 03, 2021 </span>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <div class="divider"></div>
-            <section id="footerCentralSectionWrapper-content" class="center">
-                <section class="footerContent">
-                    <div class="footerItem brand">
-                        <div class="footerLogoMain">
-                            <img src="" alt="Brand Logo Footer" title=" Brand Logo Footer " />
-                        </div>
-
-                        <div class="footerTextContent">
-                            <p class="globalText">
-                                Praesent pulvinar faucibus risus, ut iaculis tortor fermentum in. Aliquam erat volutpat.
-                                Nulla ut ullamcorper urna, et hendrerit est. Praesent id mattis ante.
-                            </p>
-                        </div>
-
-                        <div class="footerSocialIcons">
-                            <a href="https://www.facebook.com/" title="Facebook" target="_blank" rel="noopener">
-                                <i class="fab fa-facebook-f"></i
-                            ></a>
-                            <a href="https://www.instagram.com/" title="Instagram" target="_blank" rel="noopener">
-                                <i class="fab fa-instagram"></i
-                            ></a>
-                            <a href="https://www.linkedin.com/" title="LinkedIn" target="_blank" rel="noopener">
-                                <i class="fab fa-linkedin-in"></i
-                            ></a>
-                        </div>
-                    </div>
-
-                    <div class="footerItem contact">
-                        <div class="footerItem_title">
-                            <h3>
-                                <span> CONTACTO</span>
-                            </h3>
-                        </div>
-                        <div class="footerItem-content">
-                            <p>Calle falsa 123 - Buenos Aires</p>
-                            <p>
-                                <a href="mailto:info@webmail.com "> info@webmail.com </a>
-                            </p>
-                            <p>
-                                <a href="tel:++5491145556677"> +54911 4555 6677 </a>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="footerItem sitemap">
-                        <div class="footerItem_title">
-                            <h3>
-                                <span> SITEMAP</span>
-                            </h3>
-                        </div>
-                        <div class="footerItem-content">
-                            <ul class="footerItem-content_menu">
-                                <li>
-                                    <a href="/">Home</a>
-                                </li>
-                                <li>
-                                    <a href="nosotros.html">Nosotros</a>
-                                </li>
-                                <li>
-                                    <a href="productos.html">Productos</a>
-                                </li>
-                                <li>
-                                    <a href="contacto.html">Contacto</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="footerItem lastNews">
-                        <div class="footerItem_title">
-                            <h3>
-                                <span> ÚLTIMAS NOTICIAS </span>
-                            </h3>
-                        </div>
-                        <div class="footerItem-content">
-                            <div class="footerItem-content_item">
-                                <p>Maecenas quis porttitor lorem, quis egestas tortor.</p>
-                                <span> Febrero 03, 2021 </span>
-                            </div>
-                            <div class="footerItem-content_item">
-                                <p>Maecenas quis porttitor lorem, quis egestas tortor.</p>
-                                <span> Febrero 03, 2021 </span>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <div class="divider"></div>
-                <section class="bottomFooterContent">
-                    <p>Terms of use | Privacy Environmental Policy</p>
-                    <p>
-                        Copyright © 2021 website by
-                        <a href="#"> WebDeveloper </a>
-                        All Rights Reserved.
-                    </p>
-                </section>
+            <section class="bottomFooterContent">
+                <p>Terms of use | Privacy Environmental Policy</p>
+                <p>
+                    Copyright © 2021 website by
+                    <a href="#"> WebDeveloper </a>
+                    All Rights Reserved.
+                </p>
             </section>
-        </footer>
-    </body>
+        </section>
+    </footer>
+</body>
+
 </html>

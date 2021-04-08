@@ -1,9 +1,11 @@
 #ourContactWrapper {
     ul {
         overflow: hidden;
+
         &.ourContact li {
             margin-bottom: 2rem;
-            .ourContact-widget_icon {
+
+            .ourContact_widget-icon {
                 width: 70px;
                 text-align: center;
             }

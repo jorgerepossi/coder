@@ -1,0 +1,9 @@
+nav {
+    &.navWrapper {
+        height: 99px;
+
+        @extend .align-center;
+
+        @extend .flex;
+    }
+}

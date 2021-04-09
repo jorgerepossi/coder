@@ -1,5 +1,3 @@
-@import '../queries/_media-queries.scss';
-
 header {
     position: fixed;
     background-color: var(--mywebsite-color-base);
@@ -15,27 +13,19 @@ header {
         align-items: center;
     }
 
+
     padding: 0 2em;
 
     @include mq(medium, large) {
         padding: 0;
     }
 
+
     justify-content: space-between;
     letter-spacing: 0.02rem;
     height: 100px;
 
     .headerItem {
-        nav {
-            &.navWrapper {
-                height: 99px;
-
-                @extend .align-center;
-
-                @extend .flex;
-            }
-        }
-
         img {
             max-width: 150px;
         }
@@ -53,32 +43,6 @@ header {
                     position: relative;
 
                     @extend .full;
-
-                    &.menu-item {
-                        height: 100px;
-                        width: auto;
-
-                        a {
-                            @extend .align-center;
-
-                            @extend .flex;
-
-                            height: 100%;
-                            padding: 0px 16px 0px 16px;
-                            position: relative;
-                            transition: var(--mywebsite-contant-transition);
-
-                            .menu-item-link {
-                                font-weight: 600;
-                                font-size: 14px;
-                            }
-
-                            &.active,
-                            &:hover {
-                                color: var(--system-color-red-20);
-                            }
-                        }
-                    }
 
                     ul {
                         &.navSubMenuContent {
@@ -132,10 +96,38 @@ header {
                         }
                     }
                 }
+
+                .menu-item {
+                    height: 100px;
+                    width: auto;
+
+                    a {
+                        @extend .align-center;
+
+                        @extend .flex;
+
+                        height: 100%;
+                        padding: 0px 16px 0px 16px;
+                        position: relative;
+                        transition: var(--mywebsite-contant-transition);
+
+                        .menu-item-link {
+                            font-weight: 600;
+                            font-size: 14px;
+                        }
+
+                        &.active,
+                        &:hover {
+                            color: var(--system-color-red-20);
+                        }
+                    }
+                }
             }
         }
     }
 }
+
+@import "./nav";
 
 .floatNav {
     position: fixed;

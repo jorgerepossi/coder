@@ -1,5 +1,5 @@
 {
-    "name": "Entrega",
+    "name": "entrega",
     "version": "1.0.1",
     "description": "",
     "main": "index.js",
@@ -11,7 +11,7 @@
         "postcommit": "git update-index -g",
         "pretty": "prettier --write \"./**/*.{css,scss,html,js,jsx,json}\"",
         "format": "prettier --write .",
-        "go": "npm run pretty  &&  npm run pre-commit && npm run postcommit"
+        "go": "npm run pretty  &&  npm run pre-commit && npm run postcommit && npm run w"
     },
     "keywords": [],
     "author": "",

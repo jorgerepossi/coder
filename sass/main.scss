@@ -1,14 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600&display=swap');
 
-@import "queries/media-queries";
-@import "colors/colors";
-@import "fonts/fontsizes";
-@import "fonts/fontfamily";
+@import 'queries/media-queries';
+@import 'colors/colors';
+@import 'fonts/fontsizes';
+@import 'fonts/fontfamily';
 
-@import "atoms/_root";
+@import 'atoms/_root';
 
 /** RESET */
-@import "reset/reset";
+@import 'reset/reset';
 
 @mixin flex-center {
     display: flex;
@@ -48,17 +48,17 @@
     margin: 0px auto;
 }
 
-@import "atoms/text";
-@import "atoms/title";
-@import "atoms/boxshadows";
-@import "atoms/borderRadius";
-@import "atoms/buttons";
-@import "atoms/card";
+@import 'atoms/text';
+@import 'atoms/title';
+@import 'atoms/boxshadows';
+@import 'atoms/borderRadius';
+@import 'atoms/buttons';
+@import 'atoms/card';
 
-@import "components/doubleHeading";
-@import "components/breadcrumbs";
-@import "components/wrapper";
-@import "components/acordion";
+@import 'components/doubleHeading';
+@import 'components/breadcrumbs';
+@import 'components/wrapper';
+@import 'components/acordion';
 
 .newsContentWrapper {
     @extend .full;
@@ -112,22 +112,22 @@ img {
 }
 
 /** HEADER */
-@import "queries/_media-queries.scss";
+@import 'queries/_media-queries.scss';
 
-@import "layouts/header/header";
+@import 'layouts/header/header';
 
 /** FIN HEADER */
 
 /** MAIN */
-@import "pages/index";
-@import "pages/productos";
-@import "pages/producto";
-@import "pages/contactOurContact";
-@import "atoms/input";
+@import 'pages/index';
+@import 'pages/productos';
+@import 'pages/producto';
+@import 'pages/contactOurContact';
+@import 'atoms/input';
 
 /** FIN MAIN */
 
 /** FOOTER */
-@import "layouts/footer";
+@import 'layouts/footer';
 
 /** FIN FOOTER */

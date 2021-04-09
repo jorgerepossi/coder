@@ -9,8 +9,14 @@ span,
 applet,
 object,
 iframe,
-table, caption, tbody, tfoot,
-thead, tr, th, td,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
 del,
 dfn,
 em,
@@ -76,7 +82,8 @@ a {
 }
 
 body {
-    font-family: 'Inter', sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, Arial;
+    font-family: 'Inter', sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue,
+        Helvetica, Arial;
 }
 
 .container {

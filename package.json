@@ -7,9 +7,6 @@
         "build-css": "node-sass --include-path scss sass/main.scss css/main.css && scss sass/bts.scss css/bts.css",
         "w": "nodemon -e scss -x \"npm run build-css\"",
         "prepare": "husky install",
-        "pre-commit": "pretty-quick --staged",
-        "postcommit": "git update-index -g",
-        "pretty": "prettier --write \"./**/*.{css,scss,html,js,jsx,json}\"",
         "format": "prettier --write .",
         "go": "npm run pretty  &&  npm run pre-commit && npm run postcommit && npm run w"
     },

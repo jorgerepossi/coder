@@ -18,7 +18,8 @@
     "homepage": "https://github.com/jorgerepossi/coder#readme",
     "devDependencies": {
         "husky": "^6.0.0",
-        "lint-staged": "^10.5.4"
+        "lint-staged": "^10.5.4",
+        "prettier": "^2.2.1"
     },
     "husky": {
         "hooks": {
@@ -30,8 +31,5 @@
             "prettier --single-quote --write",
             "git add"
         ]
-    },
-    "dependencies": {
-        "prettier": "^2.2.1"
     }
 }

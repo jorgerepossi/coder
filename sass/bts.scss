@@ -442,6 +442,7 @@ main {
 /*  Sidebar  */
 #categorias {
     ul {
+        position: relative;
     }
 
     li {
@@ -459,7 +460,7 @@ main {
         padding: 0.5rem 0.6rem;
         margin: 0.3rem auto;
         border-radius: 5px;
-        background-color: var(--system-color-bluelight-10);
+        background-color: var(--system-color-white-20);
         font-size: 12px;
     }
 }
@@ -498,15 +499,7 @@ main {
     max-width: 550px;
 }
 
-.accordion {
-    .card-header {
-        background-color: var(--system-color-red-20);
-
-        button {
-            color: var(--system-color-white-10);
-        }
-    }
-}
+@import './components/acordion';
 
 /* Fin Páginas */
 

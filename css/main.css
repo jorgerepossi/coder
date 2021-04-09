@@ -245,7 +245,6 @@ main #hero,
     border-radius: var(--mywebsite-border-radius-circle);
 }
 
-button,
 .button,
 .button-primary,
 .button-secondary {
@@ -261,7 +260,6 @@ button,
     border: 1px solid var(--system-color-red-20-outline);
     cursor: pointer;
 }
-button:hover,
 .button:hover,
 .button-primary:hover,
 .button-secondary:hover {
@@ -271,11 +269,17 @@ button:hover,
     border: 1px solid var(--system-color-green-10);
 }
 
-button {
+/* button {
+    @extend %button;
+
     background-color: var(--mywebsite-color-base);
     margin: 0.2rem;
 }
-
+ */
+.button {
+    background-color: var(--mywebsite-color-base);
+    margin: 0.2rem;
+}
 .button-primary {
     color: var(--mywebsite-color-base);
     background-color: var(--system-color-red-20);
@@ -289,7 +293,6 @@ button {
     -moz-box-shadow: 0px 15px 20px -8px rgba(102, 207, 169, 0.45);
     box-shadow: 0px 15px 20px -8px rgba(102, 207, 169, 0.45);
 }
-
 .button-secondary {
     color: var(--mywebsite-color-base);
     background-color: var(--system-color-green-10);
@@ -372,6 +375,13 @@ button {
     .wrapper_content {
         max-width: 550px;
     }
+}
+
+.accordion .card-header {
+    background-color: var(--system-color-red-20);
+}
+.accordion .card-header button {
+    color: var(--system-color-white-10);
 }
 
 .newsContentWrapper {

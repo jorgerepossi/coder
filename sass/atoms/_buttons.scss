@@ -47,15 +47,18 @@
     }
 }
 
-button {
+/* button {
     @extend %button;
 
     background-color: var(--mywebsite-color-base);
     margin: 0.2rem;
 }
-
+ */
 .button {
     @extend %button;
+
+    background-color: var(--mywebsite-color-base);
+    margin: 0.2rem;
 
     &-primary {
         @include button-content(

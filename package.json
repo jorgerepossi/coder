@@ -11,8 +11,9 @@
         "postcommit": "git update-index -g",
         "pretty": "prettier --write \"./**/*.{css,scss,html,js,jsx,json}\"",
         "format": "prettier --write .",
-        "go": "npm run pretty  &&  npm run pre-commit && npm run postcommit",
-        "lint": " npm run format "
+        "lint": "npm run format ",
+        "lint-staged": "lint-staged",
+        "go": "npm run pretty  &&  npm run pre-commit && npm run postcommit"
     },
     "keywords": [],
     "author": "",

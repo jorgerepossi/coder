@@ -35,7 +35,6 @@
     "lint-staged": {
         "*.{js,json,css,md,html}": [
             "prettier --single-quote --write",
-            "git add",
             "npm run lint",
             "npm run format"
         ]

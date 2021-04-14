@@ -230,8 +230,6 @@ main #hero,
     justify-content: space-evenly;
 }
 
-/* justify-items-start */
-/* Flex Justify */
 .justify-items-start {
     justify-items: start;
 }

@@ -9,13 +9,13 @@ main {
     .newsWrapperContent {
         @extend .flex;
 
-        @extend .align-center;
+        @extend .items-center;
     }
 
     #hero {
         @extend .flex;
 
-        @extend .align-center;
+        @extend .items-center;
 
         background-color: var(--mywebsite-color-base);
         background-image: url('../img//hero.jpg');

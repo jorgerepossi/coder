@@ -100,7 +100,7 @@ header {
                     width: auto;
 
                     a {
-                        @extend .align-center;
+                        @extend .items-center;
 
                         @extend .flex;
 
@@ -137,11 +137,7 @@ header {
     scroll-behavior: smooth;
 
     ul {
-        width: 100%;
-        display: flex;
-        align-content: center;
-        align-items: center;
-        flex-direction: column;
+        @extend .full;
     }
 
     li {

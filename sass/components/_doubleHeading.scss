@@ -14,7 +14,7 @@
         span {
             @extend .flex;
 
-            @extend .align-center;
+            @extend .items-center;
 
             &::before {
                 content: '';

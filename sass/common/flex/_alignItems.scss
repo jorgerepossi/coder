@@ -1,0 +1,13 @@
+$align: (
+    items-start: 'flex-start',
+    items-end: 'flex-end',
+    items-center: 'center',
+    items-baseline: 'baseline',
+    items-stretch: 'stretch',
+);
+
+@each $classname, $position in $align {
+    #{'.' + $classname} {
+        align-items: #{$position};
+    }
+}

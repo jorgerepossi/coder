@@ -339,7 +339,9 @@ header {
 }
 
 /* fin header */
-/* Main */
+/* Main
+*
+* */
 main {
     padding: 0 0 5rem;
     margin-top: 100px;
@@ -353,7 +355,7 @@ main {
     display: flex;
 }
 
-.align-center,
+.items-center,
 .doubleHeading_subtitle span {
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -773,7 +775,10 @@ footer {
 }
 
 /* Fin footer */
-/* @Media queries  Mobile First */
+/* @Media queries 
+* 
+* Mobile First
+*  */
 @media (min-width: 480px) {
     .post_items p {
         font-size: 0.9rem;

@@ -1,0 +1,17 @@
+/*  map */
+$direction: (
+    flex-row: 'row',
+    flex-row-reverse: 'row-reverse',
+    flex-col: 'column',
+    flex-col-reverse: 'column-reverse',
+);
+
+/* Crea las clases de FlexDirection  */
+/* Crea la clase .flex-row, .flex-row-reverse, .flex-col .flex-col-reverse */
+/*  */
+
+@each $classname, $position in $direction {
+    #{'.' + $classname} {
+        flex-direction: #{$position};
+    }
+}

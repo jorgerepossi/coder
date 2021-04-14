@@ -64,22 +64,7 @@ footer {
     }
 }
 
-.bottomFooterContent {
-    display: flex;
-    justify-content: space-between;
-    padding: 2rem 0;
-    border-top: 1px solid var(--system-color-red-50);
-
-    p {
-        font-size: var(--system-font-size-xsmall);
-        opacity: 0.8;
-
-        a {
-            font-weight: bolder;
-            opacity: 1;
-        }
-    }
-}
+@import 'bottomFooterContent';
 
 .brand {
     grid-column: 1 / 8;

@@ -1,0 +1,14 @@
+$align: (
+    content-center: 'center',
+    content-start: 'flex-start',
+    content-end: 'flex-end',
+    content-between: 'space-between',
+    content-around: 'space-around',
+    content-evenly: 'space-evenly',
+);
+
+@each $classname, $position in $align {
+    #{'.' + $classname} {
+        align-content: #{$position};
+    }
+}

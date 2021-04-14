@@ -1,0 +1,14 @@
+$display: (
+    flex: 'flex',
+    inline-flex: 'inline-flex',
+);
+
+@each $classname, $position in $display {
+    #{'.' + $classname} {
+        display: #{$position};
+    }
+}
+
+.flex {
+    display: flex;
+}

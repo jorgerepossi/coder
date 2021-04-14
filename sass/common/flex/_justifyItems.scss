@@ -1,0 +1,15 @@
+/* justify-items-start */
+
+$justify: (
+    justify-items-start: 'start',
+    justify-items-end: 'flex-end',
+    justify-items-center: 'center',
+    justify-items-stretch: 'stretch',
+);
+
+/* Flex Justify */
+@each $classname, $position in $justify {
+    #{'.' + $classname} {
+        justify-items: #{$position};
+    }
+}

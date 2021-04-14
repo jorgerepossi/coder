@@ -1,0 +1,13 @@
+$justify: (
+    justify-self-auto: 'auto',
+    justify-self-start: 'start',
+    justify-self-end: 'flex-end',
+    justify-self-center: 'center',
+    justify-self-stretch: 'stretch',
+);
+
+@each $classname, $position in $justify {
+    #{'.' + $classname} {
+        justify-self: #{$position};
+    }
+}

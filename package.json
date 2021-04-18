@@ -33,7 +33,7 @@
         }
     },
     "lint-staged": {
-        "*.{js,json,css,md,html}": [
+        "*.{js,json,css,scss,md,html}": [
             "prettier --single-quote --write",
             "npm run lint",
             "npm run format"

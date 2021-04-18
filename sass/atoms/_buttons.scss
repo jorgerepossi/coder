@@ -3,7 +3,7 @@
     appearance: none;
     font-size: 10pt;
     padding: 1.6rem 2rem;
-    border-radius: var(--mywebsite-border-radius);
+    border-radius: var(--border-radius);
     color: var(--color-red-20);
     transition: var(--mywebsite-contant-transition) ease-in-out;
     text-transform: uppercase;
@@ -87,7 +87,7 @@
 
 .buttonWrapper {
     padding: 1.6rem 2rem;
-    border-radius: var(--mywebsite-border-radius);
+    border-radius: var(--border-radius);
     background-color: var(--color-green-10);
     color: var(--mywebsite-color-base);
     transition: var(--mywebsite-contant-transition) ease-in-out;

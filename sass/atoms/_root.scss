@@ -26,8 +26,8 @@
     --mywebsite-color-footer: var(--color-black-10);
     --mywebsite-color-footer-paragraph: #bac4e1;
     --mywebsite-color-border: var(--color-white-20);
-    --mywebsite-border-radius: $border-radius;
-    --mywebsite-border-radius-circle: $border-radius-big;
+    --border-radius: #{$border-radius};
+    --border-radius-circle: #{$border-radius-big};
     --mywebsite-global-color-text: #333;
     --mywebsite-contant-transition: 0.5s;
     --mywebsite-h1-font: 'Lato', sans-serif;
@@ -35,6 +35,7 @@
     --mywebsite-h3-font: 'Open Sans', sans-serif;
     --padding-big: 5rem 1.6rem;
     --padding-small: 2rem 0;
-    --title-big: 3rem;
+    --title-big: 2rem;
+    --title-small: 1.2rem;
     --mywebsite-shadow-primary: 0px 8px 16px -4px rgba(#ed1b24, 0.25);
 }

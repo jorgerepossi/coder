@@ -61,12 +61,18 @@ footer {
         a {
             width: 4rem;
             height: 4rem;
-            border-radius: $border-radius-big;
             border: 1px solid;
             display: flex;
             justify-content: center;
             align-items: center;
             font-size: 1.6rem;
+            transition: all 0.2s ease-in-out;
+
+            &:hover {
+                background-color: var(--color-red-20);
+                color: var(--color-white-10);
+                border: 1px solid transparent;
+            }
         }
     }
 }

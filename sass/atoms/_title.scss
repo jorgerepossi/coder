@@ -10,21 +10,21 @@
 }
 
 .bigTitle {
-    font-size: 2rem;
+    font-size: var(--font-size-h1);
     line-height: 1em;
     font-weight: 900;
     color: var(--system-color-red-20-outline);
 
-    @include mq(small, medium) {
-        font-size: 1.9rem;
+    @include mq(small) {
+        font-size: var(--font-size-h1);
     }
 
-    @include mq(medium, large) {
-        font-size: 2.1rem;
+    @include mq(medium) {
+        font-size: var(--font-size-h2);
     }
 
-    @include mq(xlarge, xlarge) {
-        font-size: 3rem;
+    @include mq(xlarge) {
+        font-size: var(--font-size-h3);
     }
 }
 

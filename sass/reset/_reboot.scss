@@ -1,4 +1,6 @@
-* {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
@@ -64,14 +66,13 @@ legend {
     border: 0;
     outline: 0;
     padding: 0;
-    font-size: 16px;
+    font-size: 10px;
+
+    @include reset-text;
+    @include list-unstyled;
+
     color: inherit;
-    font-family: inherit;
-    font-weight: inherit;
-    font-style: inherit;
     vertical-align: baseline;
-    list-style: none;
-    text-decoration: none;
     text-rendering: optimizeLegibility;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -79,11 +80,6 @@ legend {
 a {
     text-decoration: none !important;
     color: inherit;
-}
-
-body {
-    font-family: 'Inter', sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue,
-        Helvetica, Arial;
 }
 
 .container {

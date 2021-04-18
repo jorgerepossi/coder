@@ -7,13 +7,11 @@
         display: inline-block;
         padding: 0.5rem 0.8rem;
         font-weight: 600;
-        margin-bottom: 1rem;
+        margin-bottom: 1.6rem;
         background-color: var(--mywebsite-color-base);
         text-transform: uppercase;
 
         span {
-            @extend .flex;
-
             @extend .items-center;
 
             &::before {
@@ -24,7 +22,7 @@
                 @extend .flex;
 
                 background-color: var(--system-color-green-10);
-                border-radius: 50px;
+                border-radius: $border-radius-big;
                 margin-right: 0.5rem;
             }
         }
@@ -37,10 +35,10 @@
     }
 
     &_content {
-        margin: 1.1rem 0;
+        margin: 1.1 0.6rem 0;
 
         p {
-            line-height: 1.618rem;
+            line-height: 3rem;
             color: var(--mywebsite-global-color-text);
         }
     }

@@ -1,12 +1,12 @@
 $justify: (
-    justify-items-start: 'start',
-    justify-items-end: 'flex-end',
-    justify-items-center: 'center',
-    justify-items-stretch: 'stretch',
+    start: 'start',
+    end: 'flex-end',
+    center: 'center',
+    stretch: 'stretch',
 );
 
 @each $classname, $position in $justify {
-    #{'.' + $classname} {
+    .justify-items-#{$classname} {
         justify-items: #{$position};
     }
 }

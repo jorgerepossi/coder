@@ -6,7 +6,7 @@
     &_content {
         max-width: 100%;
 
-        @include mq(small, xlarge) {
+        @include mq(small) {
             max-width: 550px;
         }
     }

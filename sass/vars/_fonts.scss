@@ -1,0 +1,14 @@
+$font-size-general: 10px;
+$font-size-h1: 4rem;
+$font-size-h2: 3rem;
+$font-size-h3: 2rem;
+$font-family-base: 'Inter', sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue,
+    Helvetica, Arial;
+$font-weight-normal: inherit;
+
+$fontSizes: (
+    font-size-general: $font-size-general,
+    font-size-h1: $font-size-h1,
+    font-size-h2: $font-size-h2,
+    font-size-h3: $font-size-h3,
+);

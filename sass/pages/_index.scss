@@ -61,24 +61,24 @@ main {
             grid-template-columns: 1fr;
             place-items: center;
 
-            @include mq(small, xlarge) {
+            @include mq(small) {
                 grid-template-columns: repeat(16, 1fr);
-                gap: 40px;
+                gap: 4rem;
             }
 
             &-content {
                 grid-column: 1;
                 padding: 20px;
 
-                @include mq(small, medium) {
+                @include mq(small) {
                     grid-column: 1 / 16;
                 }
 
-                @include mq(medium, large) {
+                @include mq(medium) {
                     grid-column: 10 / span 8;
                 }
 
-                @include mq(large, xlarge) {
+                @include mq(large) {
                     grid-column: 9 / span 9;
                 }
             }
@@ -87,11 +87,11 @@ main {
         .imgWrapper {
             grid-column: 1;
 
-            @include mq(small, medium) {
+            @include mq(small) {
                 grid-column: 1 / 16;
             }
 
-            @include mq(medium, xlarge) {
+            @include mq(medium) {
                 grid-column: 1 / span 8;
             }
         }
@@ -103,24 +103,24 @@ main {
             grid-template-columns: 1fr;
             place-items: center;
 
-            @include mq(small, xlarge) {
+            @include mq(small) {
                 grid-template-columns: repeat(16, 1fr);
-                gap: 40px;
+                gap: 4rem;
             }
 
             &-content {
                 grid-column: 1;
                 padding: 20px;
 
-                @include mq(small, medium) {
+                @include mq(small) {
                     grid-column: 2 / 16;
                 }
 
-                @include mq(medium, large) {
+                @include mq(medium) {
                     grid-column: 1 / 9;
                 }
 
-                @include mq(large, xlarge) {
+                @include mq(large) {
                     grid-column: 1 / 8;
                 }
             }
@@ -129,15 +129,15 @@ main {
         .imgWrapper {
             grid-column: 1;
 
-            @include mq(small, medium) {
+            @include mq(small) {
                 grid-column: 1 / 16;
             }
 
-            @include mq(medium, large) {
+            @include mq(medium) {
                 grid-column: 9 / 16;
             }
 
-            @include mq(large, xlarge) {
+            @include mq(large) {
                 grid-column: 9 / 16;
             }
         }

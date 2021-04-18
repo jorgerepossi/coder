@@ -15,7 +15,7 @@
                     }
 
                     li {
-                        padding: 1rem;
+                        padding: 1.6rem;
                     }
                 }
             }
@@ -40,11 +40,11 @@
         padding: 10px;
 
         .tagItems {
-            padding: 0.5rem 1rem;
+            padding: 0.5rem 1.6rem;
             background-color: #bac4e1;
             margin: 5px;
             text-transform: capitalize;
-            border-radius: 50px;
+            border-radius: $border-radius-big;
         }
     }
 }

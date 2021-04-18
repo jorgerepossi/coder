@@ -1,15 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600&display=swap');
 
+@import 'vars/index';
+@import 'mixin/index';
 @import 'queries/media-queries';
-@import 'colors/colors';
-@import 'fonts/fontsizes';
-@import 'fonts/fontfamily';
-@import 'atoms/_root';
+@import 'reset/reboot';
+@import 'atoms/root';
 
 /** RESET */
-@import 'reset/reset';
+
 @import 'common/common';
-@import 'mixin/mixin';
 
 .divider {
     height: 5rem;
@@ -40,7 +39,7 @@
 @import 'atoms/borderRadius';
 @import 'atoms/buttons';
 @import 'atoms/card';
-
+@import 'atoms/input';
 @import 'components/doubleHeading';
 @import 'components/breadcrumbs';
 @import 'components/wrapper';
@@ -92,7 +91,7 @@ img {
 @import 'pages/productos';
 @import 'pages/producto';
 @import 'pages/contactOurContact';
-@import 'atoms/input';
+@import 'pages/noticias';
 
 /** FIN MAIN */
 

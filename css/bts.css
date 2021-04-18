@@ -29,7 +29,7 @@
     --system-color-black-10: #212c26;
     --system-font-size-xsmall: 0.8rem;
     --system-font-size-small: 0.9rem;
-    --system-font-size-regular: 1rem;
+    --system-font-size-regular: 1.6rem;
     --system-font-size-large: 1.2rem;
     --system-font-size-xlarge: 2.5rem;
     --system-font-size-xxlarge: 4rem;
@@ -52,7 +52,7 @@
     --mywebsite-h1-font: 'Lato', sans-serif;
     --mywebsite-h2-font: 'Lato', sans-serif;
     --mywebsite-h3-font: 'Open Sans', sans-serif;
-    --mywebsite-padding-big: 5rem 1rem;
+    --mywebsite-padding-big: 5rem 1.6rem;
     --mywebsite-padding-small: 2rem 0;
     --mywebsite-title-small: 0.8rem;
     --mywebsite-title-big: 3rem;
@@ -66,7 +66,7 @@
     width: 0.5rem;
     height: 0.5rem;
     background-color: var(--system-color-green-10);
-    border-radius: 50px;
+    border-radius: $border-radius-big;
     margin-right: 0.3rem;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -181,7 +181,7 @@ button {
 }
 
 .buttonWrapper {
-    padding: 1rem 2rem;
+    padding: 1.6rem 2rem;
     border-radius: var(--mywebsite-border-radius);
     background-color: var(--system-color-green-10);
     color: var(--mywebsite-color-base);
@@ -215,7 +215,7 @@ textarea {
 }
 
 .inputForm {
-    padding: 1rem 2rem;
+    padding: 1.6rem 2rem;
     margin: 0.5rem 0.25rem;
 }
 
@@ -226,7 +226,7 @@ textarea {
 .title-wrapper {
     text-transform: uppercase;
     font-weight: 800;
-    height: 40px;
+    height: 4rem;
 }
 
 /* fin  general */
@@ -317,7 +317,7 @@ header {
     background-color: var(--mywebsite-color-base);
     color: var(--system-color-red-20);
     height: auto;
-    padding: 1rem 0;
+    padding: 1.6rem 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -332,7 +332,7 @@ header {
     position: fixed;
     right: 2rem;
     top: 50vh;
-    width: 40px;
+    width: 4rem;
     overflow: hidden;
     z-index: 9;
     scroll-behavior: smooth;
@@ -348,7 +348,6 @@ main {
 }
 
 .flex,
-.doubleHeading_subtitle span,
 .doubleHeading_subtitle span::before {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -386,7 +385,7 @@ main {
 
 .globalText {
     font-family: var(--system-font-family-global);
-    font-size: 1rem;
+    font-size: 1.6rem;
     letter-spacing: -1px;
     line-height: 30px;
     margin-bottom: 0.7rem;
@@ -419,7 +418,7 @@ main {
 
 @media only screen and (min-width: 981px) and (max-width: 1200px) {
     .bigTitle {
-        font-size: 2.1rem;
+        font-size: 2.1.6rem;
     }
 }
 
@@ -459,7 +458,7 @@ main {
     display: inline-block;
     padding: 0.5rem 0.8rem;
     font-weight: 600;
-    margin-bottom: 1rem;
+    margin-bottom: 1.6rem;
     background-color: var(--mywebsite-color-base);
     text-transform: uppercase;
 }
@@ -469,7 +468,7 @@ main {
     width: 0.5rem;
     height: 0.5rem;
     background-color: var(--system-color-green-10);
-    border-radius: 50px;
+    border-radius: $border-radius-big;
     margin-right: 0.5rem;
 }
 
@@ -480,11 +479,11 @@ main {
 }
 
 .doubleHeading_content {
-    margin: 1.1rem 0;
+    margin: 1.1.6rem 0;
 }
 
 .doubleHeading_content p {
-    line-height: 1.618rem;
+    .line-height: 3rem;
     color: var(--mywebsite-global-color-text);
 }
 
@@ -589,7 +588,7 @@ main {
 }
 
 .post_text-header p {
-    font-size: 1rem;
+    font-size: 1.6rem;
     font-weight: 800;
     opacity: 1;
 }
@@ -636,7 +635,7 @@ main {
 
 #categorias li {
     border-bottom: 1px solid var(--system-color-white-30);
-    font-size: 1rem;
+    font-size: 1.6rem;
     line-height: 37px;
     font-weight: 600;
     -webkit-transition: 0.3s;
@@ -701,7 +700,7 @@ main {
 }
 
 .footerItem-content {
-    line-height: 40px;
+    line-height: 4rem;
 }
 
 .footerItem-content p,
@@ -727,9 +726,9 @@ main {
 }
 
 .footerSocialIcons a {
-    width: 40px;
-    height: 40px;
-    border-radius: 50px;
+    width: 4rem;
+    height: 4rem;
+    border-radius: $border-radius-big;
     border: 1px solid;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -787,15 +786,15 @@ footer {
 
 @media (min-width: 768px) {
     .post_items p {
-        font-size: 1rem;
+        font-size: 1.6rem;
     }
 }
 
 /* @media (min-width: 1024px )
-* @media (min-width: 1440px )
+* @media (min-width: 144rem )
 *
 * Desktop First 
-* @media (max-width: 1440px )
+* @media (max-width: 144rem )
 * @media (max-width: 1024px )
 * @media (max-width: 768px )
 * @media (max-width: 480px )

@@ -5,27 +5,27 @@
 :root {
     @each $color, $shades in $colors {
         @each $shade, $value in $shades {
-            --system-color-#{$color}-#{$shade}: #{$value};
+            --color-#{$color}-#{$shade}: #{$value};
         }
     }
 
     @each $size, $value in $fonts {
-        --system-font-size-#{$size}: #{$value};
+        --font-size-#{$size}: #{$value};
     }
 
     @each $font, $value in $fontfamily {
-        --system-font-family-#{$font}: #{$value};
+        --font-family-#{$font}: #{$value};
     }
 
     @each $size, $value in $fontSizes {
         --#{$size}: #{$value};
     }
 
-    --system-color-red-20-outline: #ed1b24;
-    --mywebsite-color-base: var(--system-color-white-10);
-    --mywebsite-color-footer: var(--system-color-black-10);
+    --color-red-20-outline: #ed1b24;
+    --mywebsite-color-base: var(--color-white-10);
+    --mywebsite-color-footer: var(--color-black-10);
     --mywebsite-color-footer-paragraph: #bac4e1;
-    --mywebsite-color-border: var(--system-color-white-20);
+    --mywebsite-color-border: var(--color-white-20);
     --mywebsite-border-radius: $border-radius;
     --mywebsite-border-radius-circle: $border-radius-big;
     --mywebsite-global-color-text: #333;
@@ -33,9 +33,8 @@
     --mywebsite-h1-font: 'Lato', sans-serif;
     --mywebsite-h2-font: 'Lato', sans-serif;
     --mywebsite-h3-font: 'Open Sans', sans-serif;
-    --mywebsite-padding-big: 5rem 1.6rem;
-    --mywebsite-padding-small: 2rem 0;
-    --mywebsite-title-small: 1.3rem;
-    --mywebsite-title-big: 3rem;
+    --padding-big: 5rem 1.6rem;
+    --padding-small: 2rem 0;
+    --title-big: 3rem;
     --mywebsite-shadow-primary: 0px 8px 16px -4px rgba(#ed1b24, 0.25);
 }

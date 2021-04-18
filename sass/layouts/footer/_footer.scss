@@ -1,6 +1,6 @@
 footer {
     background: linear-gradient(250deg, #211f1f, #000000);
-    color: var(--system-color-bluelight-10);
+    color: var(--color-bluelight-10);
     animation: footerAnimation 10s infinite;
     transition: animation 0.3s ease-in-out;
     background-size: 400%;
@@ -109,7 +109,7 @@ footer {
     grid-column: 1 / 8;
 
     a {
-        color: var(--system-color-red-20);
+        color: var(--color-red-20);
         font-size: 1.5rem;
     }
 

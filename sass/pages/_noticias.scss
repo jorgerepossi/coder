@@ -4,7 +4,7 @@
     content: '';
     width: 0.5rem;
     height: 0.5rem;
-    background-color: var(--system-color-green-10);
+    background-color: var(--color-green-10);
     border-radius: $border-radius-big;
     margin-right: 0.3rem;
     display: inline-flex;
@@ -16,7 +16,7 @@
     }
 
     &_date {
-        border: 1px solid var(--system-color-red-20-outline);
+        border: 1px solid var(--color-red-20-outline);
         width: 3.75rem;
         height: 3.75rem;
         text-align: center;
@@ -31,23 +31,23 @@
     }
 
     &_meta-like {
-        color: var(--system-color-bluelight-40);
+        color: var(--color-bluelight-40);
 
         p {
             font-size: 0.9rem;
         }
 
         i {
-            color: var(--system-color-red-20);
+            color: var(--color-red-20);
         }
     }
 
     &_category {
-        color: var(--system-color-red-20);
+        color: var(--color-red-20);
     }
 
     &_meta-data {
-        color: var(--system-color-bluelight-40);
+        color: var(--color-bluelight-40);
         text-transform: uppercase;
 
         a,
@@ -75,8 +75,8 @@
 
     &_text {
         &-header {
-            background-color: var(--system-color-red-20);
-            color: var(--system-color-white-10);
+            background-color: var(--color-red-20);
+            color: var(--color-white-10);
 
             p {
                 font-size: 1.6rem;
@@ -127,7 +127,7 @@
     }
 
     li {
-        border-bottom: 1px solid var(--system-color-white-30);
+        border-bottom: 1px solid var(--color-white-30);
         font-size: 1.6rem;
         line-height: 37px;
         font-weight: 600;
@@ -141,7 +141,7 @@
         padding: 0.5rem 0.6rem;
         margin: 0.3rem auto;
         border-radius: 5px;
-        background-color: var(--system-color-white-20);
+        background-color: var(--color-white-20);
         font-size: 12px;
     }
 }

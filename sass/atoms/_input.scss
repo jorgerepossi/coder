@@ -5,7 +5,7 @@ input[type='number'],
 textarea {
     outline: none;
     border-width: 1px;
-    border-color: var(--system-color-bluelight-20);
+    border-color: var(--color-bluelight-20);
     border-style: solid;
     transition: var(--mywebsite-contant-transition);
 }
@@ -15,6 +15,6 @@ textarea {
     margin: 0.5rem 0.25rem;
 
     &:focus {
-        border: 1px solid var(--system-color-red-20-outline);
+        border: 1px solid var(--color-red-20-outline);
     }
 }

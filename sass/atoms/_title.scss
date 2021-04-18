@@ -13,7 +13,7 @@
     font-size: var(--font-size-h1);
     line-height: 1em;
     font-weight: 900;
-    color: var(--system-color-red-20-outline);
+    color: var(--color-red-20-outline);
 
     @include mq(small) {
         font-size: var(--font-size-h1);

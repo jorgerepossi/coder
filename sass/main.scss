@@ -19,11 +19,11 @@
 }
 
 .sectionContent {
-    padding: var(--mywebsite-padding-big);
+    padding: var(--padding-big);
 }
 
 .sectionInnerContent {
-    margin: var(--mywebsite-padding-small);
+    margin: var(--padding-small);
 }
 
 .center {
@@ -77,7 +77,7 @@ img {
 .formGroup textarea {
     @extend .full;
 
-    border: 1px solid var(--system-color-bluelight-20);
+    border: 1px solid var(--color-bluelight-20);
 }
 
 /** HEADER */

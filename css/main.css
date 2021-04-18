@@ -102,44 +102,44 @@ a {
 }
 
 :root {
-    --system-color-white-10: #fbfaff;
-    --system-color-white-20: #f2f2f2;
-    --system-color-white-30: #e6e6e6;
-    --system-color-white-40: #cccccc;
-    --system-color-white-50: #a6a6a6;
-    --system-color-bluelight-10: #dce1ef;
-    --system-color-bluelight-20: #bcc5e1;
-    --system-color-bluelight-30: #9fadd5;
-    --system-color-bluelight-40: #7185c1;
-    --system-color-green-10: #68cfa9;
-    --system-color-green-20: #3dc291;
-    --system-color-green-30: #319b74;
-    --system-color-green-40: #257457;
-    --system-color-red-10: #ff999e;
-    --system-color-red-20: #ed1d27;
-    --system-color-red-30: #cc000a;
-    --system-color-red-40: #990008;
-    --system-color-red-50: #660005;
-    --system-color-black-10: #212c26;
-    --system-font-size-xsmall: 0.8rem;
-    --system-font-size-small: 0.9rem;
-    --system-font-size-regular: 1.6rem;
-    --system-font-size-large: 1.2rem;
-    --system-font-size-xlarge: 2.5rem;
-    --system-font-size-xxlarge: 4rem;
-    --system-font-family-global: 'Inter', , sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    --color-white-10: #fbfaff;
+    --color-white-20: #f2f2f2;
+    --color-white-30: #e6e6e6;
+    --color-white-40: #cccccc;
+    --color-white-50: #a6a6a6;
+    --color-bluelight-10: #dce1ef;
+    --color-bluelight-20: #bcc5e1;
+    --color-bluelight-30: #9fadd5;
+    --color-bluelight-40: #7185c1;
+    --color-green-10: #68cfa9;
+    --color-green-20: #3dc291;
+    --color-green-30: #319b74;
+    --color-green-40: #257457;
+    --color-red-10: #ff999e;
+    --color-red-20: #ed1d27;
+    --color-red-30: #cc000a;
+    --color-red-40: #990008;
+    --color-red-50: #660005;
+    --color-black-10: #212c26;
+    --font-size-xsmall: 0.8rem;
+    --font-size-small: 0.9rem;
+    --font-size-regular: 1.6rem;
+    --font-size-large: 1.2rem;
+    --font-size-xlarge: 2.5rem;
+    --font-size-xxlarge: 4rem;
+    --font-family-global: 'Inter', , sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
         Helvetica Neue, Helvetica, Arial;
-    --system-font-family-text: 'Open Sans', system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-        Helvetica Neue, Helvetica, Arial, sans-serif;
+    --font-family-text: 'Open Sans', system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue,
+        Helvetica, Arial, sans-serif;
     --font-size-general: 10px;
     --font-size-h1: 4rem;
     --font-size-h2: 3rem;
     --font-size-h3: 2rem;
-    --system-color-red-20-outline: #ed1b24;
-    --mywebsite-color-base: var(--system-color-white-10);
-    --mywebsite-color-footer: var(--system-color-black-10);
+    --color-red-20-outline: #ed1b24;
+    --mywebsite-color-base: var(--color-white-10);
+    --mywebsite-color-footer: var(--color-black-10);
     --mywebsite-color-footer-paragraph: #bac4e1;
-    --mywebsite-color-border: var(--system-color-white-20);
+    --mywebsite-color-border: var(--color-white-20);
     --mywebsite-border-radius: $border-radius;
     --mywebsite-border-radius-circle: $border-radius-big;
     --mywebsite-global-color-text: #333;
@@ -147,10 +147,9 @@ a {
     --mywebsite-h1-font: 'Lato', sans-serif;
     --mywebsite-h2-font: 'Lato', sans-serif;
     --mywebsite-h3-font: 'Open Sans', sans-serif;
-    --mywebsite-padding-big: 5rem 1.6rem;
-    --mywebsite-padding-small: 2rem 0;
-    --mywebsite-title-small: 1.3rem;
-    --mywebsite-title-big: 3rem;
+    --padding-big: 5rem 1.6rem;
+    --padding-small: 2rem 0;
+    --title-big: 3rem;
     --mywebsite-shadow-primary: 0px 8px 16px -4px rgba(#ed1b24, 0.25);
 }
 
@@ -374,11 +373,11 @@ main #hero,
 }
 
 .sectionContent {
-    padding: var(--mywebsite-padding-big);
+    padding: var(--padding-big);
 }
 
 .sectionInnerContent {
-    margin: var(--mywebsite-padding-small);
+    margin: var(--padding-small);
 }
 
 .center {
@@ -410,7 +409,7 @@ main #hero,
     font-size: var(--font-size-h1);
     line-height: 1em;
     font-weight: 900;
-    color: var(--system-color-red-20-outline);
+    color: var(--color-red-20-outline);
 }
 
 @media only screen and (min-width: 769px) {
@@ -458,24 +457,24 @@ main #hero,
     font-size: 10pt;
     padding: 1.6rem 2rem;
     border-radius: var(--mywebsite-border-radius);
-    color: var(--system-color-red-20);
+    color: var(--color-red-20);
     -webkit-transition: var(--mywebsite-contant-transition) ease-in-out;
     transition: var(--mywebsite-contant-transition) ease-in-out;
     text-transform: uppercase;
     -webkit-box-shadow: rgba(9, 30, 66, 0.25) 0px 8px 16px -4px, rgba(9, 30, 66, 0.31) 0px 0px 1px;
     box-shadow: rgba(9, 30, 66, 0.25) 0px 8px 16px -4px, rgba(9, 30, 66, 0.31) 0px 0px 1px;
-    border: 1px solid var(--system-color-red-20-outline);
+    border: 1px solid var(--color-red-20-outline);
     cursor: pointer;
 }
 
 .button:hover,
 .button-primary:hover,
 .button-secondary:hover {
-    background-color: var(--system-color-green-10);
+    background-color: var(--color-green-10);
     -webkit-box-shadow: 0px 15px 20px -8px rgba(102, 207, 169, 0.45);
     box-shadow: 0px 15px 20px -8px rgba(102, 207, 169, 0.45);
     color: var(--mywebsite-color-base);
-    border: 1px solid var(--system-color-green-10);
+    border: 1px solid var(--color-green-10);
 }
 
 /* button {
@@ -492,38 +491,38 @@ main #hero,
 
 .button-primary {
     color: var(--mywebsite-color-base);
-    background-color: var(--system-color-red-20);
+    background-color: var(--color-red-20);
     -webkit-box-shadow: 0px 8px 16px -4px rgba(237, 27, 36, 0.25);
     box-shadow: 0px 8px 16px -4px rgba(237, 27, 36, 0.25);
 }
 
 .button-primary:hover {
-    background-color: var(--system-color-green-10);
+    background-color: var(--color-green-10);
     -webkit-box-shadow: 0px 15px 20px -8px rgba(102, 207, 169, 0.45);
     box-shadow: 0px 15px 20px -8px rgba(102, 207, 169, 0.45);
 }
 
 .button-secondary {
     color: var(--mywebsite-color-base);
-    background-color: var(--system-color-green-10);
+    background-color: var(--color-green-10);
     -webkit-box-shadow: 0px 15px 20px -8px rgba(102, 207, 169, 0.45);
     box-shadow: 0px 15px 20px -8px rgba(102, 207, 169, 0.45);
 }
 
 .button-secondary:hover {
-    background-color: var(--system-color-green-10);
+    background-color: var(--color-green-10);
     -webkit-box-shadow: 0px 15px 20px -8px rgba(75, 131, 252, 0.45);
     box-shadow: 0px 15px 20px -8px rgba(75, 131, 252, 0.45);
 }
 
 .button-secondary:hover {
-    background-color: var(--system-color-green-10);
+    background-color: var(--color-green-10);
 }
 
 .buttonWrapper {
     padding: 1.6rem 2rem;
     border-radius: var(--mywebsite-border-radius);
-    background-color: var(--system-color-green-10);
+    background-color: var(--color-green-10);
     color: var(--mywebsite-color-base);
     -webkit-transition: var(--mywebsite-contant-transition) ease-in-out;
     transition: var(--mywebsite-contant-transition) ease-in-out;
@@ -535,7 +534,7 @@ main #hero,
 }
 
 .buttonWrapper:hover {
-    background-color: var(--system-color-red-20);
+    background-color: var(--color-red-20);
     -webkit-box-shadow: 0px 15px 20px -8px rgba(237, 27, 36, 0.45);
     box-shadow: 0px 15px 20px -8px rgba(237, 27, 36, 0.45);
     color: #ffffff;
@@ -552,7 +551,7 @@ input[type='number'],
 textarea {
     outline: none;
     border-width: 1px;
-    border-color: var(--system-color-bluelight-20);
+    border-color: var(--color-bluelight-20);
     border-style: solid;
     -webkit-transition: var(--mywebsite-contant-transition);
     transition: var(--mywebsite-contant-transition);
@@ -564,7 +563,7 @@ textarea {
 }
 
 .inputForm:focus {
-    border: 1px solid var(--system-color-red-20-outline);
+    border: 1px solid var(--color-red-20-outline);
 }
 
 /*  DoubleHeading */
@@ -585,7 +584,7 @@ textarea {
     content: '';
     width: 0.5rem;
     height: 0.5rem;
-    background-color: var(--system-color-green-10);
+    background-color: var(--color-green-10);
     border-radius: 5rem;
     margin-right: 0.5rem;
 }
@@ -637,11 +636,11 @@ textarea {
 }
 
 .accordion .card-header {
-    background-color: var(--system-color-red-20);
+    background-color: var(--color-red-20);
 }
 
 .accordion .card-header button {
-    color: var(--system-color-white-10);
+    color: var(--color-white-10);
 }
 
 .newsContentWrapper .newsContentWrapper-content {
@@ -660,7 +659,7 @@ img {
 
 .formGroup input,
 .formGroup textarea {
-    border: 1px solid var(--system-color-bluelight-20);
+    border: 1px solid var(--color-bluelight-20);
 }
 
 /** HEADER */
@@ -720,7 +719,7 @@ header {
     -webkit-box-shadow: 11px 10px 38px 0 rgba(46, 63, 99, 0.15);
     box-shadow: 11px 10px 38px 0 rgba(46, 63, 99, 0.15);
     background-color: var(--mywebsite-color-base);
-    color: var(--system-color-red-20);
+    color: var(--color-red-20);
     height: auto;
     padding: 1.6rem 0;
     -webkit-box-orient: vertical;
@@ -745,7 +744,7 @@ header {
 }
 
 #headerWrapper .headerItem ul.navMenuContent li ul.navSubMenuContent li a:hover {
-    background-color: var(--system-color-red-20);
+    background-color: var(--color-red-20);
     color: var(--mywebsite-color-base);
 }
 
@@ -777,7 +776,7 @@ header {
 
 #headerWrapper .headerItem ul.navMenuContent .menu-item a.active,
 #headerWrapper .headerItem ul.navMenuContent .menu-item a:hover {
-    color: var(--system-color-red-20);
+    color: var(--color-red-20);
 }
 
 nav.navWrapper {
@@ -802,7 +801,7 @@ nav.navWrapper {
     display: block;
     width: 15px;
     height: 15px;
-    background-color: var(--system-color-red-20);
+    background-color: var(--color-red-20);
     border-radius: 5rem;
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
@@ -851,7 +850,7 @@ main #video .clipPath {
     bottom: 0;
     left: 0;
     z-index: -1;
-    background-color: var(--system-color-red-20);
+    background-color: var(--color-red-20);
     -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
     clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
     height: 500px;
@@ -1016,7 +1015,7 @@ main #newsWrapper .imgWrapper {
     font-size: 2.5rem;
     margin: 1.1 0.6rem 0;
     font-weight: 900;
-    color: var(--system-color-red-20-outline);
+    color: var(--color-red-20-outline);
 }
 
 #productos .minWidth {
@@ -1105,7 +1104,7 @@ ul.center {
 .productosWrapper__li .imagenWrapper_inner span {
     width: 50px;
     height: 50px;
-    background-color: var(--system-color-red-20);
+    background-color: var(--color-red-20);
     border-radius: 5rem;
     margin-right: 20px;
     background-image: url(../img/logo.jpg);
@@ -1200,7 +1199,7 @@ ul.center {
     content: '';
     width: 0.5rem;
     height: 0.5rem;
-    background-color: var(--system-color-green-10);
+    background-color: var(--color-green-10);
     border-radius: 5rem;
     margin-right: 0.3rem;
     display: -webkit-inline-box;
@@ -1213,7 +1212,7 @@ ul.center {
 }
 
 .post_date {
-    border: 1px solid var(--system-color-red-20-outline);
+    border: 1px solid var(--color-red-20-outline);
     width: 3.75rem;
     height: 3.75rem;
     text-align: center;
@@ -1228,7 +1227,7 @@ ul.center {
 }
 
 .post_meta-like {
-    color: var(--system-color-bluelight-40);
+    color: var(--color-bluelight-40);
 }
 
 .post_meta-like p {
@@ -1236,15 +1235,15 @@ ul.center {
 }
 
 .post_meta-like i {
-    color: var(--system-color-red-20);
+    color: var(--color-red-20);
 }
 
 .post_category {
-    color: var(--system-color-red-20);
+    color: var(--color-red-20);
 }
 
 .post_meta-data {
-    color: var(--system-color-bluelight-40);
+    color: var(--color-bluelight-40);
     text-transform: uppercase;
 }
 
@@ -1259,8 +1258,8 @@ ul.center {
 }
 
 .post_text-header {
-    background-color: var(--system-color-red-20);
-    color: var(--system-color-white-10);
+    background-color: var(--color-red-20);
+    color: var(--color-white-10);
 }
 
 .post_text-header p {
@@ -1310,7 +1309,7 @@ ul.center {
 }
 
 #categorias li {
-    border-bottom: 1px solid var(--system-color-white-30);
+    border-bottom: 1px solid var(--color-white-30);
     font-size: 1.6rem;
     line-height: 37px;
     font-weight: 600;
@@ -1323,7 +1322,7 @@ ul.center {
     padding: 0.5rem 0.6rem;
     margin: 0.3rem auto;
     border-radius: 5px;
-    background-color: var(--system-color-white-20);
+    background-color: var(--color-white-20);
     font-size: 12px;
 }
 
@@ -1362,7 +1361,7 @@ ul.center {
 /** FOOTER */
 footer {
     background: linear-gradient(250deg, #211f1f, #000000);
-    color: var(--system-color-bluelight-10);
+    color: var(--color-bluelight-10);
     -webkit-animation: footerAnimation 10s infinite;
     animation: footerAnimation 10s infinite;
     -webkit-transition: -webkit-animation 0.3s ease-in-out;
@@ -1452,7 +1451,7 @@ footer {
     -ms-flex-pack: justify;
     justify-content: space-between;
     padding: 2rem 0;
-    border-top: 1px solid var(--system-color-red-50);
+    border-top: 1px solid var(--color-red-50);
 }
 
 .bottomFooterContent p {
@@ -1534,7 +1533,7 @@ footer {
 }
 
 .sitemap a {
-    color: var(--system-color-red-20);
+    color: var(--color-red-20);
     font-size: 1.5rem;
 }
 

@@ -50,7 +50,7 @@ header {
                             transition: all var(--mywebsite-contant-transition) ease-in-out;
                             box-shadow: 11px 10px 38px 0 rgba(46, 63, 99, 0.15);
                             background-color: var(--mywebsite-color-base);
-                            color: var(--system-color-red-20);
+                            color: var(--color-red-20);
                             height: auto;
                             padding: 1.6rem 0;
                             flex-direction: column;
@@ -78,7 +78,7 @@ header {
                                     }
 
                                     &:hover {
-                                        background-color: var(--system-color-red-20);
+                                        background-color: var(--color-red-20);
                                         color: var(--mywebsite-color-base);
                                     }
                                 }
@@ -119,7 +119,7 @@ header {
 
                         &.active,
                         &:hover {
-                            color: var(--system-color-red-20);
+                            color: var(--color-red-20);
                         }
                     }
                 }
@@ -151,7 +151,7 @@ header {
                 display: block;
                 width: 15px;
                 height: 15px;
-                background-color: var(--system-color-red-20);
+                background-color: var(--color-red-20);
                 border-radius: $border-radius-big;
                 transition: all 0.2s ease-in-out;
                 transform: scale(1);

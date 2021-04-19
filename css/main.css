@@ -422,8 +422,7 @@ main #hero,
 }
 
 .globalText {
-    font-family: var(--system-font-family-global);
-    font-size: 1rem;
+    font-size: 0.9rem;
     letter-spacing: -1px;
     line-height: 30px;
     margin-bottom: 0.7rem;

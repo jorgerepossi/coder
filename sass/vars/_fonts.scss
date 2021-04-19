@@ -10,9 +10,18 @@ $font-family-base: 'Inter', sans-serif, system-ui, -apple-system, BlinkMacSystem
 $font-weight-normal: inherit;
 
 $fontSizes: (
-    font-size-general: $font-size-general,
-    font-size-h1: $font-size-h1,
-    font-size-h2: $font-size-h2,
-    font-size-h3: $font-size-h3,
-    font-size-h4: $font-size-h4,
+    small: (
+        general: $font-size-general,
+        h1: 2.483rem,
+        h2: 1.938rem,
+        h3: 1.563rem,
+        h4: 1.125rem,
+    ),
+    large: (
+        general: $font-size-general,
+        h1: $font-size-h1,
+        h2: $font-size-h2,
+        h3: $font-size-h3,
+        h4: $font-size-h4,
+    ),
 );

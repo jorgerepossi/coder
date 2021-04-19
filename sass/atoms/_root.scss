@@ -9,39 +9,54 @@
         }
     }
 
-    @each $size, $value in $fonts {
-        --font-size-#{$size}: #{$value};
-    }
+    --color-red-20-outline: #ed1b24;
+    --color-base: var(--color-white-10);
+    --color-footer: var(--color-black-10);
+    --color-footer-paragraph: #bac4e1;
+    --color-border: var(--color-white-20);
 
     @each $font, $value in $fontfamily {
         --font-family-#{$font}: #{$value};
     }
 
-    @each $size, $value in $fontSizes {
-        --#{$size}: #{$value};
-    }
-
-    @include mq(large) {
-        @each $size, $value in $fontSizes {
-            --#{$size}: #{moreBigger($value, 1)};
+    @each $screen-size, $font-size in $fontSizes {
+        @if $screen-size == small {
+            @each $size, $value in $font-size {
+                --fs-#{$size}: #{$value};
+            }
+        } @else {
+            @include mq(small) {
+                @each $size, $value in $font-size {
+                    --fs-#{$size}: #{$value};
+                }
+            }
         }
     }
 
-    --color-red-20-outline: #ed1b24;
-    --mywebsite-color-base: var(--color-white-10);
-    --mywebsite-color-footer: var(--color-black-10);
-    --mywebsite-color-footer-paragraph: #bac4e1;
-    --mywebsite-color-border: var(--color-white-20);
+    @each $screen-size, $font-size in $font-sizes {
+        @if $screen-size == small {
+            @each $size, $value in $font-size {
+                --fs-#{$size}: #{$value};
+            }
+        } @else {
+            @include mq(small) {
+                @each $size, $value in $font-size {
+                    --fs-#{$size}: #{$value};
+                }
+            }
+        }
+    }
+
     --border-radius: #{$border-radius};
     --border-radius-circle: #{$border-radius-big};
-    --mywebsite-global-color-text: #333;
+    --global-color-text: #333;
     --mywebsite-contant-transition: 0.5s;
-    --mywebsite-h1-font: 'Lato', sans-serif;
-    --mywebsite-h2-font: 'Lato', sans-serif;
-    --mywebsite-h3-font: 'Open Sans', sans-serif;
+    --h1-font: 'Lato', sans-serif;
+    --h2-font: 'Lato', sans-serif;
+    --h3-font: 'Open Sans', sans-serif;
     --padding-big: 5rem 1.6rem;
     --padding-small: 2rem 0;
     --title-big: 2rem;
     --title-small: 1.2rem;
-    --mywebsite-shadow-primary: 0px 8px 16px -4px rgba(#ed1b24, 0.25);
+    --shadow-primary: 0px 8px 16px -4px rgba(#ed1b24, 0.25);
 }

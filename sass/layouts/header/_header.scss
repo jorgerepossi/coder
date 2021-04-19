@@ -1,7 +1,7 @@
 header {
     position: fixed;
-    background-color: var(--mywebsite-color-base);
-    border-bottom: 1px solid var(--mywebsite-color-border);
+    background-color: var(--color-base);
+    border-bottom: 1px solid var(--color-border);
     font-family: var(--mywebsite-html-font);
     width: 100%;
     z-index: 9;
@@ -49,7 +49,7 @@ header {
                             border-radius: 0 0 5px 5px;
                             transition: all var(--mywebsite-contant-transition) ease-in-out;
                             box-shadow: 11px 10px 38px 0 rgba(46, 63, 99, 0.15);
-                            background-color: var(--mywebsite-color-base);
+                            background-color: var(--color-base);
                             color: var(--color-red-20);
                             height: auto;
                             padding: 1.6rem 0;
@@ -79,7 +79,7 @@ header {
 
                                     &:hover {
                                         background-color: var(--color-red-20);
-                                        color: var(--mywebsite-color-base);
+                                        color: var(--color-base);
                                     }
                                 }
                             }

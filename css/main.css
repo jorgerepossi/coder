@@ -121,47 +121,58 @@ a {
     --color-red-40: #990008;
     --color-red-50: #660005;
     --color-black-10: #212c26;
-    --font-size-xsmall: 0.8rem;
-    --font-size-small: 0.9rem;
-    --font-size-regular: 1.6rem;
-    --font-size-large: 1.2rem;
-    --font-size-xlarge: 2.5rem;
-    --font-size-xxlarge: 4rem;
+    --color-red-20-outline: #ed1b24;
+    --color-base: var(--color-white-10);
+    --color-footer: var(--color-black-10);
+    --color-footer-paragraph: #bac4e1;
+    --color-border: var(--color-white-20);
     --font-family-global: 'Inter', , sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
         Helvetica Neue, Helvetica, Arial;
     --font-family-text: 'Open Sans', system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue,
         Helvetica, Arial, sans-serif;
-    --font-size-general: 1rem;
-    --font-size-h1: 3rem;
-    --font-size-h2: 2rem;
-    --font-size-h3: 1.5rem;
-    --font-size-h4: 0.7rem;
-    --color-red-20-outline: #ed1b24;
-    --mywebsite-color-base: var(--color-white-10);
-    --mywebsite-color-footer: var(--color-black-10);
-    --mywebsite-color-footer-paragraph: #bac4e1;
-    --mywebsite-color-border: var(--color-white-20);
+    --fs-general: 1rem;
+    --fs-h1: 2.483rem;
+    --fs-h2: 1.938rem;
+    --fs-h3: 1.563rem;
+    --fs-h4: 1.125rem;
+    --fs-300: 1rem;
+    --fs-400: 1.125rem;
+    --fs-500: 1.563rem;
+    --fs-600: 1.938rem;
+    --fs-700: 2.438rem;
+    --fs-800: 3.125rem;
     --border-radius: 0.25rem;
     --border-radius-circle: 5rem;
-    --mywebsite-global-color-text: #333;
+    --global-color-text: #333;
     --mywebsite-contant-transition: 0.5s;
-    --mywebsite-h1-font: 'Lato', sans-serif;
-    --mywebsite-h2-font: 'Lato', sans-serif;
-    --mywebsite-h3-font: 'Open Sans', sans-serif;
+    --h1-font: 'Lato', sans-serif;
+    --h2-font: 'Lato', sans-serif;
+    --h3-font: 'Open Sans', sans-serif;
     --padding-big: 5rem 1.6rem;
     --padding-small: 2rem 0;
     --title-big: 2rem;
     --title-small: 1.2rem;
-    --mywebsite-shadow-primary: 0px 8px 16px -4px rgba(#ed1b24, 0.25);
+    --shadow-primary: 0px 8px 16px -4px rgba(#ed1b24, 0.25);
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 769px) {
     :root {
-        --font-size-general: 1rem;
-        --font-size-h1: 3rem;
-        --font-size-h2: 2rem;
-        --font-size-h3: 1.5rem;
-        --font-size-h4: 0.7rem;
+        --fs-general: 1rem;
+        --fs-h1: 3rem;
+        --fs-h2: 2rem;
+        --fs-h3: 1.5rem;
+        --fs-h4: 0.7rem;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    :root {
+        --fs-300: 1rem;
+        --fs-400: 1.438rem;
+        --fs-500: 2rem;
+        --fs-600: 2.5rem;
+        --fs-700: 4rem;
+        --fs-800: 5.653rem;
     }
 }
 
@@ -431,7 +442,7 @@ main #hero,
 }
 
 .bigTitle {
-    font-size: var(--font-size-h1);
+    font-size: var(--fs-h1);
     line-height: 2.5rem;
     font-weight: 900;
     color: var(--color-red-20-outline);
@@ -439,24 +450,24 @@ main #hero,
 
 @media only screen and (min-width: 769px) {
     .bigTitle {
-        font-size: var(--font-size-h1);
+        font-size: var(--fs-h1);
     }
 }
 
 @media only screen and (min-width: 981px) {
     .bigTitle {
-        font-size: var(--font-size-h2);
+        font-size: var(--fs-h2);
     }
 }
 
 @media only screen and (min-width: 2000px) {
     .bigTitle {
-        font-size: var(--font-size-h3);
+        font-size: var(--fs-h3);
     }
 }
 
 .smallTitle {
-    font-size: var(--font-size-h4);
+    font-size: var(--fs-h4);
 }
 
 .boxShadows {
@@ -498,24 +509,24 @@ main #hero,
     background-color: var(--color-green-10);
     -webkit-box-shadow: 0px 15px 20px -8px rgba(102, 207, 169, 0.45);
     box-shadow: 0px 15px 20px -8px rgba(102, 207, 169, 0.45);
-    color: var(--mywebsite-color-base);
+    color: var(--color-base);
     border: 1px solid var(--color-green-10);
 }
 
 /* button {
     @extend %button;
 
-    background-color: var(--mywebsite-color-base);
+    background-color: var(--color-base);
     margin: 0.2rem;
 }
  */
 .button {
-    background-color: var(--mywebsite-color-base);
+    background-color: var(--color-base);
     margin: 0.2rem;
 }
 
 .button-primary {
-    color: var(--mywebsite-color-base);
+    color: var(--color-base);
     background-color: var(--color-red-20);
     -webkit-box-shadow: 0px 8px 16px -4px rgba(237, 27, 36, 0.25);
     box-shadow: 0px 8px 16px -4px rgba(237, 27, 36, 0.25);
@@ -528,7 +539,7 @@ main #hero,
 }
 
 .button-secondary {
-    color: var(--mywebsite-color-base);
+    color: var(--color-base);
     background-color: var(--color-green-10);
     -webkit-box-shadow: 0px 15px 20px -8px rgba(102, 207, 169, 0.45);
     box-shadow: 0px 15px 20px -8px rgba(102, 207, 169, 0.45);
@@ -548,7 +559,7 @@ main #hero,
     padding: 1rem 2rem;
     border-radius: var(--border-radius);
     background-color: var(--color-green-10);
-    color: var(--mywebsite-color-base);
+    color: var(--color-base);
     -webkit-transition: var(--mywebsite-contant-transition) ease-in-out;
     transition: var(--mywebsite-contant-transition) ease-in-out;
     text-transform: uppercase;
@@ -566,7 +577,7 @@ main #hero,
 }
 
 .card {
-    border: 1px solid var(--mywebsite-color-border);
+    border: 1px solid var(--color-border);
 }
 
 input[type='text'],
@@ -601,7 +612,7 @@ textarea {
     padding: 0.5rem 0.8rem;
     font-weight: 600;
     margin-bottom: 1.6rem;
-    background-color: var(--mywebsite-color-base);
+    background-color: var(--color-base);
     text-transform: uppercase;
 }
 
@@ -631,7 +642,7 @@ textarea {
 
 /* Fin DoubleHeading */
 #breadcrumbs {
-    border-bottom: 1px solid var(--mywebsite-color-border);
+    border-bottom: 1px solid var(--color-border);
     background-image: url(../img/newsletter-bg.png);
 }
 
@@ -690,8 +701,8 @@ img {
 /** HEADER */
 header {
     position: fixed;
-    background-color: var(--mywebsite-color-base);
-    border-bottom: 1px solid var(--mywebsite-color-border);
+    background-color: var(--color-base);
+    border-bottom: 1px solid var(--color-border);
     font-family: var(--mywebsite-html-font);
     width: 100%;
     z-index: 9;
@@ -743,7 +754,7 @@ header {
     transition: all var(--mywebsite-contant-transition) ease-in-out;
     -webkit-box-shadow: 11px 10px 38px 0 rgba(46, 63, 99, 0.15);
     box-shadow: 11px 10px 38px 0 rgba(46, 63, 99, 0.15);
-    background-color: var(--mywebsite-color-base);
+    background-color: var(--color-base);
     color: var(--color-red-20);
     height: auto;
     padding: 1.6rem 0;
@@ -770,7 +781,7 @@ header {
 
 #headerWrapper .headerItem ul.navMenuContent li ul.navSubMenuContent li a:hover {
     background-color: var(--color-red-20);
-    color: var(--mywebsite-color-base);
+    color: var(--color-base);
 }
 
 #headerWrapper .headerItem ul.navMenuContent li:hover ul.navSubMenuContent {
@@ -849,7 +860,7 @@ main {
 }
 
 main #hero {
-    background-color: var(--mywebsite-color-base);
+    background-color: var(--color-base);
     background-image: url('../img//hero.jpg');
     background-position: center center;
     background-repeat: no-repeat;
@@ -1169,7 +1180,7 @@ ul.center {
 }
 
 #producto #infoContentWrapper {
-    background-color: var(--mywebsite-color-base);
+    background-color: var(--color-base);
     width: 100%;
     max-width: calc(100% - 760px);
 }

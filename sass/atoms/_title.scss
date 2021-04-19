@@ -10,24 +10,24 @@
 }
 
 .bigTitle {
-    font-size: var(--font-size-h1);
+    font-size: var(--fs-h1);
     line-height: 2.5rem;
     font-weight: 900;
     color: var(--color-red-20-outline);
 
     @include mq(small) {
-        font-size: var(--font-size-h1);
+        font-size: var(--fs-h1);
     }
 
     @include mq(medium) {
-        font-size: var(--font-size-h2);
+        font-size: var(--fs-h2);
     }
 
     @include mq(xlarge) {
-        font-size: var(--font-size-h3);
+        font-size: var(--fs-h3);
     }
 }
 
 .smallTitle {
-    font-size: var(--font-size-h4);
+    font-size: var(--fs-h4);
 }

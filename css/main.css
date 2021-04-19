@@ -405,6 +405,11 @@ main #hero,
     margin: 0px auto;
 }
 
+.error-404 {
+    width: 100%;
+    max-width: 500px;
+}
+
 .globalText {
     font-family: var(--system-font-family-global);
     font-size: 1rem;
@@ -1203,7 +1208,8 @@ ul.center {
 
 /** Paginas */
 .post_author::before,
-.post_comment p::before {
+.post_comment p::before,
+.title-wrapper .title::before {
     content: '';
     width: 0.5rem;
     height: 0.5rem;
@@ -1363,6 +1369,28 @@ ul.center {
 
 .wrapper-content {
     max-width: 550px;
+}
+
+.title-wrapper {
+    text-transform: uppercase;
+    font-weight: 800;
+    height: 4rem;
+}
+
+.title-wrapper .title {
+    font-size: 14px;
+}
+
+@media (min-width: 480px) {
+    .post_items p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .post_items p {
+        font-size: 1rem;
+    }
 }
 
 /** FIN MAIN */

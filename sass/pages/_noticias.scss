@@ -179,3 +179,29 @@
 .wrapper-content {
     max-width: 550px;
 }
+
+.title-wrapper {
+    text-transform: uppercase;
+    font-weight: 800;
+    height: 4rem;
+
+    .title {
+        font-size: 14px;
+
+        &::before {
+            @extend %content;
+        }
+    }
+}
+
+@media (min-width: 480px) {
+    .post_items p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .post_items p {
+        font-size: 1rem;
+    }
+}

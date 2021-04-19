@@ -57,14 +57,7 @@ main {
 
     #about {
         .sectionContent_wrapper {
-            display: grid;
-            grid-template-columns: 1fr;
             place-items: center;
-
-            @include mq(small) {
-                grid-template-columns: repeat(16, 1fr);
-                gap: 4rem;
-            }
 
             &-content {
                 grid-column: 1;

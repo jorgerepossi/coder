@@ -1,0 +1,3 @@
+@function moreBigger($size, $times) {
+    @return $size * $times;
+}

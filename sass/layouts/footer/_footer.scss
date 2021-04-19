@@ -22,11 +22,11 @@ footer {
             height: 100%;
             background-color: transparent;
             grid-row: 2 / span 3;
-            line-height: 4rem;
+            line-height: 2.4rem;
 
             p,
             a {
-                font-size: 1.4rem;
+                font-size: 0.9rem;
             }
         }
 
@@ -34,13 +34,13 @@ footer {
             font-weight: 900;
 
             span {
-                font-size: 1.6rem;
+                font-size: 1rem;
             }
         }
 
         &-content_item span {
             opacity: 0.8;
-            font-size: 1.2rem;
+            font-size: 0.7rem;
         }
     }
 
@@ -59,13 +59,13 @@ footer {
         overflow: hidden;
 
         a {
-            width: 4rem;
-            height: 4rem;
+            width: 3rem;
+            height: 3rem;
             border: 1px solid;
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size: 1.6rem;
+            font-size: 1rem;
             transition: all 0.2s ease-in-out;
 
             &:hover {
@@ -116,7 +116,7 @@ footer {
 
     a {
         color: var(--color-red-20);
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     @include mq(small) {

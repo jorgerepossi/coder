@@ -131,11 +131,11 @@ a {
         Helvetica Neue, Helvetica, Arial;
     --font-family-text: 'Open Sans', system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue,
         Helvetica, Arial, sans-serif;
-    --font-size-general: 16px;
-    --font-size-h1: 4rem;
-    --font-size-h2: 3rem;
-    --font-size-h3: 2rem;
-    --font-size-h4: 1.2rem;
+    --font-size-general: 1rem;
+    --font-size-h1: 3rem;
+    --font-size-h2: 2rem;
+    --font-size-h3: 1.5rem;
+    --font-size-h4: 0.7rem;
     --color-red-20-outline: #ed1b24;
     --mywebsite-color-base: var(--color-white-10);
     --mywebsite-color-footer: var(--color-black-10);
@@ -153,6 +153,16 @@ a {
     --title-big: 2rem;
     --title-small: 1.2rem;
     --mywebsite-shadow-primary: 0px 8px 16px -4px rgba(#ed1b24, 0.25);
+}
+
+@media only screen and (min-width: 1200px) {
+    :root {
+        --font-size-general: 1rem;
+        --font-size-h1: 3rem;
+        --font-size-h2: 2rem;
+        --font-size-h3: 1.5rem;
+        --font-size-h4: 0.7rem;
+    }
 }
 
 /** RESET */
@@ -397,7 +407,7 @@ main #hero,
 
 .globalText {
     font-family: var(--system-font-family-global);
-    font-size: 1.6rem;
+    font-size: 1rem;
     letter-spacing: -1px;
     line-height: 30px;
     margin-bottom: 0.7rem;
@@ -417,7 +427,7 @@ main #hero,
 
 .bigTitle {
     font-size: var(--font-size-h1);
-    line-height: 1em;
+    line-height: 2.5rem;
     font-weight: 900;
     color: var(--color-red-20-outline);
 }
@@ -465,7 +475,7 @@ main #hero,
     -moz-appearance: none;
     appearance: none;
     font-size: 10pt;
-    padding: 1.6rem 2rem;
+    padding: 1rem 2rem;
     border-radius: var(--border-radius);
     color: var(--color-red-20);
     -webkit-transition: var(--mywebsite-contant-transition) ease-in-out;
@@ -530,7 +540,7 @@ main #hero,
 }
 
 .buttonWrapper {
-    padding: 1.6rem 2rem;
+    padding: 1rem 2rem;
     border-radius: var(--border-radius);
     background-color: var(--color-green-10);
     color: var(--mywebsite-color-base);
@@ -568,7 +578,7 @@ textarea {
 }
 
 .inputForm {
-    padding: 1.6rem 2rem;
+    padding: 1rem 2rem;
     margin: 0.5rem 0.25rem;
 }
 
@@ -610,7 +620,7 @@ textarea {
 }
 
 .doubleHeading_content p {
-    line-height: 3rem;
+    line-height: 2rem;
     color: var(--mywebsite-global-color-text);
 }
 
@@ -797,7 +807,7 @@ nav.navWrapper {
     position: fixed;
     right: 2rem;
     top: 50vh;
-    width: 4rem;
+    width: 3rem;
     overflow: hidden;
     z-index: 9;
     scroll-behavior: smooth;
@@ -875,19 +885,7 @@ main #video .videoWrapper {
 }
 
 main #about .sectionContent_wrapper {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
     place-items: center;
-}
-
-@media only screen and (min-width: 769px) {
-    main #about .sectionContent_wrapper {
-        -ms-grid-columns: (1fr) [16];
-        grid-template-columns: repeat(16, 1fr);
-        gap: 4rem;
-    }
 }
 
 main #about .sectionContent_wrapper-content {
@@ -1273,7 +1271,7 @@ ul.center {
 }
 
 .post_text-header p {
-    font-size: 1.6rem;
+    font-size: 1rem;
     font-weight: 800;
     opacity: 1;
 }
@@ -1320,7 +1318,7 @@ ul.center {
 
 #categorias li {
     border-bottom: 1px solid var(--color-white-30);
-    font-size: 1.6rem;
+    font-size: 1rem;
     line-height: 37px;
     font-weight: 600;
     -webkit-transition: 0.3s;
@@ -1403,12 +1401,12 @@ footer {
     -ms-grid-row: 2;
     -ms-grid-row-span: 3;
     grid-row: 2 / span 3;
-    line-height: 4rem;
+    line-height: 2.4rem;
 }
 
 .footerItem-content p,
 .footerItem-content a {
-    font-size: 1.4rem;
+    font-size: 0.9rem;
 }
 
 .footerItem_title {
@@ -1416,12 +1414,12 @@ footer {
 }
 
 .footerItem_title span {
-    font-size: 1.6rem;
+    font-size: 1rem;
 }
 
 .footerItem-content_item span {
     opacity: 0.8;
-    font-size: 1.2rem;
+    font-size: 0.7rem;
 }
 
 .footerLogoMain img {
@@ -1440,8 +1438,8 @@ footer {
 }
 
 .footerSocialIcons a {
-    width: 4rem;
-    height: 4rem;
+    width: 3rem;
+    height: 3rem;
     border: 1px solid;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1452,7 +1450,7 @@ footer {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    font-size: 1.6rem;
+    font-size: 1rem;
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
 }
@@ -1474,13 +1472,13 @@ footer {
 .bottomFooterContent p {
     font-size: var(--system-font-size-xsmall);
     opacity: 0.8;
-    font-size: 1.2rem;
+    font-size: 0.7rem;
 }
 
 .bottomFooterContent p a {
     font-weight: bolder;
     opacity: 1;
-    font-size: 1.4rem;
+    font-size: 0.9rem;
 }
 
 .brand {
@@ -1551,7 +1549,7 @@ footer {
 
 .sitemap a {
     color: var(--color-red-20);
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 @media only screen and (min-width: 769px) {

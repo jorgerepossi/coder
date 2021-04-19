@@ -21,6 +21,12 @@
         --#{$size}: #{$value};
     }
 
+    @include mq(large) {
+        @each $size, $value in $fontSizes {
+            --#{$size}: #{moreBigger($value, 1)};
+        }
+    }
+
     --color-red-20-outline: #ed1b24;
     --mywebsite-color-base: var(--color-white-10);
     --mywebsite-color-footer: var(--color-black-10);

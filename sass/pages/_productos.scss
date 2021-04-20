@@ -13,11 +13,7 @@
 
     .minWidth {
         /* uso del flex  */
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        align-content: center;
+
         margin: 0px auto;
         max-width: 500px;
     }
@@ -70,11 +66,9 @@ ul {
                 }
             }
 
-            &_inner {
+            &__inner {
                 @extend .flex;
-
                 @extend .items-center;
-
                 margin-top: 20px;
                 margin-left: 20px;
                 position: relative;

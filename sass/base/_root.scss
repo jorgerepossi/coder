@@ -1,7 +1,3 @@
-@import '../fonts/fontsizes';
-@import '../fonts/fontfamily';
-@import '../colors/colors';
-
 :root {
     @each $color, $shades in $colors {
         @each $shade, $value in $shades {

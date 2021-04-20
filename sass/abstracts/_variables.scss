@@ -1,0 +1,159 @@
+// Windows Sizes
+$breakpoints: (
+    small: 769px,
+    medium: 981px,
+    large: 1200px,
+    xlarge: 2000px,
+);
+// Colors
+
+$colors: (
+    white: (
+        10: hsl(255, 100%, 99%),
+        20: hsl(0, 0%, 95%),
+        30: hsl(0, 0, 90%),
+        40: hsl(0, 0, 80%),
+        50: hsl(0, 0, 65%),
+    ),
+    bluelight: (
+        10: hsl(225, 39%, 90%),
+        20: hsl(225, 39%, 81%),
+        30: hsl(225, 39%, 73%),
+        40: hsl(225, 39%, 60%),
+    ),
+    green: (
+        10: hsl(158, 52%, 61%),
+        20: hsl(158, 52%, 50%),
+        30: hsl(158, 52%, 40%),
+        40: hsl(158, 52%, 30%),
+    ),
+    red: (
+        10: hsl(357, 100%, 80%),
+        20: hsl(357, 85%, 52%),
+        30: hsl(357, 100%, 40%),
+        40: hsl(357, 100%, 30%),
+        50: hsl(357, 100%, 20%),
+    ),
+    black: (
+        10: hsl(150, 14%, 15%),
+    ),
+);
+
+// Border
+$border-radius: 0.25rem;
+$border-radius-big: 5rem;
+
+$border-width: 1px;
+$boder-color: #000;
+
+// FontSizes
+$font-size-general: 1rem;
+$font-size-h1: moreBigger($font-size-general, 3);
+$font-size-h2: moreBigger($font-size-general, 2);
+$font-size-h3: moreBigger($font-size-general, 1.5);
+$font-size-h4: moreBigger($font-size-general, 0.7);
+
+$font-family-base: 'Inter', sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue,
+    Helvetica, Arial;
+
+$font-weight-normal: inherit;
+
+$font-sizes: (
+    small: (
+        300: 1rem,
+        400: 1.125rem,
+        500: 1.563rem,
+        600: 1.938rem,
+        700: 2.438rem,
+        800: 3.125rem,
+    ),
+    large: (
+        300: 1rem,
+        400: 1.438rem,
+        500: 2rem,
+        600: 2.5rem,
+        700: 4rem,
+        800: 4.375rem,
+    ),
+);
+
+$fontSizes: (
+    small: (
+        general: $font-size-general,
+        h1: 2rem,
+        h2: 1.938rem,
+        h3: 1.563rem,
+        h4: 0.8rem,
+    ),
+    large: (
+        general: $font-size-general,
+        h1: $font-size-h1,
+        h2: $font-size-h2,
+        h3: $font-size-h3,
+        h4: $font-size-h4,
+    ),
+);
+
+$line-height-base: inherit;
+
+$fontfamily: (
+    global:
+        "'Inter',, sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial",
+    text:
+        "'Open Sans',system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,sans-serif",
+);
+
+// Flez system
+
+$display: (
+    flex: 'flex',
+    inline-flex: 'inline-flex',
+);
+
+$directions: (
+    row: 'row',
+    row-reverse: 'row-reverse',
+    column: 'column',
+    col-reverse: 'column-reverse',
+);
+
+$align-contents: (
+    center: 'center',
+    start: 'flex-start',
+    end: 'flex-end',
+    between: 'space-between',
+    around: 'space-around',
+    evenly: 'space-evenly',
+);
+
+$align-items: (
+    start: 'flex-start',
+    end: 'flex-end',
+    center: 'center',
+    baseline: 'baseline',
+    stretch: 'stretch',
+);
+
+$justify-contents: (
+    start: 'flex-start',
+    end: 'flex-end',
+    center: 'center',
+    between: 'space-between',
+    around: 'space-around',
+    evenly: 'space-evenly',
+);
+
+$justify-items: (
+    start: 'start',
+    end: 'flex-end',
+    center: 'center',
+    stretch: 'stretch',
+);
+
+$justify-selfs: (
+    auto: 'auto',
+    start: 'start',
+    end: 'flex-end',
+    center: 'center',
+    stretch: 'stretch',
+);

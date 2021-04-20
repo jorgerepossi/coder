@@ -1,10 +1,18 @@
+.globalText {
+    font-size: 0.9rem;
+    letter-spacing: -1px;
+    line-height: 30px;
+    margin-bottom: 0.7rem;
+    opacity: 0.7;
+}
+
 .superBigTitle {
-    font-size: 70px;
-    line-height: 70px;
+    font-size: 4.375rem;
+    line-height: 4.375rem;
     font-weight: 900;
 
     span {
-        font-size: 70px;
+        font-size: 4.375rem;
         display: block;
     }
 }

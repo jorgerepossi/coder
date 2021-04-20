@@ -42,6 +42,9 @@
             color: var(--mywebsite-global-color-text);
         }
     }
+    &__body{
+        @include margintb(.5rem, 2rem);
+    }
 }
 
 /* Fin DoubleHeading */

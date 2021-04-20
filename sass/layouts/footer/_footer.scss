@@ -77,7 +77,7 @@ footer {
     }
 }
 
-@import 'bottomFooterContent';
+@import 'bottom-footer';
 
 .brand {
     grid-column: 1 / 8;
@@ -145,19 +145,5 @@ footer {
 
     @include mq(large) {
         grid-column: 11 / 16;
-    }
-}
-
-@keyframes footerAnimation {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
     }
 }

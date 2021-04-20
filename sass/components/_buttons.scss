@@ -22,38 +22,8 @@
 %shadow {
     box-shadow: 0px 10px 20px -8px rgba(#ed1b24, 0.45);
 }
+/* Button */
 
-@mixin box-shadowi($x-axis: 0, $y-axis: 1px, $blur: 2px, $color: $default) {
-}
-
-@mixin box-shadow($shadow...) {
-    -webkit-box-shadow: $shadow;
-    -moz-box-shadow: $shadow;
-    box-shadow: $shadow;
-}
-
-@mixin button-content($color, $bg, $shadow, $bgh, $shadowh) {
-    @extend %button;
-
-    color: $color;
-    background-color: $bg;
-
-    @include box-shadow($shadow);
-
-    &:hover {
-        background-color: $bgh;
-
-        @include box-shadow($shadowh);
-    }
-}
-
-/* button {
-    @extend %button;
-
-    background-color: var(--color-base);
-    margin: 0.2rem;
-}
- */
 .button {
     @extend %button;
 

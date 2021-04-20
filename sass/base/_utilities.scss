@@ -1,0 +1,117 @@
+@each $classname, $position in $display {
+    #{'.' + $classname} {
+        display: #{$position};
+    }
+}
+
+@each $classname, $position in $justify-contents {
+    .justify-#{$classname} {
+        justify-content: #{$position};
+    }
+}
+
+@each $classname, $position in $justify-items {
+    .justify-items-#{$classname} {
+        justify-items: #{$position};
+    }
+}
+
+@each $classname, $position in $directions {
+    .direction-#{$classname} {
+        flex-direction: #{$position};
+    }
+}
+
+@each $classname, $position in $align-contents {
+    .content-#{$classname} {
+        align-content: #{$position};
+    }
+}
+
+@each $classname, $position in $align-items {
+    .items-#{$classname} {
+        align-items: #{$position};
+    }
+}
+
+@each $classname, $position in $justify-selfs {
+    .justify-self-#{$classname} {
+        justify-self: #{$position};
+    }
+}
+
+.container {
+    max-width: 90rem;
+}
+
+// Borders
+
+.border {
+    border: $border-width solid $boder-color;
+}
+
+.border-rounded {
+    border-radius: $border-radius-big;
+}
+
+.divider {
+    height: 5rem;
+}
+
+.full {
+    width: 100%;
+}
+
+.center {
+    @extend .full;
+
+    max-width: 1400px;
+    margin: 0px auto;
+}
+
+.section {
+    &Content {
+        padding: var(--padding-big);
+    }
+    &InnerContent {
+        margin: var(--padding-small);
+    }
+}
+
+.error-404 {
+    width: 100%;
+    max-width: 500px;
+}
+
+.newsContentWrapper {
+    @extend .full;
+
+    @include flex-center;
+
+    .newsContentWrapper-content {
+        max-width: 550px;
+    }
+}
+
+img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.fullWidth {
+    @extend .full;
+
+    max-width: 100%;
+    height: auto;
+}
+
+.imgWrapper {
+    @extend .full;
+}
+
+.formGroup input,
+.formGroup textarea {
+    @extend .full;
+
+    border: 1px solid var(--color-bluelight-20);
+}

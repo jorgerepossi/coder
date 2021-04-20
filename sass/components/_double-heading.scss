@@ -42,8 +42,8 @@
             color: var(--mywebsite-global-color-text);
         }
     }
-    &__body{
-        @include margintb(.5rem, 2rem);
+    &__body {
+        @include margintb(0.5rem, 2rem);
     }
 }
 

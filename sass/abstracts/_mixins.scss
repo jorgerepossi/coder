@@ -30,7 +30,9 @@
 // Flex
 @mixin flex-center {
     @extend .flex;
+
     @extend .justify-center;
+
     @content;
 }
 
@@ -71,4 +73,6 @@
 @mixin margintb($mt, $mb) {
     margin-top: $mt;
     margin-bottom: $mb;
+
+    @content;
 }

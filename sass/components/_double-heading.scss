@@ -42,8 +42,11 @@
             color: var(--mywebsite-global-color-text);
         }
     }
-    &__body {
-        @include margintb(0.5rem, 2rem);
+
+    &_body {
+        font-size: 1.3rem;
+
+        @include margintb(0.5rem, 1.2rem);
     }
 }
 

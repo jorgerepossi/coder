@@ -16,8 +16,8 @@
 
             &::before {
                 content: '';
-                width: 0.5rem;
-                height: 0.5rem;
+
+                @include wh(0.5rem, 0.5rem);
 
                 @extend .flex;
 
@@ -35,7 +35,7 @@
     }
 
     &_content {
-        margin: 1.1 0.6rem 0;
+        margin: 0.6rem 0;
 
         p {
             line-height: 2rem;

@@ -98,10 +98,10 @@ a {
 }
 
 :root {
-    --color-white-10: #fbfaff;
+    --color-white-10: white;
     --color-white-20: #f2f2f2;
-    --color-white-30: #e6e6e6;
-    --color-white-40: #cccccc;
+    --color-white-30: #d9d9d9;
+    --color-white-40: #bfbfbf;
     --color-white-50: #a6a6a6;
     --color-bluelight-10: #dce1ef;
     --color-bluelight-20: #bcc5e1;
@@ -447,7 +447,7 @@ main #hero,
 }
 
 .center {
-    max-width: 1400px;
+    max-width: 90rem;
     margin: 0px auto;
 }
 
@@ -465,7 +465,7 @@ main #hero,
 }
 
 .newsContentWrapper .newsContentWrapper-content {
-    max-width: 550px;
+    max-width: 34.375rem;
 }
 
 img {
@@ -687,7 +687,7 @@ textarea {
 }
 
 .doubleHeading_content {
-    margin: 1.1 0.6rem 0;
+    margin: 0.6rem 0;
 }
 
 .doubleHeading_content p {
@@ -712,7 +712,7 @@ textarea {
 
 @media only screen and (min-width: 769px) {
     .wrapper_content {
-        max-width: 550px;
+        max-width: 34.375rem;
     }
 }
 
@@ -810,8 +810,8 @@ header {
 }
 
 #headerWrapper .headerItem ul.navMenuContent .menu-item {
-    height: 100px;
     width: auto;
+    height: 100px;
 }
 
 #headerWrapper .headerItem ul.navMenuContent .menu-item a {
@@ -852,8 +852,8 @@ nav.navWrapper {
 
 .floatNav li a span {
     display: block;
-    width: 15px;
-    height: 15px;
+    width: 0.938rem;
+    height: 0.938rem;
     background-color: var(--color-red-20);
     border-radius: 5rem;
     -webkit-transition: all 0.2s ease-in-out;
@@ -1243,7 +1243,7 @@ ul.center {
 }
 
 .post_meta-like {
-    color: var(--color-bluelight-40);
+    color: var(--color-black-10);
 }
 
 .post_meta-like p {
@@ -1259,18 +1259,28 @@ ul.center {
 }
 
 .post_meta-data {
-    color: var(--color-bluelight-40);
     text-transform: uppercase;
 }
 
 .post_meta-data a,
 .post_meta-data p {
     font-size: 0.8rem;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.post_meta-data a {
+    color: var(--color-black-10) !important;
 }
 
 .post_author {
     margin-right: 10px;
     margin-left: 10px;
+}
+
+.post_author a {
+    color: var(--color-black-10) !important;
 }
 
 .post_text-header {
@@ -1340,6 +1350,13 @@ ul.center {
     border-radius: 5px;
     background-color: var(--color-white-20);
     font-size: 12px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+#tags .tag-item:hover {
+    background-color: #d9d9d9;
+    color: #010101;
 }
 
 #recentPost li {
@@ -1370,7 +1387,7 @@ ul.center {
 }
 
 .wrapper-content {
-    max-width: 550px;
+    max-width: 34.375rem;
 }
 
 .title-wrapper {

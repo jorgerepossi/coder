@@ -70,9 +70,17 @@
     }
 }
 
+@mixin samewh($size) {
+    width: $size;
+    height: $size;
+}
+
+@mixin wh($w, $h) {
+    width: $w;
+    height: $h;
+}
+
 @mixin margintb($mt, $mb) {
     margin-top: $mt;
     margin-bottom: $mb;
-
-    @content;
 }

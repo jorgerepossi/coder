@@ -59,8 +59,8 @@ footer {
         overflow: hidden;
 
         a {
-            width: 3rem;
-            height: 3rem;
+            @include samewh(3rem);
+
             border: 1px solid;
             display: flex;
             justify-content: center;

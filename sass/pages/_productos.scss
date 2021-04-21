@@ -58,8 +58,9 @@ ul {
 
                 &::before {
                     content: '';
-                    width: 100%;
-                    height: 100%;
+
+                    @include samewh(100%);
+
                     background-color: rgba(0, 0, 0, 0.7);
                     display: flex;
                     position: absolute;
@@ -68,15 +69,17 @@ ul {
 
             &__inner {
                 @extend .flex;
+
                 @extend .items-center;
+
                 margin-top: 20px;
                 margin-left: 20px;
                 position: relative;
                 z-index: 1;
 
                 span {
-                    width: 50px;
-                    height: 50px;
+                    @include samewh(50px);
+
                     background-color: var(--color-red-20);
                     border-radius: $border-radius-big;
                     margin-right: 20px;

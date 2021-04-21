@@ -65,7 +65,7 @@
 .center {
     @extend .full;
 
-    max-width: 1400px;
+    max-width: 90rem;
     margin: 0px auto;
 }
 
@@ -73,6 +73,7 @@
     &Content {
         padding: var(--padding-big);
     }
+
     &InnerContent {
         margin: var(--padding-small);
     }
@@ -89,7 +90,7 @@
     @include flex-center;
 
     .newsContentWrapper-content {
-        max-width: 550px;
+        max-width: 34.375rem;
     }
 }
 

@@ -5,15 +5,35 @@ $breakpoints: (
     large: 1200px,
     xlarge: 2000px,
 );
+
+$transitions: all 0.3s ease-in-out;
+
 // Colors
+$color-white-10: lighten(
+    $color: hsl(0, 0, 95%),
+    $amount: 20,
+);
+$color-white-20: hsl(0, 0%, 95%);
+$color-white-30: darken(
+    $color: $color-white-20,
+    $amount: 10,
+);
+$color-white-40: darken(
+    $color: $color-white-30,
+    $amount: 10,
+);
+$color-white-50: darken(
+    $color: $color-white-40,
+    $amount: 10,
+);
 
 $colors: (
     white: (
-        10: hsl(255, 100%, 99%),
-        20: hsl(0, 0%, 95%),
-        30: hsl(0, 0, 90%),
-        40: hsl(0, 0, 80%),
-        50: hsl(0, 0, 65%),
+        10: $color-white-10,
+        20: $color-white-20,
+        30: $color-white-30,
+        40: $color-white-40,
+        50: $color-white-50,
     ),
     bluelight: (
         10: hsl(225, 39%, 90%),

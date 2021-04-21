@@ -99,8 +99,7 @@ header {
                 }
 
                 .menu-item {
-                    height: 100px;
-                    width: auto;
+                    @include wh(auto, 100px);
 
                     a {
                         @extend .items-center;
@@ -149,8 +148,9 @@ header {
         a {
             span {
                 display: block;
-                width: 15px;
-                height: 15px;
+
+                @include samewh(0.938rem);
+
                 background-color: var(--color-red-20);
                 border-radius: $border-radius-big;
                 transition: all 0.2s ease-in-out;

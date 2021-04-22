@@ -97,7 +97,9 @@
 
         p {
             letter-spacing: -1px;
-            line-height: 30px;
+
+            @include lineHeight(16px);
+
             margin-bottom: 0.7rem;
             opacity: 0.7;
             display: flex;
@@ -122,7 +124,6 @@
 
         p {
             letter-spacing: -1px;
-            line-height: 30px;
             margin-bottom: 0.7rem;
             opacity: 0.7;
             font-size: 14px;

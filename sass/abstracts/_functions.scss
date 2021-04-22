@@ -1,3 +1,7 @@
 @function moreBigger($size, $times) {
     @return $size * $times;
 }
+
+@function lineheight($size) {
+    @return $size * 1, 618;
+}

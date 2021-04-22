@@ -84,3 +84,7 @@
     margin-top: $mt;
     margin-bottom: $mb;
 }
+
+@mixin lineHeight($size) {
+    line-height: $size * 1.618;
+}

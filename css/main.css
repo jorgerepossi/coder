@@ -1,4 +1,111 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600&display=swap');
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend {
+    margin: 0;
+    border: 0;
+    outline: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue,
+        Helvetica, Arial;
+    font-style: normal;
+    font-weight: inherit;
+    line-height: inherit;
+    text-align: left;
+    text-align: inherit;
+    text-decoration: none;
+    text-shadow: none;
+    text-transform: inherit;
+    letter-spacing: normal;
+    word-break: normal;
+    word-spacing: normal;
+    white-space: normal;
+    line-break: auto;
+    padding-left: 0;
+    list-style: none;
+    color: inherit;
+    vertical-align: baseline;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    text-decoration: none !important;
+}
+
+a,
+.btn-link.focus,
+.btn-link:focus {
+    text-decoration: none !important;
+    color: inherit;
+}
+
+a:hover,
+.btn-link.focus:hover,
+.btn-link:focus:hover {
+    text-decoration: none !important;
+}
+
 :root {
     --color-white-10: white;
     --color-white-20: #f2f2f2;
@@ -121,6 +228,97 @@
 
 .smallTitle {
     font-size: var(--fs-h4);
+}
+
+.container {
+    max-width: 90rem;
+}
+
+.border {
+    border: 1px solid #000;
+}
+
+.border-rounded {
+    border-radius: 5rem;
+}
+
+.divider {
+    height: 5rem;
+}
+
+.full,
+.center,
+.newsContentWrapper,
+.fullWidth,
+.imgWrapper,
+.formGroup input,
+.formGroup textarea,
+#headerWrapper .headerItem ul.navMenuContent li,
+#headerWrapper .headerItem ul.navMenuContent li ul.navSubMenuContent,
+#headerWrapper .headerItem ul.navMenuContent li ul.navSubMenuContent li a.navSubMenuContent-li-a span,
+.floatNav ul {
+    width: 100%;
+}
+
+.center {
+    max-width: 90rem;
+    margin: 0px auto;
+}
+
+.sectionContent {
+    padding: var(--padding-big);
+}
+
+.sectionInnerContent {
+    margin: var(--padding-small);
+}
+
+.error-404 {
+    width: 100%;
+    max-width: 500px;
+}
+
+.newsContentWrapper .newsContentWrapper-content {
+    max-width: 34.375rem;
+}
+
+img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.fullWidth {
+    max-width: 100%;
+    height: auto;
+}
+
+.formGroup input,
+.formGroup textarea {
+    border: 1px solid var(--color-bluelight-20);
+}
+
+@-webkit-keyframes footerAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes footerAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .flex,
@@ -317,204 +515,6 @@ main #hero,
 .justify-self-stretch {
     -ms-grid-column-align: stretch;
     justify-self: stretch;
-}
-
-.container {
-    max-width: 90rem;
-}
-
-.border {
-    border: 1px solid #000;
-}
-
-.border-rounded {
-    border-radius: 5rem;
-}
-
-.divider {
-    height: 5rem;
-}
-
-.full,
-.center,
-.newsContentWrapper,
-.fullWidth,
-.imgWrapper,
-.formGroup input,
-.formGroup textarea,
-#headerWrapper .headerItem ul.navMenuContent li,
-#headerWrapper .headerItem ul.navMenuContent li ul.navSubMenuContent,
-#headerWrapper .headerItem ul.navMenuContent li ul.navSubMenuContent li a.navSubMenuContent-li-a span,
-.floatNav ul {
-    width: 100%;
-}
-
-.center {
-    max-width: 90rem;
-    margin: 0px auto;
-}
-
-.sectionContent {
-    padding: var(--padding-big);
-}
-
-.sectionInnerContent {
-    margin: var(--padding-small);
-}
-
-.error-404 {
-    width: 100%;
-    max-width: 500px;
-}
-
-.newsContentWrapper .newsContentWrapper-content {
-    max-width: 34.375rem;
-}
-
-img {
-    width: 100%;
-    vertical-align: middle;
-}
-
-.fullWidth {
-    max-width: 100%;
-    height: auto;
-}
-
-.formGroup input,
-.formGroup textarea {
-    border: 1px solid var(--color-bluelight-20);
-}
-
-@-webkit-keyframes footerAnimation {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
-@keyframes footerAnimation {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
-*,
-*::before,
-*::after {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-del,
-dfn,
-em,
-font,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend {
-    margin: 0;
-    border: 0;
-    outline: 0;
-    padding: 0;
-    font-size: 16px;
-    font-family: 'Inter', sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue,
-        Helvetica, Arial;
-    font-style: normal;
-    font-weight: inherit;
-    line-height: inherit;
-    text-align: left;
-    text-align: inherit;
-    text-decoration: none;
-    text-shadow: none;
-    text-transform: inherit;
-    letter-spacing: normal;
-    word-break: normal;
-    word-spacing: normal;
-    white-space: normal;
-    line-break: auto;
-    padding-left: 0;
-    list-style: none;
-    color: inherit;
-    vertical-align: baseline;
-    text-rendering: optimizeLegibility;
-    -moz-osx-font-smoothing: grayscale;
-    text-decoration: none !important;
-}
-
-a,
-.btn-link.focus,
-.btn-link:focus {
-    text-decoration: none !important;
-    color: inherit;
-}
-
-a:hover,
-.btn-link.focus:hover,
-.btn-link:focus:hover {
-    text-decoration: none !important;
 }
 
 input[type='text'],

@@ -75,11 +75,18 @@ legend {
     vertical-align: baseline;
     text-rendering: optimizeLegibility;
     -moz-osx-font-smoothing: grayscale;
+    text-decoration: none !important;
 }
 
-a {
+a,
+.btn-link.focus,
+.btn-link:focus {
     text-decoration: none !important;
     color: inherit;
+
+    &:hover {
+        text-decoration: none !important;
+    }
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600&display=swap');

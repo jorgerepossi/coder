@@ -22,7 +22,15 @@
 %shadow {
     box-shadow: 0px 10px 20px -8px rgba(#ed1b24, 0.45);
 }
+
 /* Button */
+
+.btn:hover,
+.btn:focus {
+    text-decoration: none;
+    box-shadow: none;
+    outline: 0px;
+}
 
 .button {
     @extend %button;

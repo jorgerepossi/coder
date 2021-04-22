@@ -90,11 +90,20 @@ legend {
     vertical-align: baseline;
     text-rendering: optimizeLegibility;
     -moz-osx-font-smoothing: grayscale;
+    text-decoration: none !important;
 }
 
-a {
+a,
+.btn-link.focus,
+.btn-link:focus {
     text-decoration: none !important;
     color: inherit;
+}
+
+a:hover,
+.btn-link.focus:hover,
+.btn-link:focus:hover {
+    text-decoration: none !important;
 }
 
 :root {
@@ -178,6 +187,7 @@ a {
     line-height: 25.888px;
     margin-bottom: 0.7rem;
     opacity: 0.7;
+    font-family: var(--font-family-text);
 }
 
 .superBigTitle {
@@ -560,6 +570,14 @@ textarea {
 }
 
 /* Button */
+.btn:hover,
+.btn:focus {
+    text-decoration: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: 0px;
+}
+
 .button {
     background-color: var(--color-base);
     margin: 0.2rem;
@@ -841,7 +859,6 @@ nav.navWrapper {
     right: 2rem;
     top: 50vh;
     width: 3rem;
-    overflow: hidden;
     z-index: 9;
     scroll-behavior: smooth;
 }
@@ -1223,8 +1240,18 @@ ul.center {
     display: inline-flex;
 }
 
+#sidebar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 100px;
+}
+
 .post h2 {
     font-size: 2rem;
+}
+
+.post img {
+    border-radius: 1rem;
 }
 
 .post_date {

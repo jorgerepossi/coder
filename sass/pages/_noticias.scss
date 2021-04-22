@@ -11,9 +11,18 @@
     display: inline-flex;
 }
 
+#sidebar {
+    position: sticky;
+    top: 100px;
+}
+
 .post {
     h2 {
         font-size: 2rem;
+    }
+
+    img {
+        @include border-radius(1rem);
     }
 
     &_date {

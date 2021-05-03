@@ -149,7 +149,14 @@
                                 </div>
                             </div>
                             <div class="post_media pt-4">
-                                <img src="img/noticias_hero.jpeg" class="w-100" alt="heroBanner" />
+                                <picture>
+                                    <source
+                                        media="(max-width: 680px)"
+                                        type="image/jpeg"
+                                        srcset="img/noticias_hero-mobile.jpg 680w"
+                                    />
+                                    <img src="img/noticias_hero.jpeg" alt="heroBanner" />
+                                </picture>
                             </div>
                             <div class="post_text">
                                 <div class="post_text-header p-3">
@@ -217,7 +224,19 @@
                                 </ul>
                             </div>
                             <div class="post_media pt-4 pb-4">
-                                <img src="img/inokim_noticias.jpeg" alt="Inokim Productos" class="w-100" />
+                                <picture>
+                                    <source
+                                        media="(max-width: 680px)"
+                                        type="image/jpeg"
+                                        srcset="img/inokim_noticias-mobile.jpg 680w"
+                                    />
+                                    <img
+                                        src="img/inokim_noticias.jpg"
+                                        alt="heroBanner"
+                                        alt="Inokim Productos"
+                                        class="w-100"
+                                    />
+                                </picture>
                             </div>
                             <ul class="post_items mt-4">
                                 <li>
@@ -255,8 +274,8 @@
                                         >Tu dirección de email no va a ser publicada. Los campos requeridos están
                                         marcados *</small
                                     >
-                                    <div class="flex w-100">
-                                        <div class="formGroup">
+                                    <div class="flex mt-5 row">
+                                        <div class="formGroup col-12 col-sm-6">
                                             <input
                                                 type="text"
                                                 name="name"
@@ -265,7 +284,7 @@
                                                 class="inputForm"
                                             />
                                         </div>
-                                        <div class="formGroup">
+                                        <div class="formGroup col-12 col-sm-6">
                                             <input
                                                 type="email"
                                                 name="email"
@@ -286,7 +305,7 @@
                                             placeholder="Mensaje"
                                         ></textarea>
                                     </div>
-                                    <input class="buttonWrapper" type="button" value="enviar" />
+                                    <input class="button button-primary" type="button" value="enviar" />
                                 </form>
                             </div>
                         </section>
@@ -454,7 +473,7 @@
                                 </p>
                             </div>
 
-                           <div class="footerSocialIcons d-flex justify-content-between">
+                            <div class="footerSocialIcons d-flex justify-content-between">
                                 <a
                                     href="https://www.facebook.com/inokimargentina"
                                     title="Facebook"
@@ -483,6 +502,7 @@
                                     <i class="fab fa-linkedin-in"></i
                                 ></a>
                             </div>
+                        </div>
 
                         <div class="footerItem col-12 col-sm-6 col-lg-4 col-xl-2 sitemap">
                             <div class="footerItem_title">
@@ -556,6 +576,7 @@
                 </section>
             </section>
         </footer>
+
         <script
             src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
             integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

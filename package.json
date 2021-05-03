@@ -13,7 +13,7 @@
         "format": "prettier --write .",
         "lint": "npm run format ",
         "lint-staged": "lint-staged",
-        "go": "npm run pretty && npm run lint && npm run pre-commit  && npm run postcommit "
+        "dev": "npm run pretty && npm run lint && npm run pre-commit  && npm run postcommit "
     },
     "keywords": [],
     "author": "",

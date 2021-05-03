@@ -3,5 +3,5 @@
 }
 
 @function lineheight($size) {
-    @return $size * 1, 618;
+    @return $size * 1.618;
 }

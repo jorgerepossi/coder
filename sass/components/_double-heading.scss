@@ -35,10 +35,10 @@
     }
 
     &_content {
-        margin: 0.6rem 0;
+        margin: calc(1rem * 1.618) 0;
 
         p {
-            line-height: 2rem;
+            line-height: calc(1rem * 1.618);
             color: var(--mywebsite-global-color-text);
         }
     }

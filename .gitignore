@@ -1,1 +1,3 @@
 node_modules
+.sass-cache
+.prettierrc.js

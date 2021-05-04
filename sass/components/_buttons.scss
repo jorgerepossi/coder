@@ -1,82 +1,83 @@
 %button {
-    outline: none;
-    appearance: none;
-    font-size: 10pt;
-    padding: 1rem 2rem;
-    border-radius: var(--border-radius);
-    color: var(--color-red-20);
-    transition: var(--mywebsite-contant-transition) ease-in-out;
-    text-transform: uppercase;
-    box-shadow: rgba(9, 30, 66, 0.25) 0px 8px 16px -4px, rgba(9, 30, 66, 0.31) 0px 0px 1px;
-    border: 1px solid var(--color-red-20-outline);
-    cursor: pointer;
+  outline: none;
+  appearance: none;
+  font-size: 10pt;
+  padding: 1rem 2rem;
+  border-radius: var(--border-radius);
+  color: var(--color-red-20);
+  transition: var(--mywebsite-contant-transition) ease-in-out;
+  text-transform: uppercase;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 8px 16px -4px,
+    rgba(9, 30, 66, 0.31) 0px 0px 1px;
+  border: 1px solid var(--color-red-20-outline);
+  cursor: pointer;
 
-    &:hover {
-        background-color: var(--color-green-10);
-        box-shadow: 0px 15px 20px -8px rgba(102, 207, 169, 0.45);
-        color: var(--color-base);
-        border: 1px solid var(--color-green-10);
-    }
+  &:hover {
+    background-color: var(--color-green-10);
+    box-shadow: 0px 15px 20px -8px rgba(102, 207, 169, 0.45);
+    color: var(--color-base);
+    border: 1px solid var(--color-green-10);
+  }
 }
 
 %shadow {
-    box-shadow: 0px 10px 20px -8px rgba(#ed1b24, 0.45);
+  box-shadow: 0px 10px 20px -8px rgba(#ed1b24, 0.45);
 }
 
 /* Button */
 
 .btn:hover,
 .btn:focus {
-    text-decoration: none;
-    box-shadow: none;
-    outline: 0px;
+  text-decoration: none;
+  box-shadow: none;
+  outline: 0px;
 }
 
 .button {
-    @extend %button;
+  @extend %button;
 
-    background-color: var(--color-base);
-    margin: 0.2rem;
+  background-color: var(--color-base);
+  margin: 0.2rem;
 
-    &-primary {
-        @include button-content(
-            var(--color-base),
-            var(--color-red-20),
-            0px 8px 16px -4px rgba(#ed1b24, 0.25),
-            var(--color-green-10),
-            0px 15px 20px -8px rgba(102, 207, 169, 0.45)
-        );
+  &-primary {
+    @include button-content(
+      var(--color-base),
+      var(--color-red-20),
+      0px 8px 16px -4px rgba(#ed1b24, 0.25),
+      var(--color-green-10),
+      0px 15px 20px -8px rgba(102, 207, 169, 0.45)
+    );
+  }
+
+  &-secondary {
+    @include button-content(
+      var(--color-base),
+      var(--color-green-10),
+      0px 15px 20px -8px rgba(102, 207, 169, 0.45),
+      var(--color-green-10),
+      0px 15px 20px -8px rgba(#4b83fc, 0.45)
+    );
+
+    &:hover {
+      background-color: var(--color-green-10);
     }
-
-    &-secondary {
-        @include button-content(
-            var(--color-base),
-            var(--color-green-10),
-            0px 15px 20px -8px rgba(102, 207, 169, 0.45),
-            var(--color-green-10),
-            0px 15px 20px -8px rgba(#4b83fc, 0.45)
-        );
-
-        &:hover {
-            background-color: var(--color-green-10);
-        }
-    }
+  }
 }
 
 .buttonWrapper {
-    padding: 1rem 2rem;
-    border-radius: var(--border-radius);
-    background-color: var(--color-green-10);
-    color: var(--color-base);
-    transition: var(--mywebsite-contant-transition) ease-in-out;
-    text-transform: uppercase;
-    box-shadow: 0px 10px 5px -5px rgba(#66cfa9, 0.45);
-    font-size: 10pt;
-    cursor: pointer;
+  padding: 1rem 2rem;
+  border-radius: var(--border-radius);
+  background-color: var(--color-green-10);
+  color: var(--color-base);
+  transition: var(--mywebsite-contant-transition) ease-in-out;
+  text-transform: uppercase;
+  box-shadow: 0px 10px 5px -5px rgba(#66cfa9, 0.45);
+  font-size: 10pt;
+  cursor: pointer;
 
-    &:hover {
-        background-color: var(--color-red-20);
-        box-shadow: 0px 15px 20px -8px rgba(#ed1b24, 0.45);
-        color: #ffffff;
-    }
+  &:hover {
+    background-color: var(--color-red-20);
+    box-shadow: 0px 15px 20px -8px rgba(#ed1b24, 0.45);
+    color: #ffffff;
+  }
 }

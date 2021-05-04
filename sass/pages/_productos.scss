@@ -1,111 +1,111 @@
 /* PRODUCTOS  */
 #productos {
-    .sectionHeading {
-        text-align: center;
+  .sectionHeading {
+    text-align: center;
 
-        h3 {
-            font-size: 2.5rem;
-            margin: 1.1 0.6rem 0;
-            font-weight: 900;
-            color: var(--color-red-20-outline);
-        }
+    h3 {
+      font-size: 2.5rem;
+      margin: 1.1 0.6rem 0;
+      font-weight: 900;
+      color: var(--color-red-20-outline);
     }
+  }
 
-    .minWidth {
-        /* uso del flex  */
+  .minWidth {
+    /* uso del flex  */
 
-        margin: 0px auto;
-        max-width: 500px;
-    }
+    margin: 0px auto;
+    max-width: 500px;
+  }
 }
 
 ul {
-    &.center {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-        gap: 1.5rem;
-        margin-top: 2rem;
-    }
+  &.center {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
 }
 
 .productosWrapper {
-    &__ul {
+  &__ul {
+    position: relative;
+  }
+
+  &__li {
+    display: block;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+
+    img {
+      transform: scale(1);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .imagenWrapper {
+      position: relative;
+      overflow: hidden;
+
+      &__text {
+        position: absolute;
+        top: 0px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        color: #fff;
+
+        &::before {
+          content: "";
+
+          @include samewh(100%);
+
+          background-color: rgba(0, 0, 0, 0.7);
+          display: flex;
+          position: absolute;
+        }
+      }
+
+      &__inner {
+        @extend .flex;
+
+        @extend .items-center;
+
+        margin-top: 20px;
+        margin-left: 20px;
         position: relative;
+        z-index: 1;
+
+        span {
+          @include samewh(50px);
+
+          background-color: var(--color-red-20);
+          border-radius: $border-radius-big;
+          margin-right: 20px;
+          background-image: url(../img/logo.jpg);
+          background-size: cover;
+          padding: 10px;
+        }
+      }
     }
 
-    &__li {
-        display: block;
-        border-radius: 10px;
-        overflow: hidden;
-        transition: all 0.4s ease-in-out;
-
-        img {
-            transform: scale(1);
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .imagenWrapper {
-            position: relative;
-            overflow: hidden;
-
-            &__text {
-                position: absolute;
-                top: 0px;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                color: #fff;
-
-                &::before {
-                    content: '';
-
-                    @include samewh(100%);
-
-                    background-color: rgba(0, 0, 0, 0.7);
-                    display: flex;
-                    position: absolute;
-                }
-            }
-
-            &__inner {
-                @extend .flex;
-
-                @extend .items-center;
-
-                margin-top: 20px;
-                margin-left: 20px;
-                position: relative;
-                z-index: 1;
-
-                span {
-                    @include samewh(50px);
-
-                    background-color: var(--color-red-20);
-                    border-radius: $border-radius-big;
-                    margin-right: 20px;
-                    background-image: url(../img/logo.jpg);
-                    background-size: cover;
-                    padding: 10px;
-                }
-            }
-        }
-
-        .textContainer {
-            padding: 20px 30px 30px;
-            text-transform: uppercase;
-        }
-
-        &:hover {
-            transform: translateY(-15px);
-            box-shadow: 0px 25px 4rem -30px rgba(0, 0, 0, 0.35);
-            transition: all 0.4s ease-in-out;
-        }
-
-        &:hover img {
-            transform: scale(1.1);
-            transition: transform 0.3s ease-in-out;
-        }
+    .textContainer {
+      padding: 20px 30px 30px;
+      text-transform: uppercase;
     }
+
+    &:hover {
+      transform: translateY(-15px);
+      box-shadow: 0px 25px 4rem -30px rgba(0, 0, 0, 0.35);
+      transition: all 0.4s ease-in-out;
+    }
+
+    &:hover img {
+      transform: scale(1.1);
+      transition: transform 0.3s ease-in-out;
+    }
+  }
 }
 
 /* FIN PRODUCTOS  */

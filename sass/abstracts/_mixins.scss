@@ -1,48 +1,48 @@
 // Border
 @mixin border-radius($radius) {
-    border-radius: $radius;
+  border-radius: $radius;
 }
 
 // Unstyled keeps list items block level, just removes default browser padding and list-style
 @mixin list-unstyled {
-    padding-left: 0;
-    list-style: none;
+  padding-left: 0;
+  list-style: none;
 }
 
 // Reset Text
 @mixin reset-text {
-    font-family: $font-family-base;
-    font-style: normal;
-    font-weight: $font-weight-normal;
-    line-height: $line-height-base;
-    text-align: left;
-    text-align: inherit;
-    text-decoration: none;
-    text-shadow: none;
-    text-transform: inherit;
-    letter-spacing: normal;
-    word-break: normal;
-    word-spacing: normal;
-    white-space: normal;
-    line-break: auto;
+  font-family: $font-family-base;
+  font-style: normal;
+  font-weight: $font-weight-normal;
+  line-height: $line-height-base;
+  text-align: left;
+  text-align: inherit;
+  text-decoration: none;
+  text-shadow: none;
+  text-transform: inherit;
+  letter-spacing: normal;
+  word-break: normal;
+  word-spacing: normal;
+  white-space: normal;
+  line-break: auto;
 }
 
 // Flex
 @mixin flex-center {
-    @extend .flex;
+  @extend .flex;
 
-    @extend .justify-center;
+  @extend .justify-center;
 
-    @content;
+  @content;
 }
 
 // Media Queries
 @mixin mq($key) {
-    $size: map-get($breakpoints, $key);
+  $size: map-get($breakpoints, $key);
 
-    @media only screen and (min-width: $size) {
-        @content;
-    }
+  @media only screen and (min-width: $size) {
+    @content;
+  }
 }
 
 // Buttons
@@ -50,41 +50,41 @@
 }
 
 @mixin box-shadow($shadow...) {
-    -webkit-box-shadow: $shadow;
-    -moz-box-shadow: $shadow;
-    box-shadow: $shadow;
+  -webkit-box-shadow: $shadow;
+  -moz-box-shadow: $shadow;
+  box-shadow: $shadow;
 }
 
 @mixin button-content($color, $bg, $shadow, $bgh, $shadowh) {
-    @extend %button;
+  @extend %button;
 
-    color: $color;
-    background-color: $bg;
+  color: $color;
+  background-color: $bg;
 
-    @include box-shadow($shadow);
+  @include box-shadow($shadow);
 
-    &:hover {
-        background-color: $bgh;
+  &:hover {
+    background-color: $bgh;
 
-        @include box-shadow($shadowh);
-    }
+    @include box-shadow($shadowh);
+  }
 }
 
 @mixin samewh($size) {
-    width: $size;
-    height: $size;
+  width: $size;
+  height: $size;
 }
 
 @mixin wh($w, $h) {
-    width: $w;
-    height: $h;
+  width: $w;
+  height: $h;
 }
 
 @mixin margintb($mt, $mb) {
-    margin-top: $mt;
-    margin-bottom: $mb;
+  margin-top: $mt;
+  margin-bottom: $mb;
 }
 
 @mixin lineHeight($size) {
-    line-height: $size * 1.618;
+  line-height: $size * 1.618;
 }

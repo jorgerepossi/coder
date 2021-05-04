@@ -1,76 +1,76 @@
 .container {
-    max-width: 90rem;
+  max-width: 90rem;
 }
 
 // Borders
 
 .border {
-    border: $border-width solid $boder-color;
+  border: $border-width solid $boder-color;
 }
 
 .border-rounded {
-    border-radius: $border-radius-big;
+  border-radius: $border-radius-big;
 }
 
 .divider {
-    height: 5rem;
+  height: 5rem;
 }
 
 .full {
-    width: 100%;
+  width: 100%;
 }
 
 .center {
-    @extend .full;
+  @extend .full;
 
-    max-width: 90rem;
-    margin: 0px auto;
+  max-width: 90rem;
+  margin: 0px auto;
 }
 
 .section {
-    &Content {
-        padding: var(--padding-big);
-    }
+  &Content {
+    padding: var(--padding-big);
+  }
 
-    &InnerContent {
-        margin: var(--padding-small);
-    }
+  &InnerContent {
+    margin: var(--padding-small);
+  }
 }
 
 .error-404 {
-    width: 100%;
-    max-width: 500px;
+  width: 100%;
+  max-width: 500px;
 }
 
 .newsContentWrapper {
-    @extend .full;
+  @extend .full;
 
-    @include flex-center;
+  @include flex-center;
 
-    .newsContentWrapper-content {
-        max-width: 34.375rem;
-    }
+  .newsContentWrapper-content {
+    max-width: 34.375rem;
+  }
 }
 
 img {
-    width: 100%;
-    vertical-align: middle;
+  width: 100%;
+  vertical-align: middle;
 }
 
 .fullWidth {
-    @extend .full;
+  @extend .full;
 
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 .imgWrapper {
-    @extend .full;
+  @extend .full;
 }
 
 .formGroup input,
 .formGroup textarea {
-    @extend .full;
+  @extend .full;
 
-    border: 1px solid var(--color-bluelight-20);
+  border: 1px solid var(--color-bluelight-20);
 }

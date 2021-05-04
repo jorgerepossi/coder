@@ -1,52 +1,52 @@
 /* PRODUCTO  */
 #producto {
-    #imagenContentWrapper {
-        width: 100%;
-        max-width: 760px;
+  #imagenContentWrapper {
+    width: 100%;
+    max-width: 760px;
 
-        .contentWrapper {
-            .tinyImagenWrapper {
-                ul {
-                    &.tinyimagenWrapper_ul {
-                        display: grid;
-                        grid-template-columns: repeat(auto-fit, minmax(14.375rem, 1fr));
-                        grid-gap: 20px;
-                        padding: 20px 0;
-                    }
+    .contentWrapper {
+      .tinyImagenWrapper {
+        ul {
+          &.tinyimagenWrapper_ul {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(14.375rem, 1fr));
+            grid-gap: 20px;
+            padding: 20px 0;
+          }
 
-                    li {
-                        padding: 1.6rem;
-                    }
-                }
-            }
+          li {
+            padding: 1.6rem;
+          }
         }
+      }
     }
+  }
 
-    #infoContentWrapper {
-        background-color: var(--color-base);
-        width: 100%;
-        max-width: calc(100% - 760px);
+  #infoContentWrapper {
+    background-color: var(--color-base);
+    width: 100%;
+    max-width: calc(100% - 760px);
 
-        .contentWrapper-title {
-            .title {
-                font-size: var(--mywebsite-h2-font-size);
-            }
-        }
+    .contentWrapper-title {
+      .title {
+        font-size: var(--mywebsite-h2-font-size);
+      }
     }
+  }
 
-    .tagged_as {
-        overflow: hidden;
-        display: block;
-        padding: 10px;
+  .tagged_as {
+    overflow: hidden;
+    display: block;
+    padding: 10px;
 
-        .tagItems {
-            padding: 0.5rem 1.6rem;
-            background-color: #bac4e1;
-            margin: 5px;
-            text-transform: capitalize;
-            border-radius: $border-radius-big;
-        }
+    .tagItems {
+      padding: 0.5rem 1.6rem;
+      background-color: #bac4e1;
+      margin: 5px;
+      text-transform: capitalize;
+      border-radius: $border-radius-big;
     }
+  }
 }
 
 /* FIN PRODUCTO  */

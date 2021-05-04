@@ -1,7 +1,7 @@
 .borderRadiusSmall {
-    @include border-radius(var(--border-radius));
+  @include border-radius(var(--border-radius));
 }
 
 .borderRadiusBig {
-    @include border-radius(var(--border-radius-circle));
+  @include border-radius(var(--border-radius-circle));
 }

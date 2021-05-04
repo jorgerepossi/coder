@@ -1,16 +1,16 @@
 #breadcrumbs {
-    border-bottom: 1px solid var(--color-border);
-    background-image: url(../img/newsletter-bg.png);
+  border-bottom: 1px solid var(--color-border);
+  background-image: url(../img/newsletter-bg.png);
 }
 
 .breadcrumbWrapper {
-    @include flex-center {
-        align-items: center;
-    }
+  @include flex-center {
+    align-items: center;
+  }
 
-    min-height: 300px;
+  min-height: 300px;
 
-    .breadcrumbs-content {
-        text-align: center;
-    }
+  .breadcrumbs-content {
+    text-align: center;
+  }
 }

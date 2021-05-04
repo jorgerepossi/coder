@@ -1,14 +1,14 @@
 #ourContactWrapper {
-    ul {
-        overflow: hidden;
+  ul {
+    overflow: hidden;
 
-        &.ourContact li {
-            margin-bottom: 2rem;
+    &.ourContact li {
+      margin-bottom: 2rem;
 
-            .ourContact_widget-icon {
-                width: 4.375rem;
-                text-align: center;
-            }
-        }
+      .ourContact_widget-icon {
+        width: 4.375rem;
+        text-align: center;
+      }
     }
+  }
 }

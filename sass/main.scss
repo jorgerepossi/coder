@@ -1,17 +1,17 @@
-@import 'abstracts/functions';
-@import 'abstracts/mixins';
-@import 'abstracts/variables';
-@import 'reset/reboot';
-@import 'base/base';
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+@import "reset/reboot";
+@import "base/base";
 
-@import 'base/each';
-@import 'components/index';
-@import 'layouts/header/index';
+@import "base/each";
+@import "components/index";
+@import "layouts/header/index";
 
-@import 'pages/index';
-@import 'pages/productos';
-@import 'pages/producto';
-@import 'pages/noticias';
-@import 'pages/contact';
+@import "pages/index";
+@import "pages/productos";
+@import "pages/producto";
+@import "pages/noticias";
+@import "pages/contact";
 
-@import 'layouts/footer/index';
+@import "layouts/footer/index";

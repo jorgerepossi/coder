@@ -1,20 +1,20 @@
-input[type='text'],
-input[type='password'],
-input[type='email'],
-input[type='number'],
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
 textarea {
-    outline: none;
-    border-width: 1px;
-    border-color: var(--color-bluelight-20);
-    border-style: solid;
-    transition: var(--mywebsite-contant-transition);
+  outline: none;
+  border-width: 1px;
+  border-color: var(--color-bluelight-20);
+  border-style: solid;
+  transition: var(--mywebsite-contant-transition);
 }
 
 .inputForm {
-    padding: 1rem 2rem;
-    margin: 0.5rem 0.25rem;
+  padding: 1rem 2rem;
+  margin: 0.5rem 0.25rem;
 
-    &:focus {
-        border: 1px solid var(--color-red-20-outline);
-    }
+  &:focus {
+    border: 1px solid var(--color-red-20-outline);
+  }
 }

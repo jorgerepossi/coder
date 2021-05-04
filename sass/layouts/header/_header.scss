@@ -1,165 +1,165 @@
 header {
-    position: fixed;
-    background-color: var(--color-base);
-    border-bottom: 1px solid var(--color-border);
-    font-family: var(--mywebsite-html-font);
-    width: 100%;
-    z-index: 9;
-    top: 0;
+  position: fixed;
+  background-color: var(--color-base);
+  border-bottom: 1px solid var(--color-border);
+  font-family: var(--mywebsite-html-font);
+  width: 100%;
+  z-index: 9;
+  top: 0;
 }
 
 #headerWrapper {
-    @include flex-center {
-        align-items: center;
+  @include flex-center {
+    align-items: center;
+  }
+
+  padding: 0 2em;
+
+  @include mq(medium) {
+    padding: 0;
+  }
+
+  justify-content: space-between;
+  letter-spacing: 0.02rem;
+  height: 100px;
+
+  .headerItem {
+    img {
+      max-width: 150px;
     }
-
-    padding: 0 2em;
-
-    @include mq(medium) {
-        padding: 0;
-    }
-
-    justify-content: space-between;
-    letter-spacing: 0.02rem;
-    height: 100px;
-
-    .headerItem {
-        img {
-            max-width: 150px;
-        }
-
-        ul {
-            height: 100%;
-            text-transform: uppercase;
-            align-content: center;
-
-            &.navMenuContent {
-                li {
-                    position: relative;
-
-                    @include list-unstyled;
-
-                    @extend .full;
-
-                    ul {
-                        &.navSubMenuContent {
-                            opacity: 0;
-                            visibility: hidden;
-                            transform: rotateX(0) translateZ(0);
-                            border-radius: 0 0 5px 5px;
-                            transition: all var(--mywebsite-contant-transition) ease-in-out;
-                            box-shadow: 11px 10px 38px 0 rgba(46, 63, 99, 0.15);
-                            background-color: var(--color-base);
-                            color: var(--color-red-20);
-                            height: auto;
-                            padding: 1.6rem 0;
-                            flex-direction: column;
-
-                            @extend .full;
-
-                            min-width: 200px;
-                            white-space: nowrap;
-                            position: absolute;
-                            top: calc(100% + 15px);
-
-                            li {
-                                @include list-unstyled;
-
-                                text-transform: uppercase;
-
-                                a {
-                                    &.navSubMenuContent-li-a {
-                                        padding: 0.5rem 0 0.5rem;
-                                        text-align: center;
-
-                                        span {
-                                            @extend .full;
-                                        }
-                                    }
-
-                                    &:hover {
-                                        background-color: var(--color-red-20);
-                                        color: var(--color-base);
-                                    }
-                                }
-                            }
-                        }
-                    }
-
-                    &:hover {
-                        ul {
-                            &.navSubMenuContent {
-                                opacity: 1;
-                                visibility: visible;
-                                transform: rotateX(0) translateZ(0);
-                                top: 100%;
-                            }
-                        }
-                    }
-                }
-
-                .menu-item {
-                    @include wh(auto, 100px);
-
-                    a {
-                        @extend .items-center;
-
-                        @extend .flex;
-
-                        height: 100%;
-                        padding: 0px 16px 0px 16px;
-                        position: relative;
-                        transition: var(--mywebsite-contant-transition);
-
-                        .menu-item-link {
-                            font-weight: 600;
-                            font-size: 14px;
-                        }
-
-                        &.active,
-                        &:hover {
-                            color: var(--color-red-20);
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-@import './nav';
-
-.floatNav {
-    position: fixed;
-    right: 2rem;
-    top: 50vh;
-    width: 3rem;
-    z-index: 9;
-    scroll-behavior: smooth;
 
     ul {
-        @extend .full;
-    }
+      height: 100%;
+      text-transform: uppercase;
+      align-content: center;
 
-    li {
-        margin: 0.5rem 0;
+      &.navMenuContent {
+        li {
+          position: relative;
 
-        a {
-            span {
-                display: block;
+          @include list-unstyled;
 
-                @include samewh(0.938rem);
+          @extend .full;
 
-                background-color: var(--color-red-20);
-                border-radius: $border-radius-big;
-                transition: all 0.2s ease-in-out;
-                transform: scale(1);
+          ul {
+            &.navSubMenuContent {
+              opacity: 0;
+              visibility: hidden;
+              transform: rotateX(0) translateZ(0);
+              border-radius: 0 0 5px 5px;
+              transition: all var(--mywebsite-contant-transition) ease-in-out;
+              box-shadow: 11px 10px 38px 0 rgba(46, 63, 99, 0.15);
+              background-color: var(--color-base);
+              color: var(--color-red-20);
+              height: auto;
+              padding: 1.6rem 0;
+              flex-direction: column;
 
-                &:hover {
-                    transform: scale(1.2);
-                    transition: all 0.2s ease-in-out;
+              @extend .full;
+
+              min-width: 200px;
+              white-space: nowrap;
+              position: absolute;
+              top: calc(100% + 15px);
+
+              li {
+                @include list-unstyled;
+
+                text-transform: uppercase;
+
+                a {
+                  &.navSubMenuContent-li-a {
+                    padding: 0.5rem 0 0.5rem;
+                    text-align: center;
+
+                    span {
+                      @extend .full;
+                    }
+                  }
+
+                  &:hover {
+                    background-color: var(--color-red-20);
+                    color: var(--color-base);
+                  }
                 }
+              }
             }
+          }
+
+          &:hover {
+            ul {
+              &.navSubMenuContent {
+                opacity: 1;
+                visibility: visible;
+                transform: rotateX(0) translateZ(0);
+                top: 100%;
+              }
+            }
+          }
         }
+
+        .menu-item {
+          @include wh(auto, 100px);
+
+          a {
+            @extend .items-center;
+
+            @extend .flex;
+
+            height: 100%;
+            padding: 0px 16px 0px 16px;
+            position: relative;
+            transition: var(--mywebsite-contant-transition);
+
+            .menu-item-link {
+              font-weight: 600;
+              font-size: 14px;
+            }
+
+            &.active,
+            &:hover {
+              color: var(--color-red-20);
+            }
+          }
+        }
+      }
     }
+  }
+}
+
+@import "./nav";
+
+.floatNav {
+  position: fixed;
+  right: 2rem;
+  top: 50vh;
+  width: 3rem;
+  z-index: 9;
+  scroll-behavior: smooth;
+
+  ul {
+    @extend .full;
+  }
+
+  li {
+    margin: 0.5rem 0;
+
+    a {
+      span {
+        display: block;
+
+        @include samewh(0.938rem);
+
+        background-color: var(--color-black-10);
+        border-radius: $border-radius-big;
+        transition: all 0.2s ease-in-out;
+        transform: scale(1);
+
+        &:hover {
+          transform: scale(1.2);
+          transition: all 0.2s ease-in-out;
+        }
+      }
+    }
+  }
 }

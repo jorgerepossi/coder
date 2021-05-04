@@ -1,536 +1,584 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-        <!-- Bootstrap CSS -->
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-            integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
-            crossorigin="anonymous"
-        />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600&display=swap"
-            rel="stylesheet"
-        />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600&display=swap"
+      rel="stylesheet"
+    />
 
-        <title>Hello, world!</title>
-        <style>
-            body {
-                font-family: 'Inter', sans-serif;
-            }
+    <title>Hello, world!</title>
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
 
-            p {
-                margin: 0px;
-            }
+      p {
+        margin: 0px;
+      }
 
-            ul {
-                padding: 0px;
-                margin: 0px;
-            }
+      ul {
+        padding: 0px;
+        margin: 0px;
+      }
 
-            li {
-                list-style: none;
-            }
+      li {
+        list-style: none;
+      }
 
-            .menuWrapper li {
-                margin-inline: 20px;
-            }
+      .menuWrapper li {
+        margin-inline: 20px;
+      }
 
-            .brand span {
-                width: 3rem;
-                height: 3rem;
-                text-align: center;
-            }
+      .brand span {
+        width: 3rem;
+        height: 3rem;
+        text-align: center;
+      }
 
-            .galeriaItem-inner {
-                border: 1px solid #d0d0d0;
-                overflow: hidden;
-                height: 250px;
-                transition: all 0.2s ease-in-out;
-            }
+      .galeriaItem-inner {
+        border: 1px solid #d0d0d0;
+        overflow: hidden;
+        height: 250px;
+        transition: all 0.2s ease-in-out;
+      }
 
-            .galeriaItem-inner h3 {
-                font-size: 1.45rem;
-            }
+      .galeriaItem-inner h3 {
+        font-size: 1.45rem;
+      }
 
-            .galeriaItem-inner:hover {
-                border: 1px solid #7464e3;
-            }
+      .galeriaItem-inner:hover {
+        border: 1px solid #7464e3;
+      }
 
-            .galeriaItem {
-                margin: 0.7rem 0;
-            }
+      .galeriaItem {
+        margin: 0.7rem 0;
+      }
 
-            .imagenWrapper {
-                transform: translateY(0px);
-                transition: all 0.2s ease-in-out;
-            }
+      .imagenWrapper {
+        transform: translateY(0px);
+        transition: all 0.2s ease-in-out;
+      }
 
-            .imagenWrapper img {
-                max-width: 80px;
-                margin: 1.6rem 0 0.5rem;
-            }
+      .imagenWrapper img {
+        max-width: 80px;
+        margin: 1.6rem 0 0.5rem;
+      }
 
-            .textWrapper {
-                transform: translateY(-10px);
-                transition: all 0.2s ease-in-out;
-            }
+      .textWrapper {
+        transform: translateY(-10px);
+        transition: all 0.2s ease-in-out;
+      }
 
-            .buttonWrapper {
-                transition: all 0.2s ease-in-out;
-                transform: translateY(50px);
-                opacity: 0;
-            }
+      .buttonWrapper {
+        transition: all 0.2s ease-in-out;
+        transform: translateY(50px);
+        opacity: 0;
+      }
 
-            .galeriaItem-inner:hover .textWrapper {
-                transform: translateY(-45%);
-            }
+      .galeriaItem-inner:hover .textWrapper {
+        transform: translateY(-45%);
+      }
 
-            .galeriaItem-inner:hover .buttonWrapper {
-                transform: translateY(0%);
-                opacity: 1;
-            }
+      .galeriaItem-inner:hover .buttonWrapper {
+        transform: translateY(0%);
+        opacity: 1;
+      }
 
-            .galeriaItem-inner:hover .imagenWrapper {
-                transform: translateY(-50%);
-                opacity: 0;
-            }
+      .galeriaItem-inner:hover .imagenWrapper {
+        transform: translateY(-50%);
+        opacity: 0;
+      }
 
-            .jumbotron,
-            footer {
-                background-color: #edeef9;
-            }
-        </style>
-    </head>
+      .jumbotron,
+      footer {
+        background-color: #edeef9;
+      }
+    </style>
+  </head>
 
-    <body>
-        <header class="col-12">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light p-4">
-                <section class="col-12 d-flex justify-content-between">
-                    <div class="brand d-flex">
-                        <span
-                            class="border border-secondary rounded-circle d-flex align-items-center align-content-center justify-content-center"
-                        >
-                            i
-                        </span>
-                    </div>
-                    <div class="menuWrapper">
-                        <ul class="d-flex">
-                            <li>Home</li>
-                            <li>About</li>
-                            <li>Contact</li>
-                        </ul>
-                    </div>
-                </section>
-            </nav>
-        </header>
-        <section class="jumbotron">
-            <section class="container">
-                <h1 class="text-center">Hero Banner</h1>
-            </section>
-        </section>
-        <section class="container mt-5">
-            <ul class="d-flex justify-content-between flex-wrap">
-                <li class="col-12 col-sm-6 col-lg-4 col-xl-3 galeriaItem">
-                    <div class="galeriaItem-inner p-2 rounded">
-                        <div class="col-12">
-                            <h3>Lorem ipsum dolor sit amet.</h3>
-                        </div>
-                        <div class="imagenWrapper col-12">
-                            <img
-                                src="https://images.ctfassets.net/a6zo0szqvm4a/2ZJVdgmiLaaDskS9D9jAPp/3369d7076852f001b9bd401f05e8226b/Feature_Canvas-tp.png"
-                                alt=""
-                            />
-                        </div>
-                        <div class="textWrapper">
-                            <div class="col-12 mt-3">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, cum?</p>
-                            </div>
-                            <div class="buttonWrapper col-12 mt-3">
-                                <div class="row">
-                                    <div class="col-12 d-flex justify-content-between">
-                                        <div class="buttonContainer">
-                                            <button class="btn btn-primary">Button</button>
-                                        </div>
-                                        <div class="buttonContainer">
-                                            <button class="btn btn btn-outline-dark">Button</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-
-                <li class="col-12 col-sm-6 col-lg-4 col-xl-3 galeriaItem">
-                    <div class="galeriaItem-inner p-2 rounded">
-                        <div class="col-12">
-                            <h3>Lorem ipsum dolor sit amet.</h3>
-                        </div>
-                        <div class="imagenWrapper col-12">
-                            <img
-                                src="https://images.ctfassets.net/a6zo0szqvm4a/6LsV8wgpmkH8r8ew4elXT2/27ad8cb4abb25313e1a9aa10dba034f8/LookMockAnalyze-tp.svg"
-                                alt=""
-                            />
-                        </div>
-                        <div class="textWrapper">
-                            <div class="col-12 mt-3">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, cum?</p>
-                            </div>
-                            <div class="buttonWrapper col-12 mt-3">
-                                <div class="row">
-                                    <div class="col-12 d-flex justify-content-between">
-                                        <div class="buttonContainer">
-                                            <button class="btn btn-primary">Button</button>
-                                        </div>
-                                        <div class="buttonContainer">
-                                            <button class="btn btn btn-outline-dark">Button</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-
-                <li class="col-12 col-sm-6 col-lg-4 col-xl-3 galeriaItem">
-                    <div class="galeriaItem-inner p-2 rounded">
-                        <div class="col-12">
-                            <h3>Lorem ipsum dolor sit amet.</h3>
-                        </div>
-                        <div class="imagenWrapper col-12">
-                            <img
-                                src="https://images.ctfassets.net/a6zo0szqvm4a/2ZJVdgmiLaaDskS9D9jAPp/3369d7076852f001b9bd401f05e8226b/Feature_Canvas-tp.png"
-                                alt=""
-                            />
-                        </div>
-                        <div class="textWrapper">
-                            <div class="col-12 mt-3">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, cum?</p>
-                            </div>
-                            <div class="buttonWrapper col-12 mt-3">
-                                <div class="row">
-                                    <div class="col-12 d-flex justify-content-between">
-                                        <div class="buttonContainer">
-                                            <button class="btn btn-primary">Button</button>
-                                        </div>
-                                        <div class="buttonContainer">
-                                            <button class="btn btn btn-outline-dark">Button</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-
-                <li class="col-12 col-sm-6 col-lg-4 col-xl-3 galeriaItem">
-                    <div class="galeriaItem-inner p-2 rounded">
-                        <div class="col-12">
-                            <h3>Lorem ipsum dolor sit amet.</h3>
-                        </div>
-                        <div class="imagenWrapper col-12">
-                            <img
-                                src="https://images.ctfassets.net/a6zo0szqvm4a/6LsV8wgpmkH8r8ew4elXT2/27ad8cb4abb25313e1a9aa10dba034f8/LookMockAnalyze-tp.svg"
-                                alt=""
-                            />
-                        </div>
-                        <div class="textWrapper">
-                            <div class="col-12 mt-3">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, cum?</p>
-                            </div>
-                            <div class="buttonWrapper col-12 mt-3">
-                                <div class="row">
-                                    <div class="col-12 d-flex justify-content-between">
-                                        <div class="buttonContainer">
-                                            <button class="btn btn-primary">Button</button>
-                                        </div>
-                                        <div class="buttonContainer">
-                                            <button class="btn btn btn-outline-dark">Button</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-
-                <li class="col-12 col-sm-6 col-lg-4 col-xl-3 galeriaItem">
-                    <div class="galeriaItem-inner p-2 rounded">
-                        <div class="col-12">
-                            <h3>Lorem ipsum dolor sit amet.</h3>
-                        </div>
-                        <div class="imagenWrapper col-12">
-                            <img
-                                src="https://images.ctfassets.net/a6zo0szqvm4a/2ZJVdgmiLaaDskS9D9jAPp/3369d7076852f001b9bd401f05e8226b/Feature_Canvas-tp.png"
-                                alt=""
-                            />
-                        </div>
-                        <div class="textWrapper">
-                            <div class="col-12 mt-3">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, cum?</p>
-                            </div>
-                            <div class="buttonWrapper col-12 mt-3">
-                                <div class="row">
-                                    <div class="col-12 d-flex justify-content-between">
-                                        <div class="buttonContainer">
-                                            <button class="btn btn-primary">Button</button>
-                                        </div>
-                                        <div class="buttonContainer">
-                                            <button class="btn btn btn-outline-dark">Button</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-
-                <li class="col-12 col-sm-6 col-lg-4 col-xl-3 galeriaItem">
-                    <div class="galeriaItem-inner p-2 rounded">
-                        <div class="col-12">
-                            <h3>Lorem ipsum dolor sit amet.</h3>
-                        </div>
-                        <div class="imagenWrapper col-12">
-                            <img
-                                src="https://images.ctfassets.net/a6zo0szqvm4a/6LsV8wgpmkH8r8ew4elXT2/27ad8cb4abb25313e1a9aa10dba034f8/LookMockAnalyze-tp.svg"
-                                alt=""
-                            />
-                        </div>
-                        <div class="textWrapper">
-                            <div class="col-12 mt-3">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, cum?</p>
-                            </div>
-                            <div class="buttonWrapper col-12 mt-3">
-                                <div class="row">
-                                    <div class="col-12 d-flex justify-content-between">
-                                        <div class="buttonContainer">
-                                            <button class="btn btn-primary">Button</button>
-                                        </div>
-                                        <div class="buttonContainer">
-                                            <button class="btn btn btn-outline-dark">Button</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-
-                <li class="col-12 col-sm-6 col-lg-4 col-xl-3 galeriaItem">
-                    <div class="galeriaItem-inner p-2 rounded">
-                        <div class="col-12">
-                            <h3>Lorem ipsum dolor sit amet.</h3>
-                        </div>
-                        <div class="imagenWrapper col-12">
-                            <img
-                                src="https://images.ctfassets.net/a6zo0szqvm4a/2ZJVdgmiLaaDskS9D9jAPp/3369d7076852f001b9bd401f05e8226b/Feature_Canvas-tp.png"
-                                alt=""
-                            />
-                        </div>
-                        <div class="textWrapper">
-                            <div class="col-12 mt-3">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, cum?</p>
-                            </div>
-                            <div class="buttonWrapper col-12 mt-3">
-                                <div class="row">
-                                    <div class="col-12 d-flex justify-content-between">
-                                        <div class="buttonContainer">
-                                            <button class="btn btn-primary">Button</button>
-                                        </div>
-                                        <div class="buttonContainer">
-                                            <button class="btn btn btn-outline-dark">Button</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-
-                <li class="col-12 col-sm-6 col-lg-4 col-xl-3 galeriaItem">
-                    <div class="galeriaItem-inner p-2 rounded">
-                        <div class="col-12">
-                            <h3>Lorem ipsum dolor sit amet.</h3>
-                        </div>
-                        <div class="imagenWrapper col-12">
-                            <img
-                                src="https://images.ctfassets.net/a6zo0szqvm4a/6LsV8wgpmkH8r8ew4elXT2/27ad8cb4abb25313e1a9aa10dba034f8/LookMockAnalyze-tp.svg"
-                                alt=""
-                            />
-                        </div>
-                        <div class="textWrapper">
-                            <div class="col-12 mt-3">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, cum?</p>
-                            </div>
-                            <div class="buttonWrapper col-12 mt-3">
-                                <div class="row">
-                                    <div class="col-12 d-flex justify-content-between">
-                                        <div class="buttonContainer">
-                                            <button class="btn btn-primary">Button</button>
-                                        </div>
-                                        <div class="buttonContainer">
-                                            <button class="btn btn btn-outline-dark">Button</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-
-                <li class="col-12 col-sm-6 col-lg-4 col-xl-3 galeriaItem">
-                    <div class="galeriaItem-inner p-2 rounded">
-                        <div class="col-12">
-                            <h3>Lorem ipsum dolor sit amet.</h3>
-                        </div>
-                        <div class="imagenWrapper col-12">
-                            <img
-                                src="https://images.ctfassets.net/a6zo0szqvm4a/6LsV8wgpmkH8r8ew4elXT2/27ad8cb4abb25313e1a9aa10dba034f8/LookMockAnalyze-tp.svg"
-                                alt=""
-                            />
-                        </div>
-                        <div class="textWrapper">
-                            <div class="col-12 mt-3">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, cum?</p>
-                            </div>
-                            <div class="buttonWrapper col-12 mt-3">
-                                <div class="row">
-                                    <div class="col-12 d-flex justify-content-between">
-                                        <div class="buttonContainer">
-                                            <button class="btn btn-primary">Button</button>
-                                        </div>
-                                        <div class="buttonContainer">
-                                            <button class="btn btn btn-outline-dark">Button</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-
-                <li class="col-12 col-sm-6 col-lg-4 col-xl-3 galeriaItem">
-                    <div class="galeriaItem-inner p-2 rounded">
-                        <div class="col-12">
-                            <h3>Lorem ipsum dolor sit amet.</h3>
-                        </div>
-                        <div class="imagenWrapper col-12">
-                            <img
-                                src="https://images.ctfassets.net/a6zo0szqvm4a/2ZJVdgmiLaaDskS9D9jAPp/3369d7076852f001b9bd401f05e8226b/Feature_Canvas-tp.png"
-                                alt=""
-                            />
-                        </div>
-                        <div class="textWrapper">
-                            <div class="col-12 mt-3">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, cum?</p>
-                            </div>
-                            <div class="buttonWrapper col-12 mt-3">
-                                <div class="row">
-                                    <div class="col-12 d-flex justify-content-between">
-                                        <div class="buttonContainer">
-                                            <button class="btn btn-primary">Button</button>
-                                        </div>
-                                        <div class="buttonContainer">
-                                            <button class="btn btn btn-outline-dark">Button</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-
-                <li class="col-12 col-sm-6 col-lg-4 col-xl-3 galeriaItem">
-                    <div class="galeriaItem-inner p-2 rounded">
-                        <div class="col-12">
-                            <h3>Lorem ipsum dolor sit amet.</h3>
-                        </div>
-                        <div class="imagenWrapper col-12">
-                            <img
-                                src="https://images.ctfassets.net/a6zo0szqvm4a/6LsV8wgpmkH8r8ew4elXT2/27ad8cb4abb25313e1a9aa10dba034f8/LookMockAnalyze-tp.svg"
-                                alt=""
-                            />
-                        </div>
-                        <div class="textWrapper">
-                            <div class="col-12 mt-3">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, cum?</p>
-                            </div>
-                            <div class="buttonWrapper col-12 mt-3">
-                                <div class="row">
-                                    <div class="col-12 d-flex justify-content-between">
-                                        <div class="buttonContainer">
-                                            <button class="btn btn-primary">Button</button>
-                                        </div>
-                                        <div class="buttonContainer">
-                                            <button class="btn btn btn-outline-dark">Button</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-
-                <li class="col-12 col-sm-6 col-lg-4 col-xl-3 galeriaItem">
-                    <div class="galeriaItem-inner p-2 rounded">
-                        <div class="col-12">
-                            <h3>Lorem ipsum dolor sit amet.</h3>
-                        </div>
-                        <div class="imagenWrapper col-12">
-                            <img
-                                src="https://images.ctfassets.net/a6zo0szqvm4a/2ZJVdgmiLaaDskS9D9jAPp/3369d7076852f001b9bd401f05e8226b/Feature_Canvas-tp.png"
-                                alt=""
-                            />
-                        </div>
-                        <div class="textWrapper">
-                            <div class="col-12 mt-3">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, cum?</p>
-                            </div>
-                            <div class="buttonWrapper col-12 mt-3">
-                                <div class="row">
-                                    <div class="col-12 d-flex justify-content-between">
-                                        <div class="buttonContainer">
-                                            <button class="btn btn-primary">Button</button>
-                                        </div>
-                                        <div class="buttonContainer">
-                                            <button class="btn btn btn-outline-dark">Button</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
+  <body>
+    <header class="col-12">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light p-4">
+        <section class="col-12 d-flex justify-content-between">
+          <div class="brand d-flex">
+            <span
+              class="border border-secondary rounded-circle d-flex align-items-center align-content-center justify-content-center"
+            >
+              i
+            </span>
+          </div>
+          <div class="menuWrapper">
+            <ul class="d-flex">
+              <li>Home</li>
+              <li>About</li>
+              <li>Contact</li>
             </ul>
+          </div>
         </section>
-
-        <footer class="p-3 mt-5">
-            <div class="container">
-                <div class="d-flex justify-content-between align-items-center">
-                    <p><small> Copyright &copy; 2021 CoderHouse Team | All Rights Reserved. </small></p>
-                    <p>
-                        <small> Site made with <i class="bi bi-heart-fill"></i> Jo Repossi. </small>
-                    </p>
-                </div>
+      </nav>
+    </header>
+    <section class="jumbotron">
+      <section class="container">
+        <h1 class="text-center">Hero Banner</h1>
+      </section>
+    </section>
+    <section class="container mt-5">
+      <ul class="d-flex justify-content-between flex-wrap">
+        <li class="col-12 col-sm-6 col-lg-4 col-xl-3 galeriaItem">
+          <div class="galeriaItem-inner p-2 rounded">
+            <div class="col-12">
+              <h3>Lorem ipsum dolor sit amet.</h3>
             </div>
-        </footer>
+            <div class="imagenWrapper col-12">
+              <img
+                src="https://images.ctfassets.net/a6zo0szqvm4a/2ZJVdgmiLaaDskS9D9jAPp/3369d7076852f001b9bd401f05e8226b/Feature_Canvas-tp.png"
+                alt=""
+              />
+            </div>
+            <div class="textWrapper">
+              <div class="col-12 mt-3">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Officia, cum?
+                </p>
+              </div>
+              <div class="buttonWrapper col-12 mt-3">
+                <div class="row">
+                  <div class="col-12 d-flex justify-content-between">
+                    <div class="buttonContainer">
+                      <button class="btn btn-primary">Button</button>
+                    </div>
+                    <div class="buttonContainer">
+                      <button class="btn btn btn-outline-dark">Button</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
 
-        <script
-            src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-            crossorigin="anonymous"
-        ></script>
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-            crossorigin="anonymous"
-        ></script>
-    </body>
+        <li class="col-12 col-sm-6 col-lg-4 col-xl-3 galeriaItem">
+          <div class="galeriaItem-inner p-2 rounded">
+            <div class="col-12">
+              <h3>Lorem ipsum dolor sit amet.</h3>
+            </div>
+            <div class="imagenWrapper col-12">
+              <img
+                src="https://images.ctfassets.net/a6zo0szqvm4a/6LsV8wgpmkH8r8ew4elXT2/27ad8cb4abb25313e1a9aa10dba034f8/LookMockAnalyze-tp.svg"
+                alt=""
+              />
+            </div>
+            <div class="textWrapper">
+              <div class="col-12 mt-3">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Officia, cum?
+                </p>
+              </div>
+              <div class="buttonWrapper col-12 mt-3">
+                <div class="row">
+                  <div class="col-12 d-flex justify-content-between">
+                    <div class="buttonContainer">
+                      <button class="btn btn-primary">Button</button>
+                    </div>
+                    <div class="buttonContainer">
+                      <button class="btn btn btn-outline-dark">Button</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="col-12 col-sm-6 col-lg-4 col-xl-3 galeriaItem">
+          <div class="galeriaItem-inner p-2 rounded">
+            <div class="col-12">
+              <h3>Lorem ipsum dolor sit amet.</h3>
+            </div>
+            <div class="imagenWrapper col-12">
+              <img
+                src="https://images.ctfassets.net/a6zo0szqvm4a/2ZJVdgmiLaaDskS9D9jAPp/3369d7076852f001b9bd401f05e8226b/Feature_Canvas-tp.png"
+                alt=""
+              />
+            </div>
+            <div class="textWrapper">
+              <div class="col-12 mt-3">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Officia, cum?
+                </p>
+              </div>
+              <div class="buttonWrapper col-12 mt-3">
+                <div class="row">
+                  <div class="col-12 d-flex justify-content-between">
+                    <div class="buttonContainer">
+                      <button class="btn btn-primary">Button</button>
+                    </div>
+                    <div class="buttonContainer">
+                      <button class="btn btn btn-outline-dark">Button</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="col-12 col-sm-6 col-lg-4 col-xl-3 galeriaItem">
+          <div class="galeriaItem-inner p-2 rounded">
+            <div class="col-12">
+              <h3>Lorem ipsum dolor sit amet.</h3>
+            </div>
+            <div class="imagenWrapper col-12">
+              <img
+                src="https://images.ctfassets.net/a6zo0szqvm4a/6LsV8wgpmkH8r8ew4elXT2/27ad8cb4abb25313e1a9aa10dba034f8/LookMockAnalyze-tp.svg"
+                alt=""
+              />
+            </div>
+            <div class="textWrapper">
+              <div class="col-12 mt-3">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Officia, cum?
+                </p>
+              </div>
+              <div class="buttonWrapper col-12 mt-3">
+                <div class="row">
+                  <div class="col-12 d-flex justify-content-between">
+                    <div class="buttonContainer">
+                      <button class="btn btn-primary">Button</button>
+                    </div>
+                    <div class="buttonContainer">
+                      <button class="btn btn btn-outline-dark">Button</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="col-12 col-sm-6 col-lg-4 col-xl-3 galeriaItem">
+          <div class="galeriaItem-inner p-2 rounded">
+            <div class="col-12">
+              <h3>Lorem ipsum dolor sit amet.</h3>
+            </div>
+            <div class="imagenWrapper col-12">
+              <img
+                src="https://images.ctfassets.net/a6zo0szqvm4a/2ZJVdgmiLaaDskS9D9jAPp/3369d7076852f001b9bd401f05e8226b/Feature_Canvas-tp.png"
+                alt=""
+              />
+            </div>
+            <div class="textWrapper">
+              <div class="col-12 mt-3">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Officia, cum?
+                </p>
+              </div>
+              <div class="buttonWrapper col-12 mt-3">
+                <div class="row">
+                  <div class="col-12 d-flex justify-content-between">
+                    <div class="buttonContainer">
+                      <button class="btn btn-primary">Button</button>
+                    </div>
+                    <div class="buttonContainer">
+                      <button class="btn btn btn-outline-dark">Button</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="col-12 col-sm-6 col-lg-4 col-xl-3 galeriaItem">
+          <div class="galeriaItem-inner p-2 rounded">
+            <div class="col-12">
+              <h3>Lorem ipsum dolor sit amet.</h3>
+            </div>
+            <div class="imagenWrapper col-12">
+              <img
+                src="https://images.ctfassets.net/a6zo0szqvm4a/6LsV8wgpmkH8r8ew4elXT2/27ad8cb4abb25313e1a9aa10dba034f8/LookMockAnalyze-tp.svg"
+                alt=""
+              />
+            </div>
+            <div class="textWrapper">
+              <div class="col-12 mt-3">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Officia, cum?
+                </p>
+              </div>
+              <div class="buttonWrapper col-12 mt-3">
+                <div class="row">
+                  <div class="col-12 d-flex justify-content-between">
+                    <div class="buttonContainer">
+                      <button class="btn btn-primary">Button</button>
+                    </div>
+                    <div class="buttonContainer">
+                      <button class="btn btn btn-outline-dark">Button</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="col-12 col-sm-6 col-lg-4 col-xl-3 galeriaItem">
+          <div class="galeriaItem-inner p-2 rounded">
+            <div class="col-12">
+              <h3>Lorem ipsum dolor sit amet.</h3>
+            </div>
+            <div class="imagenWrapper col-12">
+              <img
+                src="https://images.ctfassets.net/a6zo0szqvm4a/2ZJVdgmiLaaDskS9D9jAPp/3369d7076852f001b9bd401f05e8226b/Feature_Canvas-tp.png"
+                alt=""
+              />
+            </div>
+            <div class="textWrapper">
+              <div class="col-12 mt-3">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Officia, cum?
+                </p>
+              </div>
+              <div class="buttonWrapper col-12 mt-3">
+                <div class="row">
+                  <div class="col-12 d-flex justify-content-between">
+                    <div class="buttonContainer">
+                      <button class="btn btn-primary">Button</button>
+                    </div>
+                    <div class="buttonContainer">
+                      <button class="btn btn btn-outline-dark">Button</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="col-12 col-sm-6 col-lg-4 col-xl-3 galeriaItem">
+          <div class="galeriaItem-inner p-2 rounded">
+            <div class="col-12">
+              <h3>Lorem ipsum dolor sit amet.</h3>
+            </div>
+            <div class="imagenWrapper col-12">
+              <img
+                src="https://images.ctfassets.net/a6zo0szqvm4a/6LsV8wgpmkH8r8ew4elXT2/27ad8cb4abb25313e1a9aa10dba034f8/LookMockAnalyze-tp.svg"
+                alt=""
+              />
+            </div>
+            <div class="textWrapper">
+              <div class="col-12 mt-3">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Officia, cum?
+                </p>
+              </div>
+              <div class="buttonWrapper col-12 mt-3">
+                <div class="row">
+                  <div class="col-12 d-flex justify-content-between">
+                    <div class="buttonContainer">
+                      <button class="btn btn-primary">Button</button>
+                    </div>
+                    <div class="buttonContainer">
+                      <button class="btn btn btn-outline-dark">Button</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="col-12 col-sm-6 col-lg-4 col-xl-3 galeriaItem">
+          <div class="galeriaItem-inner p-2 rounded">
+            <div class="col-12">
+              <h3>Lorem ipsum dolor sit amet.</h3>
+            </div>
+            <div class="imagenWrapper col-12">
+              <img
+                src="https://images.ctfassets.net/a6zo0szqvm4a/6LsV8wgpmkH8r8ew4elXT2/27ad8cb4abb25313e1a9aa10dba034f8/LookMockAnalyze-tp.svg"
+                alt=""
+              />
+            </div>
+            <div class="textWrapper">
+              <div class="col-12 mt-3">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Officia, cum?
+                </p>
+              </div>
+              <div class="buttonWrapper col-12 mt-3">
+                <div class="row">
+                  <div class="col-12 d-flex justify-content-between">
+                    <div class="buttonContainer">
+                      <button class="btn btn-primary">Button</button>
+                    </div>
+                    <div class="buttonContainer">
+                      <button class="btn btn btn-outline-dark">Button</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="col-12 col-sm-6 col-lg-4 col-xl-3 galeriaItem">
+          <div class="galeriaItem-inner p-2 rounded">
+            <div class="col-12">
+              <h3>Lorem ipsum dolor sit amet.</h3>
+            </div>
+            <div class="imagenWrapper col-12">
+              <img
+                src="https://images.ctfassets.net/a6zo0szqvm4a/2ZJVdgmiLaaDskS9D9jAPp/3369d7076852f001b9bd401f05e8226b/Feature_Canvas-tp.png"
+                alt=""
+              />
+            </div>
+            <div class="textWrapper">
+              <div class="col-12 mt-3">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Officia, cum?
+                </p>
+              </div>
+              <div class="buttonWrapper col-12 mt-3">
+                <div class="row">
+                  <div class="col-12 d-flex justify-content-between">
+                    <div class="buttonContainer">
+                      <button class="btn btn-primary">Button</button>
+                    </div>
+                    <div class="buttonContainer">
+                      <button class="btn btn btn-outline-dark">Button</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="col-12 col-sm-6 col-lg-4 col-xl-3 galeriaItem">
+          <div class="galeriaItem-inner p-2 rounded">
+            <div class="col-12">
+              <h3>Lorem ipsum dolor sit amet.</h3>
+            </div>
+            <div class="imagenWrapper col-12">
+              <img
+                src="https://images.ctfassets.net/a6zo0szqvm4a/6LsV8wgpmkH8r8ew4elXT2/27ad8cb4abb25313e1a9aa10dba034f8/LookMockAnalyze-tp.svg"
+                alt=""
+              />
+            </div>
+            <div class="textWrapper">
+              <div class="col-12 mt-3">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Officia, cum?
+                </p>
+              </div>
+              <div class="buttonWrapper col-12 mt-3">
+                <div class="row">
+                  <div class="col-12 d-flex justify-content-between">
+                    <div class="buttonContainer">
+                      <button class="btn btn-primary">Button</button>
+                    </div>
+                    <div class="buttonContainer">
+                      <button class="btn btn btn-outline-dark">Button</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="col-12 col-sm-6 col-lg-4 col-xl-3 galeriaItem">
+          <div class="galeriaItem-inner p-2 rounded">
+            <div class="col-12">
+              <h3>Lorem ipsum dolor sit amet.</h3>
+            </div>
+            <div class="imagenWrapper col-12">
+              <img
+                src="https://images.ctfassets.net/a6zo0szqvm4a/2ZJVdgmiLaaDskS9D9jAPp/3369d7076852f001b9bd401f05e8226b/Feature_Canvas-tp.png"
+                alt=""
+              />
+            </div>
+            <div class="textWrapper">
+              <div class="col-12 mt-3">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Officia, cum?
+                </p>
+              </div>
+              <div class="buttonWrapper col-12 mt-3">
+                <div class="row">
+                  <div class="col-12 d-flex justify-content-between">
+                    <div class="buttonContainer">
+                      <button class="btn btn-primary">Button</button>
+                    </div>
+                    <div class="buttonContainer">
+                      <button class="btn btn btn-outline-dark">Button</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <footer class="p-3 mt-5">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <p>
+            <small>
+              Copyright &copy; 2021 CoderHouse Team | All Rights Reserved.
+            </small>
+          </p>
+          <p>
+            <small>
+              Site made with <i class="bi bi-heart-fill"></i> Jo Repossi.
+            </small>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

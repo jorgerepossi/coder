@@ -5,9 +5,9 @@ input[type="number"],
 textarea {
   outline: none;
   border-width: 1px;
-  border-color: var(--color-bluelight-20);
+  border-color: var(--color-bluelight-200);
   border-style: solid;
-  transition: var(--mywebsite-contant-transition);
+  transition: all 0.5s ease-in-out;
 }
 
 .inputForm {

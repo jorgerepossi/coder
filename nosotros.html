@@ -45,73 +45,108 @@
   <body>
     <!-- Header Nav Section -->
     <header id="headerNav">
-      <section class="center">
+      <section id="headerWrapper" class="center">
         <section
           id="headerWrapper"
           class="flex justify-between content-center items-center"
         >
           <div class="headerItem">
-            <img src="img/logo_text.png" alt="Logo Brand" title="Logo Brand" />
-          </div>
-
-          <div class="headerItem">
-            <nav class="navWrapper">
-              <ul class="navMenuContent flex">
-                <li class="menu-item">
-                  <a href="index.html">
-                    <span>
-                      <span class="menu-item-link"> Home </span>
-                    </span>
-                  </a>
-                </li>
-                <li class="menu-item">
-                  <a href="productos.html" title="Nuestros Productos">
-                    <span>
-                      <span class="menu-item-link"> Productos </span>
-                    </span>
-                  </a>
-                  <ul class="navSubMenuContent">
-                    <li>
-                      <a href="producto.html" class="navSubMenuContent-li-a">
-                        <span> producto 1</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="producto.html" class="navSubMenuContent-li-a">
-                        <span> producto 2</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="producto.html" class="navSubMenuContent-li-a">
-                        <span> producto 3</span>
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="menu-item">
-                  <a href="nosotros.html" title="Quienes Somos" class="active">
-                    <span>
-                      <span class="menu-item-link"> Nosotros </span>
-                    </span>
-                  </a>
-                </li>
-                <li class="menu-item">
-                  <a href="noticias.html" title="Noticias">
-                    <span>
-                      <span class="menu-item-link"> Noticias </span>
-                    </span>
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-
-          <div class="headerItem">
-            <div class="buttonWrapper">
-              <a href="contacto.html" class="active">Contacto</a>
-            </div>
+            <a href="/">
+              <img
+                src="img/logo_text.png"
+                alt="Logo Brand"
+                title="Logo Brand"
+              />
+            </a>
           </div>
         </section>
+
+        <div class="headerItem">
+          <nav class="navWrapper">
+            <ul class="navMenuContent flex">
+              <li class="menu-item">
+                <a href="index.html">
+                  <span>
+                    <span class="menu-item-link"> Home </span>
+                  </span>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="productos.html" title="Nuestros Productos">
+                  <span>
+                    <span class="menu-item-link"> Productos </span>
+                  </span>
+                </a>
+                <ul class="navSubMenuContent">
+                  <li>
+                    <a href="producto.html" class="navSubMenuContent-li-a">
+                      <span> producto 1</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="producto.html" class="navSubMenuContent-li-a">
+                      <span> producto 2</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="producto.html" class="navSubMenuContent-li-a">
+                      <span> producto 3</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item">
+                <a href="nosotros.html" class="active" title="Quienes Somos">
+                  <span>
+                    <span class="menu-item-link"> Nosotros </span>
+                  </span>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="noticias.html" title="Noticias">
+                  <span>
+                    <span class="menu-item-link"> Noticias </span>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="headerItem">
+          <div>
+            <a
+              href="contacto.html"
+              class="button butto-secondary border-radius-big"
+              >Contacto</a
+            >
+          </div>
+        </div>
+
+        <div class="floatNav">
+          <ul class="flex content-center items-center direction-column">
+            <li>
+              <a href="#">
+                <span></span>
+              </a>
+            </li>
+            <li>
+              <a href="#productos">
+                <span></span>
+              </a>
+            </li>
+            <li>
+              <a href="#video">
+                <span></span>
+              </a>
+            </li>
+            <li>
+              <a href="#about">
+                <span></span>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
     </header>
     <!-- Main Section -->
@@ -149,7 +184,7 @@
                 <div class="wrapper-content">
                   <div class="doubleHeading">
                     <div
-                      class="doubleHeading_subtitle boxShadows borderRadiusBig"
+                      class="doubleHeading_subtitle boxShadows border-radius-big"
                     >
                       <span class="smallTitle flex"> NOSOTROS </span>
                     </div>

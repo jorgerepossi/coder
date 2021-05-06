@@ -15,7 +15,7 @@
   font-style: normal;
   font-weight: $font-weight-normal;
   line-height: $line-height-base;
-  text-align: left;
+
   text-align: inherit;
   text-decoration: none;
   text-shadow: none;
@@ -87,4 +87,8 @@
 
 @mixin lineHeight($size) {
   line-height: $size * 1.618;
+}
+
+@mixin col($number) {
+  width: column($number);
 }

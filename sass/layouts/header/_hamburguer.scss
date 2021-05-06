@@ -1,0 +1,51 @@
+.hamburguer-menu {
+  @include samewh(3rem);
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  border-radius: $border-radius-big;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid $color-red-20;
+  &-icon {
+    @include samewh(20px);
+    position: relative;
+
+    span {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 1px;
+      top: 9px;
+      background-color: $color-red-20;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 2px;
+      right: 0;
+      width: 100%;
+      height: 1px;
+      display: block;
+      background-color: $color-red-20;
+      transition: all 0.3s ease-in-out;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 2px;
+      right: 0;
+      width: 100%;
+      height: 1px;
+      display: block;
+      background-color: $color-red-20;
+    }
+
+    &:hover::before {
+      width: 100%;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+}

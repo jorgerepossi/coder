@@ -5,6 +5,14 @@ $breakpoints: (
   xlarge: 2000px,
 );
 
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+) !default;
+
 @mixin mq($key) {
   $size: map-get($breakpoints, $key);
 

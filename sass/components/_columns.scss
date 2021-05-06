@@ -1,0 +1,7 @@
+@if $col > 0 {
+  @for $i from 1 through $col {
+    .col-md-#{$i} {
+      @include col($i);
+    }
+  }
+}

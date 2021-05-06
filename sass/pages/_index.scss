@@ -128,4 +128,13 @@ main {
       }
     }
   }
+
+  .inner-content {
+    padding: 70px 0;
+    border: 1px solid hsl(357, 10%, 90%);
+
+    border-radius: 0.5rem;
+    margin: -120px 0;
+    background-color: #fff;
+  }
 }

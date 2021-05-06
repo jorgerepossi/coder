@@ -5,3 +5,7 @@
 @function lineheight($size) {
   @return $size * 1.618;
 }
+
+@function column($number) {
+  @return percentage($number) * 1 / $grid-columns;
+}

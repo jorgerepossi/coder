@@ -2,6 +2,6 @@
   @include border-radius(var(--border-radius));
 }
 
-.borderRadiusBig {
+.border-radius-big {
   @include border-radius(var(--border-radius-circle));
 }

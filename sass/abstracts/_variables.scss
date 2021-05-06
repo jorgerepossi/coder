@@ -13,19 +13,54 @@ $color-white-10: lighten(
   $color: hsl(0, 0, 95%),
   $amount: 20,
 );
+
 $color-white-20: hsl(0, 0%, 95%);
 $color-white-30: darken(
   $color: $color-white-20,
   $amount: 10,
 );
+
 $color-white-40: darken(
   $color: $color-white-30,
   $amount: 10,
 );
+
 $color-white-50: darken(
   $color: $color-white-40,
   $amount: 10,
 );
+
+// color red
+$color-red-10: lighten(
+  $color: hsl(357, 85%, 52%),
+  $amount: 20,
+);
+
+$color-red-20: hsl(357, 85%, 52%);
+$color-red-30: darken(
+  $color: $color-red-20,
+  $amount: 10,
+);
+
+$color-red-40: darken(
+  $color: $color-red-30,
+  $amount: 10,
+);
+
+$color-red-50: darken(
+  $color: $color-red-40,
+  $amount: 10,
+);
+
+// color Blue
+$color-bl-100: hsl(225, 39%, 90%);
+$color-bl-200: hsl(225, 39%, 80%);
+$color-bl-300: hsl(225, 39%, 70%);
+$color-bl-400: hsl(225, 39%, 60%);
+$color-bl-500: hsl(225, 39%, 50%);
+$color-bl-600: hsl(225, 39%, 40%);
+$color-bl-700: hsl(225, 39%, 30%);
+
 $colors: (
   white: (
     10: $color-white-10,
@@ -35,10 +70,13 @@ $colors: (
     50: $color-white-50,
   ),
   bluelight: (
-    10: hsl(225, 39%, 90%),
-    20: hsl(225, 39%, 81%),
-    30: hsl(225, 39%, 73%),
-    40: hsl(225, 39%, 60%),
+    100: $color-bl-100,
+    200: $color-bl-200,
+    300: $color-bl-300,
+    400: $color-bl-400,
+    500: $color-bl-500,
+    600: $color-bl-600,
+    700: $color-bl-700,
   ),
   green: (
     10: hsl(158, 52%, 61%),
@@ -48,10 +86,10 @@ $colors: (
   ),
   red: (
     10: hsl(357, 100%, 80%),
-    20: hsl(357, 85%, 52%),
-    30: hsl(357, 100%, 40%),
-    40: hsl(357, 100%, 30%),
-    50: hsl(357, 100%, 20%),
+    20: $color-red-20,
+    30: $color-red-30,
+    40: $color-red-40,
+    50: $color-red-50,
   ),
   black: (
     10: hsl(150, 14%, 15%),
@@ -74,6 +112,7 @@ $font-size-h4: moreBigger($font-size-general, 0.7);
 
 $font-family-base: "Inter", sans-serif, system-ui, -apple-system,
   BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, Arial;
+
 $font-weight-normal: inherit;
 $font-sizes: (
   small: (
@@ -93,6 +132,7 @@ $font-sizes: (
     800: 4.375rem,
   ),
 );
+
 $fontSizes: (
   small: (
     general: $font-size-general,
@@ -114,7 +154,7 @@ $line-height-base: inherit;
 
 $fontfamily: (
   global:
-    "'Inter',, sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial",
+    "'Inter',sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial",
   text:
     "'Open Sans',system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,sans-serif",
 );
@@ -173,3 +213,8 @@ $justify-selfs: (
   center: "center",
   stretch: "stretch",
 );
+
+// Columns
+$grid-columns: 12 !default;
+
+$col: $grid-columns;

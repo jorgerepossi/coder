@@ -42,12 +42,13 @@ header {
           @extend .full;
 
           ul {
+            transition: all 0.2s ease-in-out;
+
             &.navSubMenuContent {
               opacity: 0;
-              visibility: hidden;
-              transform: rotateX(0) translateZ(0);
+
               border-radius: 0 0 5px 5px;
-              transition: all var(--mywebsite-contant-transition) ease-in-out;
+
               box-shadow: 11px 10px 38px 0 rgba(46, 63, 99, 0.15);
               background-color: var(--color-base);
               color: var(--color-red-20);
@@ -90,7 +91,8 @@ header {
             ul {
               &.navSubMenuContent {
                 opacity: 1;
-                visibility: visible;
+                transition: all 0.5s ease-in-out;
+
                 transform: rotateX(0) translateZ(0);
                 top: 100%;
               }
@@ -109,7 +111,6 @@ header {
             height: 100%;
             padding: 0px 16px 0px 16px;
             position: relative;
-            transition: var(--mywebsite-contant-transition);
 
             .menu-item-link {
               font-weight: 600;
@@ -128,7 +129,7 @@ header {
 }
 
 @import "./nav";
-
+@import "./hamburguer";
 .floatNav {
   position: fixed;
   right: 2rem;

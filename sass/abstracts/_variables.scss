@@ -6,6 +6,14 @@ $breakpoints: (
   xlarge: 2000px,
 );
 
+$mq-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+) !default;
+
 $transitions: all 0.3s ease-in-out;
 
 // Colors
@@ -218,3 +226,17 @@ $justify-selfs: (
 $grid-columns: 12 !default;
 
 $col: $grid-columns;
+
+//
+$gutter: 0.25rem;
+
+$gutters: (
+  1: $gutter,
+  2: $gutter * 2,
+  3: $gutter * 3,
+  4: $gutter * 4,
+  5: $gutter * 5,
+  6: $gutter * 6,
+  7: $gutter * 7,
+  8: $gutter * 8,
+);

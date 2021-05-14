@@ -39,3 +39,43 @@
     justify-self: #{$position};
   }
 }
+
+// margins
+
+@each $gut, $size in $gutters {
+  .mt-#{$gut} {
+    margin-top: #{$size};
+  }
+}
+
+@each $gut, $size in $gutters {
+  .mb-#{$gut} {
+    margin-bottom: #{$size};
+  }
+}
+
+@each $gut, $size in $gutters {
+  .mx-#{$gut} {
+    margin-left: #{$size};
+    margin-right: #{$size};
+  }
+}
+
+@each $gut, $size in $gutters {
+  .my-#{$gut} {
+    margin-top: #{$size};
+    margin-bottom: #{$size};
+  }
+}
+@each $gut, $size in $gutters {
+  .px-#{$gut} {
+    padding-left: #{$size};
+    padding-right: #{$size};
+  }
+}
+@each $gut, $size in $gutters {
+  .py-#{$gut} {
+    padding-top: #{$size};
+    padding-bottom: #{$size};
+  }
+}

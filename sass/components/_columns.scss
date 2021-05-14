@@ -1,7 +1,21 @@
-@if $col > 0 {
-  @for $i from 1 through $col {
-    .col-md-#{$i} {
-      @include col($i);
+@each $size, $name in $mq-breakpoints {
+  @include mq(#{$size}) {
+    @if $col > 0 {
+      @for $i from 1 through $col {
+        .col-#{$size}-#{$i} {
+          @include col($i);
+        }
+      }
+    }
+  }
+}
+
+@each $size, $name in $mq-breakpoints {
+  @if $col > 0 {
+    @for $i from 1 through $col {
+      .col-#{$size}-#{$i} {
+        @extend %floatleft;
+      }
     }
   }
 }

@@ -6,7 +6,7 @@
   &_content {
     max-width: 100%;
 
-    @include mq(small) {
+    @include mq(sm) {
       max-width: 34.375rem;
     }
   }

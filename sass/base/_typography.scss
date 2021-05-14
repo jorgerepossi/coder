@@ -28,7 +28,7 @@
   font-weight: 900;
   color: var(--color-red-20-outline);
 
-  @include mq(small) {
+  @include mq(sm) {
     font-size: var(--fs-h1);
   }
 
@@ -36,7 +36,7 @@
     font-size: var(--fs-h2);
   }
 
-  @include mq(xlarge) {
+  @include mq(xl) {
     font-size: var(--fs-h3);
   }
 }

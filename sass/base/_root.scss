@@ -16,12 +16,12 @@
   }
 
   @each $screen-size, $font-size in $fontSizes {
-    @if $screen-size == small {
+    @if $screen-size == sm {
       @each $size, $value in $font-size {
         --fs-#{$size}: #{$value};
       }
     } @else {
-      @include mq(small) {
+      @include mq(sm) {
         @each $size, $value in $font-size {
           --fs-#{$size}: #{$value};
         }
@@ -30,12 +30,12 @@
   }
 
   @each $screen-size, $font-size in $font-sizes {
-    @if $screen-size == small {
+    @if $screen-size == sm {
       @each $size, $value in $font-size {
         --fs-#{$size}: #{$value};
       }
     } @else {
-      @include mq(small) {
+      @include mq(sm) {
         @each $size, $value in $font-size {
           --fs-#{$size}: #{$value};
         }

@@ -19,7 +19,9 @@
 .full {
   width: 100%;
 }
-
+.mr-auto {
+  margin: 0px auto;
+}
 .center {
   @extend .full;
 
@@ -30,6 +32,7 @@
 .section {
   &Content {
     padding: var(--padding-big);
+    overflow: hidden;
   }
 
   &InnerContent {

@@ -38,7 +38,7 @@
 
 // Media Queries
 @mixin mq($key) {
-  $size: map-get($breakpoints, $key);
+  $size: map-get($mq-breakpoints, $key);
 
   @media only screen and (min-width: $size) {
     @content;
@@ -91,4 +91,8 @@
 
 @mixin col($number) {
   width: column($number);
+}
+
+%floatleft {
+  float: left;
 }

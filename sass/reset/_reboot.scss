@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
 }
+
 html,
 body,
 div,
@@ -84,6 +85,14 @@ a,
   &:hover {
     text-decoration: none !important;
   }
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600&display=swap");

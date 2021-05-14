@@ -68,8 +68,6 @@ ul {
       }
 
       &__inner {
-        @extend .flex;
-
         @extend .items-center;
 
         margin-top: 20px;

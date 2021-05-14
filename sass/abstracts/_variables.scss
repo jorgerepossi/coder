@@ -123,7 +123,7 @@ $font-family-base: "Inter", sans-serif, system-ui, -apple-system,
 
 $font-weight-normal: inherit;
 $font-sizes: (
-  small: (
+  sm: (
     300: 1rem,
     400: 1.125rem,
     500: 1.563rem,
@@ -131,7 +131,7 @@ $font-sizes: (
     700: 2.438rem,
     800: 3.125rem,
   ),
-  large: (
+  lg: (
     300: 1rem,
     400: 1.438rem,
     500: 2rem,
@@ -142,14 +142,14 @@ $font-sizes: (
 );
 
 $fontSizes: (
-  small: (
+  sm: (
     general: $font-size-general,
     h1: 2rem,
     h2: 1.938rem,
     h3: 1.563rem,
     h4: 0.8rem,
   ),
-  large: (
+  lg: (
     general: $font-size-general,
     h1: $font-size-h1,
     h2: $font-size-h2,

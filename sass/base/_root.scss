@@ -16,26 +16,12 @@
   }
 
   @each $screen-size, $font-size in $fontSizes {
-    @if $screen-size == sm {
+    @if $screen-size == lg {
       @each $size, $value in $font-size {
         --fs-#{$size}: #{$value};
       }
     } @else {
-      @include mq(sm) {
-        @each $size, $value in $font-size {
-          --fs-#{$size}: #{$value};
-        }
-      }
-    }
-  }
-
-  @each $screen-size, $font-size in $font-sizes {
-    @if $screen-size == sm {
-      @each $size, $value in $font-size {
-        --fs-#{$size}: #{$value};
-      }
-    } @else {
-      @include mq(sm) {
+      @include mq(lg) {
         @each $size, $value in $font-size {
           --fs-#{$size}: #{$value};
         }
@@ -46,7 +32,6 @@
   --border-radius: #{$border-radius};
   --border-radius-circle: #{$border-radius-big};
   --global-color-text: #333;
-
   --h1-font: "Lato", sans-serif;
   --h2-font: "Lato", sans-serif;
   --h3-font: "Open Sans", sans-serif;

@@ -124,9 +124,6 @@
 
       span {
         font-weight: 900;
-
-        @extend .flex;
-
         margin-bottom: calc(16px * 1.618);
 
         &::before {
@@ -141,6 +138,7 @@
       margin-bottom: 0.7rem;
       opacity: 0.7;
       font-size: 14px;
+
       @include lineHeight(16px);
     }
   }

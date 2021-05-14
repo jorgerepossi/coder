@@ -79,3 +79,14 @@
     padding-bottom: #{$size};
   }
 }
+
+%floatleft {
+  float: left;
+}
+
+%paddleftright {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}

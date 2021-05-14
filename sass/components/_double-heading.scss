@@ -19,8 +19,6 @@
 
         @include wh(0.5rem, 0.5rem);
 
-        @extend .flex;
-
         background-color: var(--color-green-10);
         border-radius: $border-radius-big;
         margin-right: 0.5rem;

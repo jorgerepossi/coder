@@ -23,21 +23,16 @@
 }
 
 .bigTitle {
-  font-size: var(--fs-h1);
   line-height: 2.5rem;
   font-weight: 900;
   color: var(--color-red-20-outline);
 
   @include mq(sm) {
-    font-size: var(--fs-h1);
-  }
-
-  @include mq(medium) {
     font-size: var(--fs-h2);
   }
 
   @include mq(xl) {
-    font-size: var(--fs-h3);
+    font-size: var(--fs-h1);
   }
 }
 

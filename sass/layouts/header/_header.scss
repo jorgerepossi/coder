@@ -46,9 +46,7 @@ header {
 
             &.navSubMenuContent {
               opacity: 0;
-
               border-radius: 0 0 5px 5px;
-
               box-shadow: 11px 10px 38px 0 rgba(46, 63, 99, 0.15);
               background-color: var(--color-base);
               color: var(--color-red-20);
@@ -92,7 +90,6 @@ header {
               &.navSubMenuContent {
                 opacity: 1;
                 transition: all 0.5s ease-in-out;
-
                 transform: rotateX(0) translateZ(0);
                 top: 100%;
               }
@@ -105,8 +102,6 @@ header {
 
           a {
             @extend .items-center;
-
-            @extend .flex;
 
             height: 100%;
             padding: 0px 16px 0px 16px;
@@ -130,6 +125,7 @@ header {
 
 @import "./nav";
 @import "./hamburguer";
+
 .floatNav {
   position: fixed;
   right: 2rem;

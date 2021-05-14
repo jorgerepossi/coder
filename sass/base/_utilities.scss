@@ -1,5 +1,8 @@
 .container {
+  width: 100%;
   max-width: 90rem;
+  display: block;
+  @extend .mr-auto;
 }
 
 // Borders
@@ -24,7 +27,7 @@
 }
 .center {
   @extend .full;
-
+  flex-wrap: wrap;
   max-width: 90rem;
   margin: 0px auto;
 }

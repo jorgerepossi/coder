@@ -15,7 +15,6 @@
   font-style: normal;
   font-weight: $font-weight-normal;
   line-height: $line-height-base;
-
   text-align: inherit;
   text-decoration: none;
   text-shadow: none;
@@ -29,8 +28,6 @@
 
 // Flex
 @mixin flex-center {
-  @extend .flex;
-
   @extend .justify-center;
 
   @content;
@@ -90,9 +87,6 @@
 }
 
 @mixin col($number) {
-  width: column($number);
-}
-
-%floatleft {
-  float: left;
+  flex: 0 0 column($number);
+  max-width: column($number);
 }

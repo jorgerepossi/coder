@@ -3,18 +3,13 @@ main {
   margin-top: 100px;
 
   .carouselWrapper ul {
-    @extend .flex;
   }
 
   .newsWrapperContent {
-    @extend .flex;
-
     @extend .items-center;
   }
 
   #hero {
-    @extend .flex;
-
     @extend .items-center;
 
     background-color: var(--color-base);

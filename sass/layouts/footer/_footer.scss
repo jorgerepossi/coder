@@ -76,34 +76,9 @@ footer {
 
 @import "bottom-footer";
 
-.brand {
-  @include mq(sm) {
-  }
-
-  @include mq(medium) {
-  }
-
-  @include mq(lg) {
-  }
-}
-
-.contact {
-  @include mq(sm) {
-  }
-
-  @include mq(medium) {
-  }
-
-  @include mq(lg) {
-  }
-}
-
 .sitemap {
   a {
     color: var(--color-red-20);
     font-size: 1rem;
   }
-}
-
-.lastNews {
 }

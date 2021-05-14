@@ -21,10 +21,7 @@
 
 ul {
   &.center {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 1.5rem;
-    margin-top: 2rem;
+    margin-top: 0.3rem;
   }
 }
 

@@ -12,8 +12,12 @@
 }
 
 #sidebar {
-  position: sticky;
-  top: 100px;
+  position: relative;
+  top: 0px;
+  @include mq(md) {
+    position: sticky;
+    top: 90px;
+  }
 }
 
 .post {
@@ -170,8 +174,8 @@
     transition: $transitions;
 
     &:hover {
-      background-color: darken($color: $color-white-20, $amount: 10);
-      color: #010101;
+      background-color: $color-red-20;
+      color: #fff;
     }
   }
 }
@@ -213,10 +217,10 @@
 .title-wrapper {
   text-transform: uppercase;
   font-weight: 800;
-  height: 4rem;
+  height: 3rem;
 
   .title {
-    font-size: 14px;
+    font-size: 0.875rem;
 
     &::before {
       @extend %content;

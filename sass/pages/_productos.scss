@@ -1,4 +1,8 @@
 /* PRODUCTOS  */
+
+#productos {
+  padding-top: 0rem;
+}
 #productos {
   .sectionHeading {
     text-align: center;
@@ -28,6 +32,7 @@ ul {
 .productosWrapper {
   &__ul {
     position: relative;
+    overflow: hidden;
   }
 
   &__li {
@@ -99,6 +104,14 @@ ul {
     &:hover img {
       transform: scale(1.1);
       transition: transform 0.3s ease-in-out;
+    }
+  }
+}
+
+#sidebar {
+  #tags {
+    .tags {
+      flex-wrap: wrap;
     }
   }
 }

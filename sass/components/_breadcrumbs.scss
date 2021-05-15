@@ -14,3 +14,60 @@
     text-align: center;
   }
 }
+
+.overlayed {
+  background-color: #1f2532;
+  display: flex;
+  align-items: center;
+  min-height: 240px;
+  position: relative;
+  overflow: hidden;
+
+  &-picture {
+    position: absolute;
+    width: 100%;
+  }
+
+  &-picture {
+    opacity: 0.1;
+  }
+}
+
+.heading {
+  position: relative;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &-title {
+    position: relative;
+    margin: 0 0 1rem;
+    padding-bottom: 1rem;
+    font-size: 1.8rem;
+
+    &::after {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      content: "";
+      bottom: 0;
+      width: 50px;
+      height: 3px;
+      background-color: $color-red-20;
+    }
+  }
+
+  &-body {
+    max-width: 31.25rem;
+    padding: 0 1rem;
+    text-align: center;
+    p {
+      margin: 0;
+    }
+  }
+}
+
+.heading {
+  flex-basis: 100%;
+}

@@ -575,6 +575,16 @@ template {
   font-size: var(--fs-h4);
 }
 
+::-moz-selection {
+  background: #ed1d27;
+  text-shadow: none;
+}
+
+::selection {
+  background: #ed1d27;
+  text-shadow: none;
+}
+
 .container {
   max-width: 90rem;
   display: block;
@@ -1421,6 +1431,77 @@ textarea {
   text-align: center;
 }
 
+.overlayed {
+  background-color: #1f2532;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 240px;
+  position: relative;
+  overflow: hidden;
+}
+
+.overlayed-picture {
+  position: absolute;
+  width: 100%;
+}
+
+.overlayed-picture {
+  opacity: 0.1;
+}
+
+.heading {
+  position: relative;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.heading-title {
+  position: relative;
+  margin: 0 0 1rem;
+  padding-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.heading-title::after {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  content: "";
+  bottom: 0;
+  width: 50px;
+  height: 3px;
+  background-color: #ed1d27;
+}
+
+.heading-body {
+  max-width: 31.25rem;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.heading-body p {
+  margin: 0;
+}
+
+.heading {
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+}
+
 /*  DoubleHeading */
 .doubleHeading {
   position: relative;
@@ -2111,12 +2192,31 @@ main #hero-heading {
 
 main #productos {
   background-color: white;
+  position: relative;
+  height: 820px;
 }
 
 main #productos .inner-content {
   margin-top: -120px;
-  position: relative;
+  position: absolute;
   z-index: 2;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+
+main #productos .clipPath {
+  width: 100%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
+  clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
+  height: 100vh;
+  max-height: 500px;
 }
 
 main #newsletter {

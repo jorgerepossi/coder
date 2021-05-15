@@ -30,10 +30,28 @@ main {
 
   #productos {
     background-color: $color-white-10;
+    position: relative;
+    height: 820px;
     .inner-content {
       margin-top: -120px;
-      position: relative;
+      position: absolute;
       z-index: 2;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+    }
+    .clipPath {
+      width: 100%;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 1;
+
+      clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
+      height: 100vh;
+      max-height: 500px;
     }
   }
 

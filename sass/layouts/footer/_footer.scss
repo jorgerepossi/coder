@@ -19,7 +19,6 @@ footer {
       overflow: hidden;
       height: 100%;
       background-color: transparent;
-
       line-height: 2.4rem;
 
       p,
@@ -46,9 +45,6 @@ footer {
     img {
       max-width: 180px;
     }
-  }
-
-  &TextContent {
   }
 
   &SocialIcons {
@@ -80,5 +76,37 @@ footer {
   a {
     color: var(--color-red-20);
     font-size: 1rem;
+    display: flex;
+    width: 100%;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    padding-left: 0px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      height: 100%;
+      background-color: $color-red-20;
+      left: 0;
+      right: 0;
+      display: block;
+      z-index: -1;
+      transition: all 0.3s ease-in-out;
+      animation: out 0.3s;
+      animation-direction: alternate;
+      transform-origin: left;
+    }
+
+    &:hover {
+      color: $color-white-20;
+      z-index: 2;
+      padding-left: 10px;
+      transition: all 0.3s ease-in-out;
+
+      &::after {
+        animation: in 0.3s;
+        transition: all 0.3s ease-in-out;
+      }
+    }
   }
 }

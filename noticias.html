@@ -49,95 +49,90 @@
   <body>
     <!-- Header Nav Section -->
     <header id="headerNav">
-      <section class="center">
-        <section
-          id="headerWrapper"
-          class="flex justify-content-between content-center item-center"
-        >
-          <div class="headerItem">
-            <img src="img/logo_text.png" alt="Logo Brand" title="Logo Brand" />
-          </div>
-
-          <div class="headerItem">
-            <nav class="navWrapper">
-              <ul class="navMenuContent flex">
-                <li class="menu-item">
-                  <a href="index.html">
-                    <span>
-                      <span class="menu-item-link"> Home </span>
-                    </span>
-                  </a>
-                </li>
-                <li class="menu-item">
-                  <a href="productos.html" title="Nuestros Productos">
-                    <span>
-                      <span class="menu-item-link"> Productos </span>
-                    </span>
-                  </a>
-                  <ul class="navSubMenuContent">
-                    <li>
-                      <a href="producto.html" class="navSubMenuContent-li-a">
-                        <span> producto 1</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="producto.html" class="navSubMenuContent-li-a">
-                        <span> producto 2</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="producto.html" class="navSubMenuContent-li-a">
-                        <span> producto 3</span>
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="menu-item">
-                  <a href="nosotros.html" title="Quienes Somos">
-                    <span>
-                      <span class="menu-item-link"> Nosotros </span>
-                    </span>
-                  </a>
-                </li>
-                <li class="menu-item">
-                  <a href="noticias.html" title="Noticias" class="active">
-                    <span>
-                      <span class="menu-item-link"> Noticias </span>
-                    </span>
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-
-          <div class="headerItem">
-            <div>
-              <a href="contacto.html" class="button button-primary active"
-                >Contacto</a
-              >
-            </div>
-          </div>
+      <section
+        id="headerWrapper"
+        class="container mx-auto flex justify-between items-center"
+      >
+        <section class="headerItem logo">
+          <a href="/">
+            <img
+              src="http://inokim.jrepossi.com/img/logo_text.png"
+              alt="Logo Brand"
+              title="Logo Brand"
+            />
+          </a>
         </section>
+
+        <section class="headerItem flex items-center">
+          <section>
+            <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+          </section>
+          <section>
+            <a href="contacto.html" class=""> <i class="fa fa-envelope"></i></a>
+          </section>
+          <a href="">
+            <section class="hamburguer-menu">
+              <section class="hamburguer-menu-icon"><span></span></section>
+            </section>
+          </a>
+        </section>
+
+        <div class="floatNav">
+          <ul class="flex content-center items-center direction-column">
+            <li>
+              <a href="#">
+                <span></span>
+              </a>
+            </li>
+            <li>
+              <a href="#productos">
+                <span></span>
+              </a>
+            </li>
+            <li>
+              <a href="#video">
+                <span></span>
+              </a>
+            </li>
+            <li>
+              <a href="#about">
+                <span></span>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
     </header>
+
+    <!-- end  Header Nav Section -->
     <main>
       <section id="breadcrumbs " class="overlayed">
-        <picture class="overlayed-picture">
-          <img
-            src="https://inokim.com/wp-content/uploads/2018/05/scooter.jpg"
-            alt=""
-            class="img-responsive"
-          />
-        </picture>
+        <div
+          class="overlayed-picture"
+          style="
+            background-image: url(img/contacto.jpg);
+            max-height: 300px;
+            height: 100%;
+          "
+        ></div>
+
         <div class="center">
           <section class="breadcrumbWrapper flex">
             <div class="heading">
-              <h1 class="heading-title">Noticias</h1>
+              <h1 class="heading-title">Inokim Magazine</h1>
+              <div class="heading-body">
+                <p class="globalText">
+                  <span>
+                    Te presentamos las últimas noticias asociadas a la mejor
+                    marca del scooters del mundo.</span
+                  >
+                </p>
+              </div>
             </div>
           </section>
         </div>
       </section>
-      <section class="center mt-3">
+      <section class="center mt-7 py-8">
         <section class="flex flex-wrap">
           <section id="" class="col-12 col-md-12 col-lg-9">
             <article class="post">
@@ -394,8 +389,20 @@
                       />
                     </div>
                     <div class="recentPost_content">
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                      Sed, obcaecati.
+                      ¡Nuevo servicio de alquiler de monopatines INOKIM por
+                      meses en Buenos Aires
+                    </div>
+                  </li>
+                  <li class="flex flex-wrap">
+                    <div class="recentPost_image">
+                      <img
+                        src="/img/noticias/MG_1000-80x20.jpg"
+                        alt="Recent Post"
+                        class="fullWidth"
+                      />
+                    </div>
+                    <div class="recentPost_content">
+                      Las 10 razones para elegir un monopatin eléctrico Inokim.
                     </div>
                   </li>
                   <li class="flex flex-wrap">
@@ -407,46 +414,12 @@
                       />
                     </div>
                     <div class="recentPost_content">
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                      Sed, obcaecati.
-                    </div>
-                  </li>
-                  <li class="flex flex-wrap">
-                    <div class="recentPost_image">
-                      <img
-                        src="img/imagen-small.jpg"
-                        alt="Recent Post"
-                        class="img-fluid"
-                      />
-                    </div>
-                    <div class="recentPost_content">
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                      Sed, obcaecati.
+                      Emovity abre su primera tienda en Buenos Aires.
                     </div>
                   </li>
                 </ul>
               </article>
-              <article id="tags" class="w-100 pt-5">
-                <div class="title-wrapper">
-                  <span class="title"> Tags</span>
-                </div>
-                <div class="">
-                  <ul class="flex justify-center flex-wrap">
-                    <li class="tag-item">Inokim</li>
-                    <li class="tag-item">Scooter</li>
-                    <li class="tag-item">Monopatin</li>
-                    <li class="tag-item">Patinetes</li>
-                    <li class="tag-item">Bateria</li>
-                    <li class="tag-item">Inokim OXO</li>
-                    <li class="tag-item">Inokim OX SUPER</li>
-                    <li class="tag-item">Frenos ajustados</li>
-                    <li class="tag-item">Quick4</li>
-                    <li class="tag-item">Vida útil</li>
-                    <li class="tag-item">Frenos ajustados</li>
-                    <li class="tag-item">KIMI</li>
-                  </ul>
-                </div>
-              </article>
+
               <article id="gallery" class="w-100 pt-5">
                 <div class="title-wrapper">
                   <span class="title"> Galeria</span>
@@ -507,6 +480,27 @@
                     </div>
                   </li>
                 </ul>
+              </article>
+              <article id="tags" class="w-100 pt-5">
+                <div class="title-wrapper">
+                  <span class="title"> Tags</span>
+                </div>
+                <div class="">
+                  <ul class="flex justify-center flex-wrap">
+                    <li class="tag-item">Inokim</li>
+                    <li class="tag-item">Scooter</li>
+                    <li class="tag-item">Monopatin</li>
+                    <li class="tag-item">Patinetes</li>
+                    <li class="tag-item">Bateria</li>
+                    <li class="tag-item">Inokim OXO</li>
+                    <li class="tag-item">Inokim OX SUPER</li>
+                    <li class="tag-item">Frenos ajustados</li>
+                    <li class="tag-item">Quick4</li>
+                    <li class="tag-item">Vida útil</li>
+                    <li class="tag-item">Frenos ajustados</li>
+                    <li class="tag-item">KIMI</li>
+                  </ul>
+                </div>
               </article>
             </div>
           </aside>

@@ -402,7 +402,6 @@ template {
 
 .superBigTitle span {
   font-size: 2.375rem;
-  display: block;
 }
 
 @media only screen and (min-width: 576px) {
@@ -519,6 +518,12 @@ template {
   width: 100%;
 }
 
+.primary-bg {
+  background-color: #ed1d27;
+  color: #f2f2f2;
+  padding: 0 0.5rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -567,6 +572,11 @@ img {
 .fullWidth {
   max-width: 100%;
   height: auto;
+}
+
+.scale-15 {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
 }
 
 .formGroup input,
@@ -1403,7 +1413,7 @@ textarea {
 /*  DoubleHeading */
 .doubleHeading {
   position: relative;
-  max-width: 550px;
+  max-width: 560px;
 }
 
 .doubleHeading_subtitle {
@@ -1959,7 +1969,7 @@ header {
 .hamburguer-menu {
   width: 2.5rem;
   height: 2.5rem;
-  background-color: transparent;
+  background-color: #ed1d27;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1987,33 +1997,31 @@ header {
   position: relative;
   display: block;
   width: 100%;
-  height: 1px;
+  height: 2px;
   top: 9px;
-  background-color: #ed1d27;
+  background-color: #f2f2f2;
+}
+
+.hamburguer-menu-icon::before,
+.hamburguer-menu-icon::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: #f2f2f2;
+  display: block;
 }
 
 .hamburguer-menu-icon::before {
-  content: "";
-  position: absolute;
   top: 2px;
   right: 0;
-  width: 100%;
-  height: 1px;
-  display: block;
-  background-color: #ed1d27;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
 .hamburguer-menu-icon::after {
-  content: "";
-  position: absolute;
   bottom: 2px;
   right: 0;
-  width: 100%;
-  height: 1px;
-  display: block;
-  background-color: #ed1d27;
 }
 
 .hamburguer-menu-icon:hover::before {
@@ -2099,6 +2107,10 @@ main #hero-heading {
 @media only screen and (min-width: 576px) {
   main #hero-heading {
     height: 750px;
+    padding-top: 0rem;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
 }
 
@@ -2157,12 +2169,37 @@ main #productos .clipPath {
 
 main #newsletter {
   position: relative;
-  background-image: url("../img/newsletter-bg.png");
-  background-position: center center;
 }
 
 main #newsletter .newsletterWrapper {
   z-index: 2;
+}
+
+main #newsletter .formNewsletter form {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 768px) {
+  main #newsletter .formNewsletter form {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+  }
 }
 
 main #video {
@@ -2407,16 +2444,7 @@ ul.center {
   .contentWrapper
   .tinyImagenWrapper
   ul.tinyimagenWrapper_ul {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(14.375rem, 1fr)) [auto-fit];
-  grid-template-columns: repeat(auto-fit, minmax(14.375rem, 1fr));
-  grid-gap: 20px;
   padding: 20px 0;
-}
-
-#producto #imagenContentWrapper .contentWrapper .tinyImagenWrapper ul li {
-  padding: 1.6rem;
 }
 
 #producto #infoContentWrapper {
@@ -2462,14 +2490,6 @@ ul.center {
 #sidebar {
   position: relative;
   top: 0px;
-}
-
-@media only screen and (min-width: 768px) {
-  #sidebar {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 90px;
-  }
 }
 
 .post h2 {
@@ -2597,6 +2617,15 @@ ul.center {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   opacity: 0.5;
+}
+
+@media only screen and (min-width: 768px) {
+  #tags {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 90px;
+    color: #2f3e6a;
+  }
 }
 
 #tags .tag-item {

@@ -14,10 +14,6 @@
 #sidebar {
   position: relative;
   top: 0px;
-  @include mq(md) {
-    position: sticky;
-    top: 90px;
-  }
 }
 
 .post {
@@ -165,6 +161,12 @@
 }
 
 #tags {
+  @include mq(md) {
+    position: sticky;
+    top: 90px;
+    color: $color-bl-700;
+  }
+
   .tag-item {
     padding: 0.5rem 0.6rem;
     margin: 0.3rem auto;

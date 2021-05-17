@@ -61,6 +61,12 @@
   width: 100%;
 }
 
+.primary-bg {
+  background-color: $color-red-20;
+  color: $color-white-20;
+  padding: 0 0.5rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -116,6 +122,10 @@ img {
 
   max-width: 100%;
   height: auto;
+}
+
+.scale-15 {
+  transform: scale(1.5);
 }
 
 .imgWrapper {

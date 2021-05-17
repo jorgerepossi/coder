@@ -12,9 +12,11 @@ main {
 
     position: fixed;
     background-color: rgba(0, 0, 0, 0.6);
+
     @include mq(sm) {
       background-color: hsl(0, 0%, 80%);
     }
+
     background-blend-mode: multiply;
     background-image: url("../img/hero.jpg");
     background-position: top center;
@@ -26,14 +28,16 @@ main {
       height: 800px;
       background-size: cover;
     }
-  }
+    &-heading {
+      height: 610px;
+      align-items: baseline;
+      padding-top: 5rem;
 
-  #hero-heading {
-    height: 610px;
-    align-items: baseline;
-    padding-top: 5rem;
-    @include mq(sm) {
-      height: 750px;
+      @include mq(sm) {
+        height: 750px;
+        padding-top: 0rem;
+        align-items: center;
+      }
     }
   }
 
@@ -83,10 +87,22 @@ main {
 
   #newsletter {
     position: relative;
-    background-image: url("../img/newsletter-bg.png");
-    background-position: center center;
+
     .newsletterWrapper {
       z-index: 2;
+    }
+    .formNewsletter form {
+      flex-direction: column;
+      display: flex;
+      width: 100%;
+      justify-content: center;
+    }
+    @include mq(md) {
+      .formNewsletter form {
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+      }
     }
   }
 
@@ -121,9 +137,11 @@ main {
     @include mq(md) {
       height: 680px;
     }
+
     @include mq(lg) {
       height: 800px;
     }
+
     @include mq(xl) {
       height: 980px;
     }

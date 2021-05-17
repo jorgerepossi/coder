@@ -13,7 +13,7 @@ main {
     position: fixed;
     background-color: rgba(0, 0, 0, 0.6);
 
-    @include mq(sm) {
+    @include mq(xl) {
       background-color: hsl(0, 0%, 80%);
     }
 
@@ -24,19 +24,41 @@ main {
     width: 100%;
     height: 690px;
 
-    @include mq(md) {
-      height: 800px;
+    @include mq(xs) {
+      background-position: top right;
+
+      width: 100%;
+      height: 690px;
       background-size: cover;
     }
+
+    @include mq(md) {
+      height: 800px;
+    }
+
     &-heading {
       height: 610px;
       align-items: baseline;
       padding-top: 5rem;
 
-      @include mq(sm) {
+      @include mq(xs) {
         height: 750px;
         padding-top: 0rem;
         align-items: center;
+      }
+
+      .doubleHeading_subtitle {
+        animation: fadeIn 0.8s ease-in-out;
+      }
+
+      h2 {
+        animation: fadeIn 1s ease-in-out;
+      }
+      p {
+        animation: fadeIn 1.2s ease-in-out;
+      }
+      a {
+        animation: fadeIn 1.4s ease-in-out;
       }
     }
   }
@@ -59,7 +81,7 @@ main {
     }
 
     .inner-content {
-      margin-top: -120px;
+      margin-top: 0px;
       position: relative;
       z-index: 2;
       left: 0;
@@ -69,6 +91,7 @@ main {
 
       @include mq(md) {
         position: absolute;
+        margin-top: -120px;
       }
     }
 
@@ -91,12 +114,14 @@ main {
     .newsletterWrapper {
       z-index: 2;
     }
+
     .formNewsletter form {
       flex-direction: column;
       display: flex;
       width: 100%;
       justify-content: center;
     }
+
     @include mq(md) {
       .formNewsletter form {
         flex-direction: row;

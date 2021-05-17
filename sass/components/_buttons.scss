@@ -27,7 +27,7 @@
     z-index: 1;
     border-radius: 50px;
     transition: all 0.4s cubic-bezier(0.29, 0.02, 0.39, 0.71);
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: hsla(0, 0%, 0%, 0.2);
   }
 
   &:hover {
@@ -67,7 +67,10 @@
 
   background-color: var(--color-base);
   margin: 0.2rem;
-
+  span {
+    position: relative;
+    z-index: 1;
+  }
   &-primary {
     @include button-content(
       var(--color-base),

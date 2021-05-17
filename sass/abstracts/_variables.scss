@@ -174,20 +174,20 @@ $display: (
   inline-flex: "inline-flex",
 );
 
-//col-reverse: "column-reverse",
+//in-reverse: "column-reverse",
 // row-reverse: "row-reverse",
 $directions: (
   row: "row",
   column: "column",
 );
 
+//evenly: "space-evenly",
 $align-contents: (
   center: "center",
   start: "flex-start",
   end: "flex-end",
   between: "space-between",
   around: "space-around",
-  evenly: "space-evenly",
 );
 
 //baseline: "baseline",
@@ -214,13 +214,13 @@ $justify-items: (
   center: "center",
 );
 
-/* $justify-selfs: (
-  auto: "auto",
-  start: "start",
-  end: "flex-end",
-  center: "center",
-  stretch: "stretch",
-); */
+// $justify-selfs: (
+// auto: "auto",
+// start: "start",
+// end: "flex-end",
+// center: "center",
+// stretch: "stretch",
+//);
 
 // Columns
 $grid-columns: 12 !default;

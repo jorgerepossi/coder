@@ -2,7 +2,7 @@ header {
   position: fixed;
   background-color: var(--color-base);
   border-bottom: 1px solid var(--color-border);
-  font-family: var(--mywebsite-html-font);
+  font-family: var(--font-familt-global);
   width: 100%;
   z-index: 9;
   top: 0;
@@ -23,7 +23,7 @@ header {
       max-width: 120px;
     }
 
-    ul {
+    /*  ul {
       height: 100%;
       text-transform: uppercase;
       align-content: center;
@@ -114,11 +114,11 @@ header {
           }
         }
       }
-    }
+    } */
   }
 }
 
-@import "./nav";
+//@import "./nav";
 @import "./hamburguer";
 
 .floatNav {

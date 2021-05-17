@@ -10,15 +10,27 @@
 }
 
 .superBigTitle {
-  font-size: 4.375rem;
+  @include lineHeight(2rem);
 
-  @include lineHeight(3rem);
-
+  font-size: 2.375rem;
   font-weight: 900;
+  color: $color-white-20;
+
+  @include mq(sm) {
+    font-size: 4.375rem;
+
+    @include lineHeight(3rem);
+
+    color: $boder-color;
+  }
 
   span {
-    font-size: 4.375rem;
+    font-size: 2.375rem;
     display: block;
+
+    @include mq(sm) {
+      font-size: 4.375rem;
+    }
   }
 }
 
@@ -38,4 +50,8 @@
 
 .smallTitle {
   font-size: var(--fs-h4);
+}
+
+.text-white {
+  color: $color-white-20;
 }

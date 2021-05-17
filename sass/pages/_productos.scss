@@ -31,9 +31,9 @@ ul {
 }
 
 .productosWrapper {
+  overflow: hidden;
   &__ul {
     position: relative;
-    overflow: hidden;
   }
 
   &__li {

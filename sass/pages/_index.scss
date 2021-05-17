@@ -11,7 +11,10 @@ main {
     @extend .items-center;
 
     position: fixed;
-    background-color: hsl(0, 0%, 80%);
+    background-color: rgba(0, 0, 0, 0.6);
+    @include mq(sm) {
+      background-color: hsl(0, 0%, 80%);
+    }
     background-blend-mode: multiply;
     background-image: url("../img/hero.jpg");
     background-position: top center;
@@ -26,7 +29,12 @@ main {
   }
 
   #hero-heading {
-    height: 750px;
+    height: 610px;
+    align-items: baseline;
+    padding-top: 5rem;
+    @include mq(sm) {
+      height: 750px;
+    }
   }
 
   #productos {
@@ -75,9 +83,11 @@ main {
 
   #newsletter {
     position: relative;
-    background-color: #f5f5f5;
     background-image: url("../img/newsletter-bg.png");
     background-position: center center;
+    .newsletterWrapper {
+      z-index: 2;
+    }
   }
 
   #video {
@@ -100,7 +110,21 @@ main {
 
     height: 690px;
 
+    @include mq(xs) {
+      height: 380px;
+    }
+
+    @include mq(sm) {
+      height: 480px;
+    }
+
+    @include mq(md) {
+      height: 680px;
+    }
     @include mq(lg) {
+      height: 800px;
+    }
+    @include mq(xl) {
       height: 980px;
     }
 
@@ -115,6 +139,16 @@ main {
       clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
       height: 100vh;
       max-height: 500px;
+
+      @include mq(xs) {
+        height: 100vh;
+        max-height: 380px;
+      }
+
+      @include mq(md) {
+        height: 100vh;
+        max-height: 430px;
+      }
     }
 
     .videoWrapper {

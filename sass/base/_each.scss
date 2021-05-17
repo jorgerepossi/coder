@@ -34,11 +34,11 @@
   }
 }
 
-@each $classname, $position in $justify-selfs {
-  .justify-self-#{$classname} {
-    justify-self: #{$position};
-  }
-}
+//@each $classname, $position in $justify-selfs {
+//.justify-self-#{$classname} {
+//  justify-self: #{$position};
+//}
+//}
 
 // margins
 

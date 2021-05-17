@@ -174,11 +174,11 @@ $display: (
   inline-flex: "inline-flex",
 );
 
+//col-reverse: "column-reverse",
+// row-reverse: "row-reverse",
 $directions: (
   row: "row",
-  row-reverse: "row-reverse",
   column: "column",
-  col-reverse: "column-reverse",
 );
 
 $align-contents: (
@@ -190,37 +190,37 @@ $align-contents: (
   evenly: "space-evenly",
 );
 
+//baseline: "baseline",
+//stretch: "stretch",
 $align-items: (
   start: "flex-start",
   end: "flex-end",
   center: "center",
-  baseline: "baseline",
-  stretch: "stretch",
 );
 
+//evenly: "space-evenly",
 $justify-contents: (
   start: "flex-start",
   end: "flex-end",
   center: "center",
   between: "space-between",
   around: "space-around",
-  evenly: "space-evenly",
 );
 
+//stretch: "stretch",
 $justify-items: (
   start: "start",
   end: "flex-end",
   center: "center",
-  stretch: "stretch",
 );
 
-$justify-selfs: (
+/* $justify-selfs: (
   auto: "auto",
   start: "start",
   end: "flex-end",
   center: "center",
   stretch: "stretch",
-);
+); */
 
 // Columns
 $grid-columns: 12 !default;

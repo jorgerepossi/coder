@@ -12,7 +12,28 @@
       name="keywords"
       content="Inokim Argentina, Acualización Inokim, Inokim, monopatines, MONOPATINES, monopatines eléctricos, vehículos eléctricos"
     />
+    <meta name="theme-color" content="#ffffff" />
     <link rel="icon" href="img/cropped-favicon-1-32x32.png" sizes="32x32" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="120x120"
+      href="http://inokim.jrepossi.com/ico/favicon_120.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="152x152"
+      href="http://inokim.jrepossi.com/ico/favicon_152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="http://inokim.jrepossi.com/ico/favicon_180.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="http://inokim.jrepossi.com/ico/favicon_192.png"
+    />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
@@ -217,15 +238,6 @@
         <div class="clipPath"></div>
         <div class="mx-auto container">
           <div class="videoWrapper">
-            <!-- <video
-              width="100%"
-              controls
-              autoplay
-              loop
-              poster="img/video-poster.jpg"
-            >
-              <source type="video/mp4" src="videos/inokim.mp4" />
-            </video> -->
             <iframe
               width="100%"
               height="100%"
@@ -242,15 +254,18 @@
       <section id="about" class="sectionContent">
         <div class="mx-auto container">
           <div class="sectionContent_wrapper flex center">
-            <div class="imgWrapper col-xs-12 col-sm-12 col-md-12 col-lg-6">
-              <img
-                src="img/about.jpg"
-                alt=" imagen about us"
-                class="fullWidth"
-              />
+            <div class="imgWrapper col-xs-12 col-sm-12 col-md-12 col-lg-6 my-7">
+              <a href="/nosotros.html" title="Nosotros ">
+                <img
+                  src="img/about.jpg"
+                  alt=" Acerca de nosotros"
+                  title="Acerca de nosotros"
+                  class="fullWidth"
+                />
+              </a>
             </div>
             <div
-              class="sectionContent_wrapper-content col-xs-12 col-sm-12 col-md-12 col-lg-6"
+              class="sectionContent_wrapper-content col-xs-12 col-sm-12 col-md-12 col-lg-6 my-7"
             >
               <div class="wrapper-content">
                 <div class="doubleHeading">
@@ -277,7 +292,7 @@
                   <div class="accordion mt-5" id="accordionExample">
                     <div class="card">
                       <div class="card-header" id="headingOne">
-                        <h2 class="mb-0">
+                        <h2 class="mb-1">
                           <button
                             class="btn btn-link btn-block text-left collapsed"
                             type="button"
@@ -312,7 +327,7 @@
                     </div>
                     <div class="card">
                       <div class="card-header" id="headingTwo">
-                        <h2 class="mb-0">
+                        <h2 class="mb-1">
                           <button
                             class="btn btn-link btn-block text-left collapsed"
                             type="button"
@@ -344,7 +359,7 @@
                     </div>
                     <div class="card">
                       <div class="card-header" id="headingThree">
-                        <h2 class="mb-0">
+                        <h2 class="mb-1">
                           <button
                             class="btn btn-link btn-block text-left collapsed"
                             type="button"
@@ -383,8 +398,36 @@
       </section>
 
       <!-- #Newsletter -->
-      <section id="newsletter" class="sectionContent">
-        <div class="mx-auto container">
+      <section id="newsletter" class="sectionContent overlayed">
+        <picture class="overlayed-picture">
+          <source
+            media="(max-width: 991px)"
+            type="image/webp"
+            srcset="img/nosotros-hero-mobile.webp 991w"
+          />
+          <source
+            media="(max-width: 992px)"
+            type="image/webp"
+            srcset="img/nosotros-hero.webp 992w"
+          />
+
+          <source
+            media="(max-width: 991px)"
+            type="image/jpeg"
+            srcset="img/nosotros-hero-mobile.jpg 991w"
+          />
+          <source
+            media="(max-width: 992px)"
+            type="image/jpeg"
+            srcset="img/nosotros-hero 992w"
+          />
+          <img
+            src="/img/nosotros-hero.jpg"
+            alt=" Newsletter"
+            class="fullWidth"
+          />
+        </picture>
+        <div class="center">
           <div class="flex">
             <div class="newsletterWrapper">
               <div class="flex align-center">
@@ -394,16 +437,18 @@
                       class="doubleHeading_subtitle boxShadows border-radius-big"
                     >
                       <span class="smallTitle flex">
-                        SUSCRIBITE AL NEWSLETTER
+                        Recibí la mejor información
                       </span>
                     </div>
                     <div class="doubleHeading_title">
-                      <h2 class="bigTitle">Lorem Ipsum Dolor Sit</h2>
+                      <h2 class="bigTitle">SUSCRIBITE AL NEWSLETTER</h2>
                     </div>
-                    <div class="doubleHeading_content">
+                    <div class="doubleHeading_content text-white">
                       <p class="globalText">
-                        Quisque sit amet mauris in turpis tincidunt vestibulum
-                        ut sed risus.
+                        Enterate de las últimas noticias, promociones y
+                        descuentos que Inokim tiene para vos! Podes tener tu
+                        monopatín ideal, suscribite para poder obtener estos y
+                        más beneficios!
                       </p>
                     </div>
                   </div>
@@ -412,13 +457,13 @@
                       <input
                         type="text"
                         name="name"
-                        placeholder="YOUR NAME"
+                        placeholder="Juan Juanes"
                         class="inputForm"
                       />
                       <input
                         type="email"
                         name="email"
-                        placeholder="YOUR EMAIL"
+                        placeholder="ejemplo@mail.com"
                         class="inputForm"
                       />
                       <button
@@ -472,7 +517,7 @@
                 </div>
               </div>
             </div>
-            <div class="imgWrapper col-xs-12 col-sm-12 col-md-12 col-lg-6">
+            <div class="imgWrapper col-xs-12 col-sm-12 col-md-12 col-lg-6 my-7">
               <a href="noticias.html">
                 <img
                   src="img/noticias-box.jpg"
@@ -590,7 +635,7 @@
                   <span> CONTACTO</span>
                 </h3>
               </div>
-              <div class="footerItem-content mt-4 mb-5">
+              <div class="footerItem-content mt-4 mb-5 py-1">
                 <p>Calle falsa 123 - Buenos Aires</p>
                 <p>
                   <a href="mailto:info@webmail.com "> info@webmail.com </a>
@@ -611,7 +656,7 @@
               </div>
               <div class="footerItem-content mt-4 mb-5">
                 <div class="footerItem-content_item">
-                  <p>Maecenas quis porttitor lorem, quis egestas tortor.</p>
+                  <p>¿Cómo mejorar la vida útil de mi monopatín eléctrico?</p>
                   <span> Febrero 03, 2021 </span>
                 </div>
                 <div class="footerItem-content_item">
@@ -637,6 +682,12 @@
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
       crossorigin="anonymous"
     ></script>
   </body>

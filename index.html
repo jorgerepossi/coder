@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | Inokim</title>
     <meta
       name="description"
       content="Home | Inokim. Web oficiale de monopatines Inokim en Argentina."
@@ -12,6 +13,19 @@
       name="keywords"
       content="Inokim Argentina, Acualización Inokim, Inokim, monopatines, MONOPATINES, monopatines eléctricos, vehículos eléctricos"
     />
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Home | Inokim." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://inokim.jrepossi.com/" />
+    <meta
+      property="og:image"
+      content="http://inokim.jrepossi.com/img/meta-logo.jpg"
+    />
+    <meta
+      property="og:description"
+      content="Home | Inokim. Web oficiale de monopatines Inokim en Argentina."
+    />
+
     <meta name="theme-color" content="#ffffff" />
     <link rel="icon" href="img/cropped-favicon-1-32x32.png" sizes="32x32" />
     <link
@@ -41,11 +55,10 @@
       crossorigin="anonymous"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600&display=optional"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/main.css" />
-    <title>Home | Inokim</title>
   </head>
 
   <body>
@@ -61,6 +74,8 @@
               src="http://inokim.jrepossi.com/img/logo_text.png"
               alt="Logo Brand"
               title="Logo Brand"
+              width="100%"
+              height="100%"
             />
           </a>
         </section>
@@ -82,22 +97,22 @@
         <div class="floatNav">
           <ul class="flex content-center items-center direction-column">
             <li>
-              <a href="#">
+              <a href="#hero-heading" class="scroll_to">
                 <span></span>
               </a>
             </li>
             <li>
-              <a href="#productos">
+              <a href="#productos" class="scroll_to">
                 <span></span>
               </a>
             </li>
             <li>
-              <a href="#video">
+              <a href="#video" class="scroll_to">
                 <span></span>
               </a>
             </li>
             <li>
-              <a href="#about">
+              <a href="#newsWrapper" class="scroll_to">
                 <span></span>
               </a>
             </li>
@@ -140,6 +155,7 @@
                   href="productos.html"
                   class="button button-primary border-radius-big"
                   type="button"
+                  data-role="button"
                 >
                   <span> IR A PRODUCTOS </span>
                 </a>
@@ -173,10 +189,22 @@
                 <a href="producto.html">
                   <div class="itemimagen productosItem">
                     <div class="imagenWrapper">
-                      <img
-                        src="img/productos/prod-1.jpg"
-                        alt="imagen productos fullWidth"
-                      />
+                      <picture>
+                        <source
+                          media="(max-width: 991px)"
+                          type="image/webp"
+                          srcset="
+                            http://inokim.jrepossi.com/img/productos/prod-1.webp 991w
+                          "
+                        />
+                        <img
+                          src="http://inokim.jrepossi.com/img/productos/prod-1.jpg"
+                          alt="imagen productos"
+                          width="100%"
+                          height="100%"
+                          loading="lazy"
+                        />
+                      </picture>
                       <div class="imagenWrapper__text">
                         <div class="imagenWrapper__inner flex">
                           <span> </span>
@@ -193,10 +221,23 @@
               <li class="productosWrapper__li in-xs-12 in-md-4">
                 <div class="itemimagen productosItem">
                   <div class="imagenWrapper">
-                    <img
-                      src="img/productos/prod-2.jpg"
-                      alt="imagen productos fullWidth"
-                    />
+                    <picture>
+                      <source
+                        media="(max-width: 991px)"
+                        type="image/webp"
+                        srcset="
+                          http://inokim.jrepossi.com/img/productos/prod-2.webp 991w
+                        "
+                      />
+                      <img
+                        src="http://inokim.jrepossi.com/img/productos/prod-2.jpg"
+                        alt="imagen productos "
+                        width="100%"
+                        height="100%"
+                        loading="lazy"
+                      />
+                    </picture>
+
                     <div class="imagenWrapper__text">
                       <div class="imagenWrapper__inner flex">
                         <span> </span>
@@ -214,10 +255,23 @@
               <li class="productosWrapper__li in-xs-12 in-md-4">
                 <div class="itemimagen productosItem">
                   <div class="imagenWrapper">
-                    <img
-                      src="img/productos/prod-3.jpg"
-                      alt="imagen productos fullWidth"
-                    />
+                    <picture>
+                      <source
+                        media="(max-width: 991px)"
+                        type="image/webp"
+                        srcset="
+                          http://inokim.jrepossi.com/img/productos/prod-3.webp 991w
+                        "
+                      />
+                      <img
+                        src="http://inokim.jrepossi.com/img/productos/prod-3.jpg"
+                        alt="imagen productos "
+                        width="100%"
+                        height="100%"
+                        loading="lazy"
+                      />
+                    </picture>
+
                     <div class="imagenWrapper__text">
                       <div class="imagenWrapper__inner flex">
                         <span> </span>
@@ -251,144 +305,70 @@
           </div>
         </div>
       </section>
-      <!-- #About Us -->
-      <section id="about" class="sectionContent">
+
+      <section id="newsWrapper" class="sectionContent">
         <div class="mx-auto container">
           <div class="sectionContent_wrapper flex center">
-            <div class="imgWrapper in-xs-12 in-sm-12 in-md-12 in-lg-6 my-7">
-              <a href="/nosotros.html" title="Nosotros ">
-                <img
-                  src="img/about.jpg"
-                  alt=" Acerca de nosotros"
-                  title="Acerca de nosotros"
-                  class="fullWidth"
-                />
-              </a>
+            <div
+              class="sectionContent_wrapper-content in-xs-12 in-sm-12 in-md-12 in-lg-6"
+            >
+              <div class="doubleHeading in-xs-12 in-lg-9">
+                <div
+                  class="doubleHeading_subtitle boxShadows border-radius-big"
+                >
+                  <span class="smallTitle flex"> NOTICIAS INOKIM </span>
+                </div>
+                <div class="doubleHeading_title">
+                  <h2 class="bigTitle">
+                    ¿Cómo mejorar la vida útil de mi monopatín eléctrico?
+                  </h2>
+                </div>
+                <div class="doubleHeading_content">
+                  <p class="globalText">
+                    Si el patinete se va a quedar aparcado durante algunos
+                    meses, hazlo con la batería llena y recárgala regularmente
+                    (aproximadamente cada mes). La batería no debería estar
+                    descargada completamente demasiado tiempo porqué podría
+                    estropearse, en algunos casos, irremediablemente.
+                  </p>
+                </div>
+                <div>
+                  <a
+                    href="noticias.html"
+                    class="button button-primary border-radius-big"
+                  >
+                    <span> Ir a Noticias </span></a
+                  >
+                </div>
+              </div>
             </div>
             <div
-              class="sectionContent_wrapper-content in-xs-12 in-sm-12 in-md-12 in-lg-6 my-7"
+              class="imgWrapper team-item in-xs-12 in-sm-12 in-md-12 in-lg-6 my-7"
             >
-              <div class="wrapper-content">
-                <div class="doubleHeading">
-                  <div
-                    class="doubleHeading_subtitle boxShadows border-radius-big"
-                  >
-                    <span class="smallTitle flex"> NOSOTROS </span>
-                  </div>
-                  <div class="doubleHeading_title">
-                    <h2 class="bigTitle">
-                      Razones para ir con los scooters electricos
-                    </h2>
-                  </div>
-                  <div class="doubleHeading_content">
-                    <p class="globalText">
-                      Nuestro objetivo es brindarle la mejor experiencia de
-                      conducción, a través de materiales y producción de alta
-                      calidad.
-                    </p>
-                  </div>
-                </div>
-
-                <div id="accordionWrapper">
-                  <div class="accordion mt-5" id="accordionExample">
-                    <div class="card">
-                      <div class="card-header" id="headingOne">
-                        <h2 class="mb-1">
-                          <button
-                            class="btn btn-link btn-block text-left collapsed"
-                            type="button"
-                            data-toggle="collapse"
-                            data-target="#collapseOne"
-                            aria-expanded="false"
-                            aria-controls="collapseOne"
-                          >
-                            Un Equipo
-                          </button>
-                        </h2>
-                      </div>
-
-                      <div
-                        id="collapseOne"
-                        class="collapse show"
-                        aria-labelledby="headingOne"
-                        data-parent="#accordionExample"
-                      >
-                        <div class="card-body">
-                          <p class="globalText">
-                            Somos un equipo multidisciplinar que, desde hace
-                            años, se dedica a la movilidad sostenible. A través
-                            de diferentes canales de venta, asesoramos para la
-                            compra del patinete idóneo para cada cliente, y a
-                            través de nuestro servicio de asistencia técnica,
-                            nos ocupamos de mantenerlo en perfecto estado en
-                            todo momento.
-                          </p>
+              <div class="team-item_wrap">
+                <div class="team__image">
+                  <div class="team__media-wrapper">
+                    <div class="team__image-wrapper">
+                      <a class="team__image-outer" href="noticias.html">
+                        <div class="team__image">
+                          <picture>
+                            <source
+                              media="(max-width: 991px)"
+                              type="image/webp"
+                              srcset="
+                                http://inokim.jrepossi.com/img/noticias-box.webp 991w
+                              "
+                            />
+                            <img
+                              src="http://inokim.jrepossi.com/img/noticias-box.jpg"
+                              alt=" ¿Cómo mejorar la vida útil de mi monopatín eléctrico?"
+                              width="100%"
+                              height="100%"
+                              loading="lazy"
+                            />
+                          </picture>
                         </div>
-                      </div>
-                    </div>
-                    <div class="card">
-                      <div class="card-header" id="headingTwo">
-                        <h2 class="mb-1">
-                          <button
-                            class="btn btn-link btn-block text-left collapsed"
-                            type="button"
-                            data-toggle="collapse"
-                            data-target="#collapseTwo"
-                            aria-expanded="false"
-                            aria-controls="collapseTwo"
-                          >
-                            Una Misión
-                          </button>
-                        </h2>
-                      </div>
-                      <div
-                        id="collapseTwo"
-                        class="collapse"
-                        aria-labelledby="headingTwo"
-                        data-parent="#accordionExample"
-                      >
-                        <div class="card-body">
-                          <p class="globalText">
-                            La principal misión de la empresa es poner a
-                            disposición de las personas que quieren desplazarse
-                            de manera sostenible por la ciudad, vehículos de
-                            calidad, bien equilibrados entre las buenas
-                            prestaciones, diseños atractivos y alta fiabilidad.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card">
-                      <div class="card-header" id="headingThree">
-                        <h2 class="mb-1">
-                          <button
-                            class="btn btn-link btn-block text-left collapsed"
-                            type="button"
-                            data-toggle="collapse"
-                            data-target="#collapseThree"
-                            aria-expanded="false"
-                            aria-controls="collapseThree"
-                          >
-                            Un Sueño
-                          </button>
-                        </h2>
-                      </div>
-                      <div
-                        id="collapseThree"
-                        class="collapse"
-                        aria-labelledby="headingThree"
-                        data-parent="#accordionExample"
-                      >
-                        <div class="card-body">
-                          <p class="globalText">
-                            La principal misión de la empresa es poner a
-                            disposición de las personas que quieren desplazarse
-                            de manera sostenible por la ciudad, vehículos de
-                            calidad, bien equilibrados entre las buenas
-                            prestaciones, diseños atractivos y alta fiabilidad.
-                          </p>
-                        </div>
-                      </div>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -426,6 +406,7 @@
             src="/img/nosotros-hero.jpg"
             alt=" Newsletter"
             class="fullWidth scale-15"
+            loading="lazy"
           />
         </picture>
         <div class="center">
@@ -486,46 +467,70 @@
         <div class="mx-auto container">
           <div class="sectionContent_wrapper flex center">
             <div
+              class="imgWrapper team-item in-xs-12 in-sm-12 in-md-12 in-lg-6 my-7"
+            >
+              <div class="team-item_wrap">
+                <div class="team__image">
+                  <div class="team__media-wrapper">
+                    <div class="team__image-wrapper">
+                      <a class="team__image-outer" href="noticias.html">
+                        <div class="team__image">
+                          <picture>
+                            <source
+                              media="(max-width: 991px)"
+                              type="image/webp"
+                              srcset="
+                                http://inokim.jrepossi.com/img/productos/quick4.webp 991w
+                              "
+                            />
+                            <img
+                              src="http://inokim.jrepossi.com/img/productos/quick4.jpg"
+                              alt=" ¿Cómo mejorar la vida útil de mi monopatín eléctrico?"
+                              width="100%"
+                              height="100%"
+                              loading="lazy"
+                            />
+                          </picture>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
               class="sectionContent_wrapper-content in-xs-12 in-sm-12 in-md-12 in-lg-6"
             >
               <div class="doubleHeading in-xs-12 in-lg-9">
                 <div
                   class="doubleHeading_subtitle boxShadows border-radius-big"
                 >
-                  <span class="smallTitle flex"> NOTICIAS INOKIM </span>
+                  <span class="smallTitle flex"> Producto descatado </span>
                 </div>
                 <div class="doubleHeading_title">
                   <h2 class="bigTitle">
-                    ¿Cómo mejorar la vida útil de mi monopatín eléctrico?
+                    Inokim QUICK 4 hace realidad el concepto todo-en-uno.
                   </h2>
                 </div>
                 <div class="doubleHeading_content">
                   <p class="globalText">
-                    Si el patinete se va a quedar aparcado durante algunos
-                    meses, hazlo con la batería llena y recárgala regularmente
-                    (aproximadamente cada mes). La batería no debería estar
-                    descargada completamente demasiado tiempo porqué podría
-                    estropearse, en algunos casos, irremediablemente.
+                    Es un scooter resistente pero compacto, potente pero
+                    controlable y grande pero ligero. Entre todos, el más fácil
+                    de plegar y llevar. Con un display único, el más
+                    sofisticado. Los mejores frenos, y una carga rápida
+                    literalmente increible. Este monopatín es QUICK en todos los
+                    aspectos.
                   </p>
                 </div>
                 <div>
                   <a
-                    href="noticias.html"
+                    href="productos.html"
                     class="button button-primary border-radius-big"
                   >
-                    <span> Ir a Noticias </span></a
+                    <span> Ir a productos </span></a
                   >
                 </div>
               </div>
-            </div>
-            <div class="imgWrapper in-xs-12 in-sm-12 in-md-12 in-lg-6 my-7">
-              <a href="noticias.html">
-                <img
-                  src="img/noticias-box.jpg"
-                  alt=" imagen NEWSContent"
-                  class="img-fluid"
-                />
-              </a>
             </div>
           </div>
         </div>
@@ -549,6 +554,7 @@
                   src="img/footer.svg"
                   alt="Brand Logo Footer"
                   title=" Brand Logo Footer "
+                  loading="lazy"
                 />
               </div>
 
@@ -686,16 +692,13 @@
       </section>
     </footer>
 
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
       crossorigin="anonymous"
     ></script>
+    <script src="js/funciones.js"></script>
   </body>
 </html>

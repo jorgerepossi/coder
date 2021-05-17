@@ -9,12 +9,14 @@
   display: block;
   position: relative;
 }
+
 .collapsing {
   position: relative;
   height: 0;
   overflow: hidden;
   transition: height 0.3s ease-in-out;
 }
+
 .collapse:not(.show) {
   display: none;
 }
@@ -31,6 +33,7 @@
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
+
   &-body {
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
@@ -83,6 +86,7 @@
 .section {
   &Content {
     padding: 2rem 1rem;
+
     @include mq(md) {
       padding: var(--padding-big);
     }
@@ -115,6 +119,7 @@
 img {
   width: 100%;
   vertical-align: middle;
+  overflow: hidden;
 }
 
 .fullWidth {
@@ -126,6 +131,93 @@ img {
 
 .scale-15 {
   transform: scale(1.5);
+}
+
+.team-item {
+  .team-item_wrap {
+    &:hover .team__image-outer::after {
+      border: 1px solid #000;
+      opacity: 1;
+      transition: all 0.45s;
+    }
+
+    &:hover {
+      .team__image {
+        transform: translate(10px, 10px);
+      }
+
+      .team__media-wrapper
+        .team__image-wrapper
+        .team__image-outer
+        .team__image {
+        &:after {
+          opacity: 1;
+        }
+      }
+    }
+
+    .team__media-wrapper {
+      .team__image-wrapper {
+        position: relative;
+        line-height: 0;
+        transition: all 0.45s;
+
+        .team__image-outer {
+          transition: all 0.45s;
+
+          &:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            transition: all 0.3s ease 0s;
+            transform: translate(0px, 0px);
+          }
+
+          &:after {
+            border-radius: 10px;
+            transition: all 0.45s;
+          }
+
+          .team__image {
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            transition: all 0.45s;
+
+            img {
+              overflow: hidden;
+            }
+
+            &:after {
+              background-color: hsla(357, 85%, 52%, 0.8);
+            }
+
+            &:after {
+              opacity: 0;
+            }
+
+            &:after {
+              content: "";
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              transition: 0.3s;
+              transform: translate(0px, 0px);
+            }
+          }
+        }
+      }
+
+      .team__image-wrapper {
+        border-radius: 10px;
+      }
+    }
+  }
 }
 
 .imgWrapper {

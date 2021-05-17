@@ -24,6 +24,7 @@ pre {
 
 a {
   background-color: transparent;
+  display: block;
 }
 
 abbr[title] {
@@ -66,6 +67,11 @@ sup {
 
 img {
   border-style: none;
+}
+
+picture,
+source {
+  display: block;
 }
 
 button,

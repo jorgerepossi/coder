@@ -129,8 +129,43 @@ img {
   height: auto;
 }
 
+.hide {
+  transform: translateX(100vw);
+  transition: all 0.6s ease-in-out 0s;
+  transform: translate3d(0%, 0%, 0%);
+}
+
+.show {
+  transform: translate3d(0%, 0%, 100%);
+  transition-timing-function: cubic-bezier(0.53, 0.49, 0, 1.01) !important;
+  transition: transform 0.6s ease-in-out 0s;
+}
+
 .scale-15 {
   transform: scale(1.5);
+}
+
+.darken {
+  content: "";
+  position: absolute;
+  background-color: hsl(0, 50%, 0%);
+  height: 100vh;
+  top: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -2;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.6s ease-in-out 0s;
+}
+
+.darken.show {
+  width: 100vw;
+  opacity: 0.6;
+  z-index: -1;
+  visibility: visible;
 }
 
 .team-item {

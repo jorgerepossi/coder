@@ -4,3 +4,13 @@ jQuery(".scroll_to").click(function (e) {
   $("html, body").stop().animate({ scrollTop: new_position.top }, 500);
   e.preventDefault();
 });
+
+jQuery(".hamburguer").click(function () {
+  $(".menu-wrapper").removeClass("hide").addClass("show");
+  $(".darken").addClass("show ").fadeIn();
+});
+
+jQuery(".close").click(function () {
+  $(".menu-wrapper").removeClass("show ").addClass("hide");
+  $(".darken").removeClass("show").fadeIn();
+});

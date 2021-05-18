@@ -1,6 +1,7 @@
 .hamburguer-menu {
   @include samewh(2.5rem);
 
+  cursor: pointer;
   background-color: $color-red-20;
   display: flex;
   justify-content: center;
@@ -49,5 +50,38 @@
       width: 100%;
       transition: all 0.3s ease-in-out;
     }
+  }
+}
+
+.menu-wrapper-content {
+  position: absolute;
+  width: 100%;
+  max-width: 500px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  height: 100vh;
+}
+
+.menu-wrapper {
+  position: absolute;
+  z-index: 3;
+  content: "";
+  display: block;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+
+  &-content {
+    position: absolute;
+    width: 100%;
+    max-width: 500px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    height: 100vh;
   }
 }

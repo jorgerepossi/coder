@@ -5,12 +5,12 @@ jQuery(".scroll_to").click(function (e) {
   e.preventDefault();
 });
 
-jQuery(".hamburguer").click(function () {
-  $(".menu-wrapper").removeClass("hide").addClass("show");
-  $(".darken").addClass("show ").fadeIn();
+jQuery(".hamburguer").click(() => {
+  $(".menu-wrapper ").addClass("isActive").removeClass("smooth");
+  $(".darken").addClass("show");
 });
 
-jQuery(".close").click(function () {
-  $(".menu-wrapper").removeClass("show ").addClass("hide");
-  $(".darken").removeClass("show").fadeIn();
+jQuery(".close").click(() => {
+  $(".menu-wrapper ").removeClass("isActive").addClass("smooth");
+  $(".darken").removeClass("show");
 });

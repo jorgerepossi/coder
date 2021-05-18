@@ -1,6 +1,8 @@
+@import "normalize";
+
 *,
-*::before,
-*::after {
+::before,
+::after {
   box-sizing: border-box;
 }
 html,
@@ -108,5 +110,3 @@ nav,
 section {
   display: block;
 }
-
-@import "normalize";

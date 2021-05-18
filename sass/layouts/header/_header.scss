@@ -8,6 +8,10 @@ header {
   top: 0;
 }
 
+.menu-icons {
+  width: 12.5rem;
+}
+
 #headerWrapper {
   padding: 0 2em;
 
@@ -22,99 +26,6 @@ header {
     img {
       max-width: 120px;
     }
-
-    /*  ul {
-      height: 100%;
-      text-transform: uppercase;
-      align-content: center;
-
-      &.navMenuContent {
-        li {
-          position: relative;
-
-          @include list-unstyled;
-
-          @extend .full;
-
-          ul {
-            transition: all 0.2s ease-in-out;
-
-            &.navSubMenuContent {
-              opacity: 0;
-              border-radius: 0 0 5px 5px;
-              box-shadow: 11px 10px 38px 0 rgba(46, 63, 99, 0.15);
-              background-color: var(--color-base);
-              color: var(--color-red-20);
-              height: auto;
-              padding: 1.6rem 0;
-              flex-direction: column;
-
-              @extend .full;
-
-              min-width: 200px;
-              white-space: nowrap;
-              position: absolute;
-              top: calc(100% + 15px);
-
-              li {
-                @include list-unstyled;
-
-                text-transform: uppercase;
-
-                a {
-                  &.navSubMenuContent-li-a {
-                    padding: 0.5rem 0 0.5rem;
-                    text-align: center;
-
-                    span {
-                      @extend .full;
-                    }
-                  }
-
-                  &:hover {
-                    background-color: var(--color-red-20);
-                    color: var(--color-base);
-                  }
-                }
-              }
-            }
-          }
-
-          &:hover {
-            ul {
-              &.navSubMenuContent {
-                opacity: 1;
-                transition: all 0.5s ease-in-out;
-                transform: rotateX(0) translateZ(0);
-                top: 100%;
-              }
-            }
-          }
-        }
-
-        .menu-item {
-          @include wh(auto, 100px);
-
-          a {
-            @extend .items-center;
-
-            height: 100%;
-            padding: 0px 16px 0px 16px;
-            position: relative;
-
-            .menu-item-link {
-              font-weight: 600;
-              font-size: 14px;
-            }
-
-            &.active,
-            &:hover {
-              color: var(--color-red-20);
-            }
-          }
-        }
-      }
-    } */
   }
 }
 

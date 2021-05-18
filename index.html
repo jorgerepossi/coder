@@ -55,7 +55,7 @@
       crossorigin="anonymous"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600&display=optional"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/main.css" />
@@ -80,18 +80,20 @@
           </a>
         </section>
 
-        <section class="headerItem flex items-center">
+        <section
+          class="headerItem menu-icons justify-between flex items-center"
+        >
           <section>
             <i class="fa fa-shopping-bag" aria-hidden="true"></i>
           </section>
           <section>
             <a href="contacto.html" class=""> <i class="fa fa-envelope"></i></a>
           </section>
-          <div class="hamburguer">
+          <section class="hamburguer">
             <section class="hamburguer-menu">
               <section class="hamburguer-menu-icon"><span></span></section>
             </section>
-          </div>
+          </section>
         </section>
 
         <div class="floatNav">
@@ -121,9 +123,22 @@
       </section>
       <style></style>
       <div class="darken"></div>
-      <div class="menu-wrapper hide">
+      <div class="menu-wrapper">
         <div class="menu-wrapper-content side-menu-container">
-          <p class="close">chau</p>
+          <div>
+            <p class="close">chau</p>
+          </div>
+          <div>
+            <nav>
+              <ul>
+                <li><a href=""> Home </a></li>
+                <li><a href=""> Productos </a></li>
+                <li><a href=""> Nsotros </a></li>
+                <li><a href=""> Noticias </a></li>
+                <li><a href=""> Contacto </a></li>
+              </ul>
+            </nav>
+          </div>
         </div>
       </div>
     </header>
@@ -705,6 +720,7 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
       crossorigin="anonymous"
+      defer
     ></script>
     <script src="js/funciones.js"></script>
   </body>

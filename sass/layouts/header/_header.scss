@@ -18,7 +18,7 @@ header {
 #headerWrapper {
   padding: 0 2em;
 
-  @include mq(medium) {
+  @include mq(md) {
     padding: 0;
   }
 

@@ -80,6 +80,13 @@
   }
 }
 
+@each $gut, $size in $gutters {
+  .pb-#{$gut} {
+    padding-top: #{$size} !important;
+    padding-bottom: #{$size} !important;
+  }
+}
+
 %floatleft {
   float: left;
 }

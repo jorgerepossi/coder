@@ -9,7 +9,7 @@
   }
   &__body {
     &__item {
-      border-bottom: 1px solid #d0d0d0;
+      border-bottom: 1px solid var(--color-bluelight-200);
       overflow: hidden;
     }
     &__image {
@@ -18,5 +18,29 @@
     &__name {
       margin-left: 1rem;
     }
+  }
+
+  &__total {
+    border: 1px solid var(--color-bluelight-200);
+    &_check {
+      font-weight: 700;
+      text-transform: capitalize;
+    }
+  }
+  &__title,
+  &__sub {
+    overflow: hidden;
+    border-bottom: 1px solid var(--color-bluelight-200);
+  }
+
+  &__title {
+    h3 {
+      font-size: 1.6rem;
+      font-weight: 700;
+    }
+  }
+  &__sub,
+  &__total_check {
+    text-transform: capitalize;
   }
 }

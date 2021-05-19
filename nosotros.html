@@ -7,14 +7,52 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+    <title>Nosotros | Inokim</title>
     <meta
       name="description"
-      content="Nosotros | Inokim.En INOKIM nuestro objetivo es brindarle la mejor experiencia de conducción, a través de materiales y producción de alta calidad."
+      content="Nosotros | Inokim .En INOKIM nuestro objetivo es brindarle la mejor experiencia de conducción, a través de materiales y producción de alta calidad."
     />
     <meta
       name="keywords"
       content="Inokim Argentina, Acualización Inokim, Inokim, monopatines, MONOPATINES, monopatines eléctricos, vehículos eléctricos"
     />
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Nosotros | Inokim." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://inokim.jrepossi.com/" />
+    <meta
+      property="og:image"
+      content="http://inokim.jrepossi.com/img/meta-logo.jpg"
+    />
+    <meta
+      property="og:description"
+      content="Nosotros | Inokim .En INOKIM nuestro objetivo es brindarle la mejor experiencia de conducción, a través de materiales y producción de alta calidad."
+    />
+
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="icon" href="img/cropped-favicon-1-32x32.png" sizes="32x32" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="120x120"
+      href="http://inokim.jrepossi.com/ico/favicon_120.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="152x152"
+      href="http://inokim.jrepossi.com/ico/favicon_152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="http://inokim.jrepossi.com/ico/favicon_180.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="http://inokim.jrepossi.com/ico/favicon_192.png"
+    />
+
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
@@ -28,7 +66,6 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/main.css" />
-    <title>Nosotros | Inokim</title>
   </head>
 
   <body>
@@ -44,28 +81,65 @@
               src="http://inokim.jrepossi.com/img/logo_text.png"
               alt="Logo Brand"
               title="Logo Brand"
+              width="100%"
+              height="100%"
             />
           </a>
         </section>
 
-        <section class="headerItem flex items-center">
+        <section
+          class="headerItem menu-icons justify-between flex items-center"
+        >
           <section>
             <i class="fa fa-shopping-bag" aria-hidden="true"></i>
           </section>
           <section>
             <a href="contacto.html" class=""> <i class="fa fa-envelope"></i></a>
           </section>
-          <a href="">
+          <section class="hamburguer">
             <section class="hamburguer-menu">
               <section class="hamburguer-menu-icon"><span></span></section>
             </section>
-          </a>
+          </section>
         </section>
       </section>
+
+      <div class="darken"></div>
+      <div class="menu-wrapper">
+        <div class="menu-wrapper-content side-menu-container">
+          <div class="close__content">
+            <div class="close border-radius-big">
+              <span></span>
+            </div>
+          </div>
+          <div>
+            <nav class="navWrapper flex">
+              <ul class="nav--wrapper__ul">
+                <li class="nav-link-general mb-2">
+                  <a href="/index.html"> Home </a>
+                </li>
+                <li class="nav-link-general mb-2">
+                  <a href="/productos.html"> Productos </a>
+                </li>
+                <li class="nav-link-general mb-2">
+                  <a href="/nosotros.html"> Nosotros </a>
+                </li>
+                <li class="nav-link-general mb-2">
+                  <a href="/noticias.html"> Noticias </a>
+                </li>
+                <li class="nav-link-general mb-2">
+                  <a href="/contacto.html"> Contacto </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
     </header>
+
     <!-- Main Section -->
-    <main>
-      <section id="breadcrumbs " class="overlayed">
+    <main class="flex flex-wrap">
+      <section id="breadcrumbs " class="overlayed in-xs-12">
         <div
           class="overlayed-picture"
           style="
@@ -91,7 +165,7 @@
       </section>
 
       <!-- #About Us -->
-      <section id="about" class="sectionContent mt-5">
+      <section id="about" class="sectionContent mt-5 in-xs-12">
         <div class="center">
           <div class="sectionContent_wrapper row">
             <div class="flex flex-wrap">
@@ -415,15 +489,13 @@
         </section>
       </section>
     </footer>
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
       crossorigin="anonymous"
     ></script>
+    <script src="js/funciones.js"></script>
   </body>
 </html>

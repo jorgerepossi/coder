@@ -69,14 +69,14 @@
 }
 @each $gut, $size in $gutters {
   .px-#{$gut} {
-    padding-left: #{$size};
-    padding-right: #{$size};
+    padding-left: #{$size} !important;
+    padding-right: #{$size} !important;
   }
 }
 @each $gut, $size in $gutters {
   .py-#{$gut} {
-    padding-top: #{$size};
-    padding-bottom: #{$size};
+    padding-top: #{$size} !important;
+    padding-bottom: #{$size} !important;
   }
 }
 

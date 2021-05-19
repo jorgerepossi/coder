@@ -1,0 +1,35 @@
+.close__content {
+  position: relative;
+}
+
+.close {
+  width: 40px;
+  height: 40px;
+  background-color: $boder-color;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+
+  span {
+    width: 30px;
+    height: 2px;
+    background-color: $color-white-10;
+    display: block;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 20px;
+    right: 5px;
+
+    &::after {
+      content: "";
+      width: 30px;
+      height: 2px;
+      background-color: $color-white-10;
+      display: block;
+      display: block;
+      transform: rotate(90deg);
+      z-index: 1;
+    }
+  }
+}

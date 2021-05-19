@@ -9,7 +9,10 @@ header {
 }
 
 .menu-icons {
-  width: 12.5rem;
+  width: 9rem;
+  @include mq(sm) {
+    width: 12.5rem;
+  }
 }
 
 #headerWrapper {
@@ -28,9 +31,6 @@ header {
     }
   }
 }
-
-//@import "./nav";
-@import "./hamburguer";
 
 .floatNav {
   position: fixed;

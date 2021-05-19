@@ -42,31 +42,65 @@
         class="container mx-auto flex justify-between items-center"
       >
         <section class="headerItem logo">
-          <a href="/" title="Go to Home">
+          <a href="/">
             <img
               src="http://inokim.jrepossi.com/img/logo_text.png"
-              alt="Go to Home"
-              title="Go to Home"
+              alt="Logo Brand"
+              title="Logo Brand"
+              width="100%"
+              height="100%"
             />
           </a>
         </section>
 
-        <section class="headerItem flex items-center">
+        <section
+          class="headerItem menu-icons justify-between flex items-center"
+        >
           <section>
             <i class="fa fa-shopping-bag" aria-hidden="true"></i>
           </section>
           <section>
-            <a href="http://inokim.jrepossi.com/contacto.html" class="">
-              <i class="fa fa-envelope"></i
-            ></a>
+            <a href="contacto.html" class=""> <i class="fa fa-envelope"></i></a>
           </section>
-          <a href="" title="Menu">
+          <section class="hamburguer">
             <section class="hamburguer-menu">
               <section class="hamburguer-menu-icon"><span></span></section>
             </section>
-          </a>
+          </section>
         </section>
       </section>
+
+      <div class="darken"></div>
+      <div class="menu-wrapper">
+        <div class="menu-wrapper-content side-menu-container">
+          <div class="close__content">
+            <div class="close border-radius-big">
+              <span></span>
+            </div>
+          </div>
+          <div>
+            <nav class="navWrapper flex">
+              <ul class="nav--wrapper__ul">
+                <li class="nav-link-general mb-2">
+                  <a href="/index.html"> Home </a>
+                </li>
+                <li class="nav-link-general mb-2">
+                  <a href="/productos.html"> Productos </a>
+                </li>
+                <li class="nav-link-general mb-2">
+                  <a href="/nosotros.html"> Nosotros </a>
+                </li>
+                <li class="nav-link-general mb-2">
+                  <a href="/noticias.html"> Noticias </a>
+                </li>
+                <li class="nav-link-general mb-2">
+                  <a href="/contacto.html"> Contacto </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
     </header>
 
     <!-- Main Section -->
@@ -238,5 +272,8 @@
         </section>
       </section>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="js/funciones.js"></script>
   </body>
 </html>

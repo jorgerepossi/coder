@@ -167,9 +167,15 @@
     color: $color-bl-700;
   }
 
+  .tags__ul {
+    li {
+      float: left;
+    }
+  }
+
   .tag-item {
     padding: 0.5rem 0.6rem;
-    margin: 0.3rem auto;
+    margin: 0.3rem 0.2rem;
     border-radius: 5px;
     background-color: var(--color-white-20);
     font-size: 12px;

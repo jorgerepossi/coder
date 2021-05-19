@@ -3,7 +3,7 @@
 @import "abstracts/variables";
 @import "reset/reboot";
 @import "base/base";
-
+@import "base/animations";
 @import "base/each";
 
 @import "components/index";
@@ -17,5 +17,3 @@
 @import "pages/contact";
 
 @import "layouts/footer/index";
-
-@import "base/animations";

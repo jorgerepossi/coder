@@ -8,9 +8,11 @@ jQuery(".scroll_to").click(function (e) {
 jQuery(".hamburguer").click(() => {
   $(".menu-wrapper ").addClass("isActive").removeClass("smooth");
   $(".darken").addClass("show");
+  $(".hamburguer").hide();
 });
 
 jQuery(".close").click(() => {
   $(".menu-wrapper ").removeClass("isActive").addClass("smooth");
   $(".darken").removeClass("show");
+  $(".hamburguer").show();
 });

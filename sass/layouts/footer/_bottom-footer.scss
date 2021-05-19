@@ -7,7 +7,9 @@
     font-size: var(--system-font-size-xsmall);
     opacity: 0.8;
     font-size: 0.7rem;
-
+    i {
+      color: $color-red-20;
+    }
     a {
       font-weight: bolder;
       opacity: 1;

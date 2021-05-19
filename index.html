@@ -48,6 +48,7 @@
       rel="apple-touch-icon"
       href="http://inokim.jrepossi.com/ico/favicon_192.png"
     />
+
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
@@ -55,7 +56,7 @@
       crossorigin="anonymous"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@100;300;400;500&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/main.css" />
@@ -121,21 +122,33 @@
           </ul>
         </div>
       </section>
-      <style></style>
+
       <div class="darken"></div>
       <div class="menu-wrapper">
         <div class="menu-wrapper-content side-menu-container">
-          <div>
-            <p class="close">chau</p>
+          <div class="close__content">
+            <div class="close border-radius-big">
+              <span></span>
+            </div>
           </div>
           <div>
-            <nav>
-              <ul>
-                <li><a href=""> Home </a></li>
-                <li><a href=""> Productos </a></li>
-                <li><a href=""> Nsotros </a></li>
-                <li><a href=""> Noticias </a></li>
-                <li><a href=""> Contacto </a></li>
+            <nav class="navWrapper flex">
+              <ul class="nav--wrapper__ul">
+                <li class="nav-link-general mb-2">
+                  <a href="/index.html"> Home </a>
+                </li>
+                <li class="nav-link-general mb-2">
+                  <a href="/productos.html"> Productos </a>
+                </li>
+                <li class="nav-link-general mb-2">
+                  <a href="/nosotros.html"> Nosotros </a>
+                </li>
+                <li class="nav-link-general mb-2">
+                  <a href="/noticias.html"> Noticias </a>
+                </li>
+                <li class="nav-link-general mb-2">
+                  <a href="/contacto.html"> Contacto </a>
+                </li>
               </ul>
             </nav>
           </div>
@@ -144,9 +157,9 @@
     </header>
 
     <!-- Main Section -->
-    <main>
-      <section id="hero" class="sectionContent flex"></section>
-      <section id="hero-heading" class="flex items-center">
+    <main class="flex flex-wrap">
+      <section id="hero" class="sectionContent flex in-xs-12"></section>
+      <section id="hero-heading" class="flex items-center in-xs-12">
         <div class="mx-auto in-xs-12">
           <div class="heroWrapper mx-auto container">
             <div class="heroWrapper-content">
@@ -187,7 +200,7 @@
         </div>
       </section>
       <!-- #Carousel -->
-      <section id="productos" class="sectionContent">
+      <section id="productos" class="sectionContent in-xs-12">
         <div class="clipPath"></div>
         <div class="inner-content mx-auto">
           <section class="center">
@@ -311,7 +324,7 @@
         </div>
       </section>
       <!-- #Video FlipBox -->
-      <section id="video" class="sectionContent">
+      <section id="video" class="sectionContent in-xs-12">
         <div class="clipPath"></div>
         <div class="mx-auto container">
           <div class="videoWrapper">
@@ -328,7 +341,7 @@
         </div>
       </section>
 
-      <section id="newsWrapper" class="sectionContent">
+      <section id="newsWrapper" class="sectionContent in-xs-12">
         <div class="mx-auto container">
           <div class="sectionContent_wrapper flex center">
             <div
@@ -401,7 +414,7 @@
       </section>
 
       <!-- #Newsletter -->
-      <section id="newsletter" class="sectionContent overlayed">
+      <section id="newsletter" class="sectionContent overlayed in-xs-12">
         <picture class="overlayed-picture">
           <source
             media="(max-width: 991px)"
@@ -485,7 +498,7 @@
         </div>
       </section>
 
-      <section id="newsWrapper" class="sectionContent">
+      <section id="newsWrapper" class="sectionContent in-xs-12">
         <div class="mx-auto container">
           <div class="sectionContent_wrapper flex center">
             <div

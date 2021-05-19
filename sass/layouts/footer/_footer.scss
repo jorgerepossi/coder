@@ -70,8 +70,6 @@ footer {
   }
 }
 
-@import "bottom-footer";
-
 .sitemap {
   a {
     color: var(--color-red-20);
@@ -110,3 +108,5 @@ footer {
     }
   }
 }
+
+@import "bottom-footer";

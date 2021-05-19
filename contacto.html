@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <title>Contacto | Inokim</title>
     <meta
       name="description"
       content="Página de contacto del Distribuidor oficial de monopatines Inokim en Argentina."
@@ -14,14 +14,45 @@
       content="Inokim Contacto, Inokim, monopatines, monopatines eléctricos, vehículos eléctricos"
     />
 
-    <title>Contacto | Inokim</title>
     <link rel="icon" href="img/cropped-favicon-1-32x32.png" sizes="32x32" />
-    <!-- Bootstrap CSS -->
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Contacto | Inokim." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://inokim.jrepossi.com/" />
+    <meta
+      property="og:image"
+      content="http://inokim.jrepossi.com/img/meta-logo.jpg"
+    />
+    <meta
+      property="og:description"
+      content="Página de contacto del Distribuidor oficial de monopatines Inokim en Argentina."
+    />
+
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="icon" href="img/cropped-favicon-1-32x32.png" sizes="32x32" />
     <link
+      rel="icon"
+      type="image/png"
+      sizes="120x120"
+      href="http://inokim.jrepossi.com/ico/favicon_120.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="152x152"
+      href="http://inokim.jrepossi.com/ico/favicon_152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="http://inokim.jrepossi.com/ico/favicon_180.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="http://inokim.jrepossi.com/ico/favicon_192.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@100;300;400;500&display=swap"
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
-      crossorigin="anonymous"
     />
 
     <link
@@ -30,7 +61,7 @@
       integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
       crossorigin="anonymous"
     />
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="stylesheet" href="css/main.css" />
   </head>
 
@@ -47,29 +78,66 @@
               src="http://inokim.jrepossi.com/img/logo_text.png"
               alt="Logo Brand"
               title="Logo Brand"
+              width="100%"
+              height="100%"
             />
           </a>
         </section>
 
-        <section class="headerItem flex items-center">
+        <section
+          class="headerItem menu-icons justify-between flex items-center"
+        >
           <section>
             <i class="fa fa-shopping-bag" aria-hidden="true"></i>
           </section>
           <section>
             <a href="contacto.html" class=""> <i class="fa fa-envelope"></i></a>
           </section>
-          <a href="">
+          <section class="hamburguer">
             <section class="hamburguer-menu">
               <section class="hamburguer-menu-icon"><span></span></section>
             </section>
-          </a>
+          </section>
         </section>
       </section>
+
+      <div class="darken"></div>
+      <div class="menu-wrapper">
+        <div class="menu-wrapper-content side-menu-container">
+          <div class="close__content">
+            <div class="close border-radius-big">
+              <span></span>
+            </div>
+          </div>
+          <div>
+            <nav class="navWrapper flex">
+              <ul class="nav--wrapper__ul">
+                <li class="nav-link-general mb-2">
+                  <a href="/index.html"> Home </a>
+                </li>
+                <li class="nav-link-general mb-2">
+                  <a href="/productos.html"> Productos </a>
+                </li>
+                <li class="nav-link-general mb-2">
+                  <a href="/nosotros.html"> Nosotros </a>
+                </li>
+                <li class="nav-link-general mb-2">
+                  <a href="/noticias.html"> Noticias </a>
+                </li>
+                <li class="nav-link-general mb-2">
+                  <a href="/contacto.html"> Contacto </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
     </header>
+
     <!-- Main Section -->
 
-    <main>
-      <section id="breadcrumbs " class="overlayed">
+    <main class="flex flex-wrap">
+      <section id="breadcrumbs " class="overlayed in-xs-12">
         <div
           class="overlayed-picture"
           style="
@@ -87,7 +155,114 @@
         </div>
       </section>
 
-      <section id="ourContact" class="sectionContent">
+      <section id="formWrapper" class="sectionContent in-xs-12">
+        <div class="center">
+          <div class="flex flex-wrap items-center">
+            <div class="imgWrapper in-xs-12 in-md-12 in-lg-6">
+              <div class="imgWrapper team-item my-7">
+                <div class="team-item_wrap">
+                  <div class="team__image">
+                    <div class="team__media-wrapper">
+                      <div class="team__image-wrapper">
+                        <div class="team__image-outer">
+                          <div class="team__image">
+                            <picture>
+                              <source
+                                media="(max-width: 991px)"
+                                type="image/webp"
+                                srcset="
+                                  http://inokim.jrepossi.com/img/meta-logo.webp 991w
+                                "
+                              />
+
+                              <img
+                                src="img/meta-logo.jpg"
+                                alt=" Contactate con nosotros "
+                                width="100%"
+                                height="100%"
+                                loading="lazy"
+                              />
+                            </picture>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="wrapper in-xs-12 in-md-12 in-lg-6">
+              <div class="wrapper-content px-8">
+                <article class="sectionContentWrapper-content">
+                  <div class="doubleHeading">
+                    <div
+                      class="doubleHeading_subtitle boxShadows border-radius-big"
+                    >
+                      <span class="smallTitle flex"> Estamos para ayudar </span>
+                    </div>
+                    <div class="doubleHeading_title">
+                      <h2 class="bigTitle">Contactate con nosotros</h2>
+                    </div>
+                    <div class="doubleHeading_content">
+                      <p class="globalText">
+                        Tu consulta siempre es bien recibida con nosotros.
+                        Estamos para ayudar y asesorar todas las dudas que
+                        tengas acerca de los monopatines Inokim y otras
+                        consultas.
+                        <br />
+                        Muchas gracias
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="in-xs-12">
+                    <form action="" enctype="multipart/form-data">
+                      <fieldset>
+                        <div class="formGroup">
+                          <input
+                            type="text"
+                            name="name"
+                            id="name"
+                            placeholder=" Juan Juanes"
+                            class="inputForm"
+                          />
+                        </div>
+                        <div class="formGroup">
+                          <input
+                            type="email"
+                            name="email"
+                            id="email"
+                            placeholder=" ejemplo@mail.com"
+                            class="inputForm"
+                          />
+                        </div>
+                        <div class="formGroup">
+                          <textarea
+                            name=""
+                            id=""
+                            class="inputForm"
+                            placeholder="Un mensaje agradable..."
+                          ></textarea>
+                        </div>
+                        <div class="mt-8">
+                          <button
+                            class="button button-primary border-radius-big"
+                            type="button"
+                          >
+                            <span> Enviar</span>
+                          </button>
+                        </div>
+                      </fieldset>
+                    </form>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="ourContact" class="sectionContent in-xs-12">
         <div class="center">
           <div class="flex flex-wrap">
             <div class="wrapper in-xs-12 in-md-12 in-lg-6">
@@ -97,7 +272,7 @@
                     <div
                       class="doubleHeading_subtitle boxShadows border-radius-big"
                     >
-                      <span class="smallTitle flex"> get in touch </span>
+                      <span class="smallTitle flex"> ENCONTRANOS </span>
                     </div>
 
                     <div class="doubleHeading_title">
@@ -160,80 +335,6 @@
 
             <div class="imgWrapper in-xs-12 in-md-12 in-lg-6">
               <img src="img/imagen.jpg" alt=" imagen contacto" />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="formWrapper" class="sectionContent">
-        <div class="center">
-          <div class="flex flex-wrap">
-            <div class="imgWrapper in-xs-12 in-md-12 in-lg-6">
-              <img src="img/imagen.jpg" alt=" imagen contacto" />
-            </div>
-
-            <div class="wrapper in-xs-12 in-md-12 in-lg-6">
-              <div class="wrapper-content">
-                <article class="sectionContentWrapper-content">
-                  <div class="doubleHeading">
-                    <div
-                      class="doubleHeading_subtitle boxShadows border-radius-big"
-                    >
-                      <span class="smallTitle flex"> CONTACT US </span>
-                    </div>
-                    <div class="doubleHeading_title">
-                      <h2 class="bigTitle">Lorem Ipsum Dolor Sit</h2>
-                    </div>
-                    <div class="doubleHeading_content">
-                      <p class="globalText">
-                        Vestibulum sit amet convallis nisi. Morbi a orci ex.
-                        Duis fringilla libero a est interdum egestas. Class
-                        aptent taciti sociosqu ad litora torquent per conubia
-                        nostra.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div>
-                    <form action="" enctype="multipart/form-data">
-                      <fieldset>
-                        <div class="formGroup">
-                          <input
-                            type="text"
-                            name="name"
-                            id="name"
-                            placeholder=" YOUR NAME"
-                            class="inputForm"
-                          />
-                        </div>
-                        <div class="formGroup">
-                          <input
-                            type="email"
-                            name="email"
-                            id="email"
-                            placeholder=" YOUR EMAIL"
-                            class="inputForm"
-                          />
-                        </div>
-                        <div class="formGroup">
-                          <textarea
-                            name=""
-                            id=""
-                            class="inputForm"
-                            placeholder="YORU MESSAGE HERE"
-                          ></textarea>
-                        </div>
-                        <button class="button button-primary" type="button">
-                          CTA BTN
-                        </button>
-                        <button class="button" type="reset">
-                          RESET CTA BTN
-                        </button>
-                      </fieldset>
-                    </form>
-                  </div>
-                </article>
-              </div>
             </div>
           </div>
         </div>
@@ -393,15 +494,8 @@
         </section>
       </section>
     </footer>
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="js/funciones.js"></script>
   </body>
 </html>

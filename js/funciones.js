@@ -16,3 +16,7 @@ jQuery(".close").click(() => {
   $(".darken").removeClass("show");
   $(".hamburguer").show();
 });
+
+jQuery("#inoRange").on(" input change", function () {
+  $("#value").html($("#inoRange").val());
+});

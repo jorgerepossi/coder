@@ -22,6 +22,11 @@
       crossorigin="anonymous"
     />
 
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@100;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="css/main.css" />
     <title>Productos | Inokim</title>
   </head>
@@ -166,9 +171,23 @@
                     </ul>
                   </div>
                 </article>
-                <article class="in-xs-12 mt-5">
+                <article class="in-xs-12 my-8">
                   <div class="title-wrapper">
-                    <span class="title"> precios</span>
+                    <span class="title"> precios </span>
+
+                    <div class="mt-8 pb-8 flex flex-wrap justify-between">
+                      <span> 80.000 </span
+                      ><input
+                        type="range"
+                        min="80000"
+                        max="180000"
+                        value="0"
+                        class="slider"
+                        id="inoRange"
+                        step="1000"
+                      />
+                      <span id="value"> 180.000 </span>
+                    </div>
                   </div>
                 </article>
                 <article id="tags" class="in-xs-12 mt-5">
@@ -185,15 +204,30 @@
                     </ul>
                   </div>
                 </article>
-                <article class="in-xs-12 mt-5">
-                  <div class="title-wrapper">
-                    <span class="title"> cart</span>
-                  </div>
-                </article>
               </section>
             </aside>
             <section id="productList" class="in-xs-12 in-sm-12 in-md-9 in-lg-9">
               <div class="productos-wrapper-content">
+                <section class="flex justify-between">
+                  <div class="breadcrumb">
+                    <ul class="flex">
+                      <li>Productos</li>
+                      <li>Monopatines</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <select class="in-sorting-select" name="select-name">
+                      <option value="">Ordenar por</option>
+                      <option value="alto bajo">
+                        Ordenar por precio: alto a bajo
+                      </option>
+                      <option value="bajo alto ">
+                        Ordenar por precio: bajo a alto
+                      </option>
+                      <option value="mas nuevo ">Los más nuevos</option>
+                    </select>
+                  </div>
+                </section>
                 <ul class="productos-wrapper__ul center">
                   <li
                     class="productos-wrapper__li in-xs-12 in-sm-6 in-md-6 in-lg-4 mb-8"
@@ -239,7 +273,7 @@
                             <div class="imagenWrapper__inner">
                               <span> </span>
                               <div class="flex direction-column">
-                                <p>Inokim OXO</p>
+                                <p class="title">Inokim OXO</p>
                                 <p>Es como surfear en las calles</p>
                               </div>
                             </div>
@@ -249,6 +283,9 @@
                           <p class="globalText">
                             Conduce en todos los terrenos
                           </p>
+                        </div>
+                        <div class="addToCart">
+                          add to cart <i class="fa fa-plus"></i>
                         </div>
                       </div>
                     </a>
@@ -296,7 +333,7 @@
                           <div class="imagenWrapper__inner">
                             <span> </span>
                             <div class="flex direction-column">
-                              <p>Inokim Quick 4</p>
+                              <p class="title">Inokim Quick 4</p>
                               <p>Es como surfear en las calles</p>
                             </div>
                           </div>
@@ -306,6 +343,9 @@
                         <p class="globalText">
                           PORTABILIDAD Y RENDIMIENTO MEJORADO
                         </p>
+                      </div>
+                      <div class="addToCart">
+                        add to cart <i class="fa fa-plus"></i>
                       </div>
                     </div>
                   </li>
@@ -352,7 +392,7 @@
                           <div class="imagenWrapper__inner">
                             <span> </span>
                             <div class="flex direction-column">
-                              <p>Inokim OX Super</p>
+                              <p class="title">Inokim OX Super</p>
                               <p>Lleva tu mini a todas partes</p>
                             </div>
                           </div>
@@ -360,6 +400,9 @@
                       </div>
                       <div class="textContainer">
                         <p class="globalText">DISEÑO ULTRA LIVIANO</p>
+                      </div>
+                      <div class="addToCart">
+                        add to cart <i class="fa fa-plus"></i>
                       </div>
                     </div>
                   </li>
@@ -408,7 +451,7 @@
                             <div class="imagenWrapper__inner">
                               <span> </span>
                               <div class="flex direction-column">
-                                <p>Inokim OX ECO</p>
+                                <p class="title">Inokim OX ECO</p>
                                 <p>Es como surfear en las calles</p>
                               </div>
                             </div>
@@ -418,6 +461,9 @@
                           <p class="globalText">
                             Conduce en todos los terrenos
                           </p>
+                        </div>
+                        <div class="addToCart">
+                          add to cart <i class="fa fa-plus"></i>
                         </div>
                       </div>
                     </a>
@@ -466,7 +512,7 @@
                           <div class="imagenWrapper__inner">
                             <span> </span>
                             <div class="flex direction-column">
-                              <p>Inokim Quick 3+ Super</p>
+                              <p class="title">Inokim Quick 3+ Super</p>
                               <p>Movete libremente</p>
                             </div>
                           </div>
@@ -476,6 +522,9 @@
                         <p class="globalText">
                           PORTABILIDAD Y RENDIMIENTO MEJORADO
                         </p>
+                      </div>
+                      <div class="addToCart">
+                        add to cart <i class="fa fa-plus"></i>
                       </div>
                     </div>
                   </li>
@@ -522,7 +571,7 @@
                           <div class="imagenWrapper__inner">
                             <span> </span>
                             <div class="flex direction-column">
-                              <p>Inokim Mini 2</p>
+                              <p class="title">Inokim Mini 2</p>
                               <p>Lleva tu mini a todas partes</p>
                             </div>
                           </div>
@@ -530,6 +579,9 @@
                       </div>
                       <div class="textContainer">
                         <p class="globalText">DISEÑO ULTRA LIVIANO</p>
+                      </div>
+                      <div class="addToCart">
+                        add to cart <i class="fa fa-plus"></i>
                       </div>
                     </div>
                   </li>
@@ -576,7 +628,7 @@
                           <div class="imagenWrapper__inner">
                             <span> </span>
                             <div class="flex direction-column">
-                              <p>Inokim Light Hero</p>
+                              <p class="title">Inokim Light Hero</p>
                               <p>Movete libremente</p>
                             </div>
                           </div>
@@ -586,6 +638,9 @@
                         <p class="globalText">
                           PORTABILIDAD Y RENDIMIENTO MEJORADO
                         </p>
+                      </div>
+                      <div class="addToCart">
+                        add to cart <i class="fa fa-plus"></i>
                       </div>
                     </div>
                   </li>
@@ -633,7 +688,7 @@
                           <div class="imagenWrapper__inner">
                             <span> </span>
                             <div class="flex direction-column">
-                              <p>Inokim Light 2 Super</p>
+                              <p class="title">Inokim Light 2 Super</p>
                               <p>Lleva tu mini a todas partes</p>
                             </div>
                           </div>
@@ -641,6 +696,9 @@
                       </div>
                       <div class="textContainer">
                         <p class="globalText">DISEÑO ULTRA LIVIANO</p>
+                      </div>
+                      <div class="addToCart">
+                        add to cart <i class="fa fa-plus"></i>
                       </div>
                     </div>
                   </li>

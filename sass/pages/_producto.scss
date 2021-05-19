@@ -18,7 +18,6 @@
   #infoContentWrapper {
     background-color: var(--color-base);
     width: 100%;
-    max-width: calc(100% - 760px);
 
     .contentWrapper-title {
       .title {
@@ -38,6 +37,31 @@
       margin: 5px;
       text-transform: capitalize;
       border-radius: $border-radius-big;
+    }
+  }
+}
+
+.breadcrumb {
+  ul {
+    li {
+      position: relative;
+      display: flex;
+
+      &:nth-child(1)::after,
+      &:nth-child(2)::after {
+        content: "/";
+        display: flex;
+        width: 20px;
+        justify-content: center;
+      }
+
+      &:nth-child(2) {
+        color: $color-red-20;
+      }
+      &:nth-child(3) {
+        color: $color-red-40;
+        font-weight: 600;
+      }
     }
   }
 }

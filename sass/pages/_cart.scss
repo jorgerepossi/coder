@@ -64,3 +64,23 @@
     text-transform: capitalize;
   }
 }
+
+.quantity {
+  background: var(--color-white-20);
+  padding: 10px;
+  #quantity__number {
+    appearance: textfield;
+    width: 40px;
+    background-color: transparent;
+    border: 0;
+    text-align: center;
+  }
+}
+
+.buttons_plus,
+.buttons_minus {
+  width: 30px;
+  height: 20px;
+  text-align: center;
+  cursor: pointer;
+}

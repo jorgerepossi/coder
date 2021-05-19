@@ -4,6 +4,12 @@
   }
 }
 
+@each $classname, $position in $flex {
+  .flex-#{ $classname} {
+    flex-wrap: #{$position};
+  }
+}
+
 @each $classname, $position in $justify-contents {
   .justify-#{$classname} {
     justify-content: #{$position};

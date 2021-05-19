@@ -75,4 +75,17 @@
   }
 }
 
+.specifitacions ul {
+  li {
+    padding: 10px;
+    margin: 0px;
+    p {
+      margin: 0px;
+    }
+  }
+  li:nth-child(odd) {
+    background-color: var(--color-white-20);
+  }
+}
+
 /* FIN PRODUCTO  */

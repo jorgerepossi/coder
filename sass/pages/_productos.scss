@@ -118,6 +118,11 @@ ul {
 }
 
 .addToCart {
+  cursor: pointer;
+  i {
+    margin-right: 0.5rem;
+  }
+
   background-color: red;
   padding: 0.8rem;
   color: #fff;

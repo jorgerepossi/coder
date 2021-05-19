@@ -1,0 +1,22 @@
+.cart {
+  font-weight: 700;
+
+  &__head {
+    overflow: hidden;
+    background-color: #191919;
+    color: $color-white-10;
+    text-transform: capitalize;
+  }
+  &__body {
+    &__item {
+      border-bottom: 1px solid #d0d0d0;
+      overflow: hidden;
+    }
+    &__image {
+      max-width: 80px;
+    }
+    &__name {
+      margin-left: 1rem;
+    }
+  }
+}

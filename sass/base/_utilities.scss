@@ -75,6 +75,10 @@
   margin-right: auto;
 }
 
+.text-center {
+  text-align: center !important;
+}
+
 .center {
   @extend .full;
 
@@ -178,7 +182,7 @@ img {
 
 .nav--wrapper__ul {
   overflow: hidden;
-  max-width: 250px;
+  max-width: 200px;
   width: 100%;
 
   li {

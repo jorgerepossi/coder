@@ -87,8 +87,10 @@
         <section
           class="headerItem menu-icons justify-between flex items-center"
         >
-          <section>
-            <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+          <section class="gotoCart">
+            <a href="carrito.html">
+              <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+            </a>
           </section>
           <section>
             <a href="contacto.html" class=""> <i class="fa fa-envelope"></i></a>
@@ -155,8 +157,9 @@
         </div>
       </section>
 
-      <section id="formWrapper" class="sectionContent in-xs-12">
+      <section id="formWrapper" class="in-xs-12">
         <div class="center">
+          <div class="divider"></div>
           <div class="flex flex-wrap items-center">
             <div class="imgWrapper in-xs-12 in-md-12 in-lg-6">
               <div class="imgWrapper team-item my-7">
@@ -216,7 +219,7 @@
                     </div>
                   </div>
 
-                  <div class="in-xs-12">
+                  <div class="py-2">
                     <form action="" enctype="multipart/form-data">
                       <fieldset>
                         <div class="formGroup">
@@ -234,6 +237,15 @@
                             name="email"
                             id="email"
                             placeholder=" ejemplo@mail.com"
+                            class="inputForm"
+                          />
+                        </div>
+                        <div class="formGroup">
+                          <input
+                            type="phone"
+                            name="phone"
+                            id="phome"
+                            placeholder="541150504040"
                             class="inputForm"
                           />
                         </div>

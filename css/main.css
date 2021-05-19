@@ -519,6 +519,10 @@ section {
   margin-right: auto;
 }
 
+.text-center {
+  text-align: center !important;
+}
+
 .center {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -634,7 +638,7 @@ img {
 
 .nav--wrapper__ul {
   overflow: hidden;
-  max-width: 250px;
+  max-width: 200px;
   width: 100%;
 }
 .nav--wrapper__ul li {
@@ -1479,13 +1483,16 @@ input[type="text"],
 input[type="password"],
 input[type="email"],
 input[type="number"],
+input[type="phone"],
 textarea {
   outline: none;
   border-width: 1px;
   border-color: var(--color-bluelight-200);
   border-style: solid;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+}
+
+textarea {
+  min-height: 150px;
 }
 
 .inputForm {
@@ -1494,6 +1501,8 @@ textarea {
 }
 .inputForm:focus {
   border: 1px solid var(--color-red-20-outline);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .button-secondary,
@@ -1622,8 +1631,8 @@ a.button {
 }
 
 .boxShadows {
-  -webkit-box-shadow: 0 6px 10px 0 rgba(128, 98, 96, 0.0016);
-  box-shadow: 0 6px 10px 0 rgba(128, 98, 96, 0.0016);
+  -webkit-box-shadow: 0 6px 10px 0 rgba(128, 98, 96, 0.116);
+  box-shadow: 0 6px 10px 0 rgba(128, 98, 96, 0.116);
 }
 
 .accordion .card {
@@ -2356,6 +2365,31 @@ header {
   -webkit-transform-origin: center right;
   transform-origin: center right;
 }
+.gotoCart {
+  position: relative;
+}
+.gotoCart::before {
+  content: "1";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 15px;
+  height: 15px;
+  background-color: #ed1d27;
+  border-radius: 50px;
+  font-size: 12px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  color: white;
+}
+
 .hamburguer-menu {
   width: 2.5rem;
   height: 2.5rem;
@@ -3105,16 +3139,43 @@ ul.center {
   background-color: #191919;
   color: white;
   text-transform: capitalize;
+  display: none;
+}
+@media only screen and (min-width: 768px) {
+  .cart__head {
+    display: block;
+  }
 }
 .cart__body__item {
   border-bottom: 1px solid var(--color-bluelight-200);
   overflow: hidden;
 }
+.cart__body__item span {
+  display: block;
+}
+@media only screen and (min-width: 768px) {
+  .cart__body__item span {
+    display: none;
+  }
+}
 .cart__body__image {
   max-width: 80px;
+  display: none;
+}
+@media only screen and (min-width: 768px) {
+  .cart__body__image {
+    display: block;
+  }
 }
 .cart__body__name {
-  margin-left: 1rem;
+  margin-left: 0;
+  width: 100%;
+}
+@media only screen and (min-width: 768px) {
+  .cart__body__name {
+    margin-left: 1rem;
+    width: auto;
+  }
 }
 .cart__total {
   border: 1px solid var(--color-bluelight-200);

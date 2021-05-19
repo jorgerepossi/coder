@@ -2,12 +2,16 @@ input[type="text"],
 input[type="password"],
 input[type="email"],
 input[type="number"],
+input[type="phone"],
 textarea {
   outline: none;
   border-width: 1px;
   border-color: var(--color-bluelight-200);
   border-style: solid;
-  transition: all 0.5s ease-in-out;
+}
+
+textarea {
+  min-height: 150px;
 }
 
 .inputForm {
@@ -16,5 +20,6 @@ textarea {
 
   &:focus {
     border: 1px solid var(--color-red-20-outline);
+    transition: all 0.5s ease-in-out;
   }
 }

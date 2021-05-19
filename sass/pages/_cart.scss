@@ -6,17 +6,37 @@
     background-color: #191919;
     color: $color-white-10;
     text-transform: capitalize;
+    display: none;
+    @include mq(md) {
+      display: block;
+    }
   }
   &__body {
     &__item {
       border-bottom: 1px solid var(--color-bluelight-200);
       overflow: hidden;
+      span {
+        display: block;
+        @include mq(md) {
+          display: none;
+        }
+      }
     }
     &__image {
       max-width: 80px;
+
+      display: none;
+      @include mq(md) {
+        display: block;
+      }
     }
     &__name {
-      margin-left: 1rem;
+      margin-left: 0;
+      width: 100%;
+      @include mq(md) {
+        margin-left: 1rem;
+        width: auto;
+      }
     }
   }
 

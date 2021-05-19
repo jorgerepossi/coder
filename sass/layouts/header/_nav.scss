@@ -69,3 +69,22 @@
     }
   }
 }
+
+.gotoCart {
+  position: relative;
+  &::before {
+    content: "1";
+    display: flex;
+    width: 15px;
+    height: 15px;
+    background-color: $color-red-20;
+    border-radius: 50px;
+    font-size: 12px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    color: $color-white-10;
+  }
+}

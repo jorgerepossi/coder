@@ -49,8 +49,10 @@
         <section
           class="headerItem menu-icons justify-between flex items-center"
         >
-          <section>
-            <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+          <section class="gotoCart">
+            <a href="carrito.html">
+              <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+            </a>
           </section>
           <section>
             <a href="contacto.html" class=""> <i class="fa fa-envelope"></i></a>
@@ -103,7 +105,7 @@
         <div
           class="overlayed-picture"
           style="
-            background-image: url(http://inokim.jrepossi.com/img/productos/productos-hero.jpg);
+            background-image: url(http://inokim.jrepossi.com/img/contacto.jpg);
             height: 100%;
             max-height: 300px;
           "
@@ -111,13 +113,14 @@
         <div class="center">
           <section class="breadcrumbWrapper flex">
             <div class="heading">
-              <h1 class="heading-title">Cart</h1>
+              <h1 class="heading-title">Tu Carrito</h1>
             </div>
           </section>
         </div>
       </section>
-      <section class="container mx-auto">
-        <div class="mx-auto center flex flex-wrap sectionContent">
+      <section class="center mx-auto">
+        <div class="divider"></div>
+        <div class="mx-auto center flex flex-wrap py-8">
           <form action="" class="in-xs-12 in-lg-9">
             <div class="in-xs-12 cart">
               <div class="in-xs-12 cart__head px-4 py-6">
@@ -129,7 +132,9 @@
 
               <div class="in-xs-12 cart__body px-4">
                 <div class="cart__body__item py-6 flex flex-wrap items-center">
-                  <div class="in-xs-12 in-md-6 flex flex-wrap items-center">
+                  <div
+                    class="in-xs-12 in-md-6 flex flex-wrap items-center justify-between"
+                  >
                     <div class="cart__body__image">
                       <picture>
                         <source
@@ -148,13 +153,20 @@
                         />
                       </picture>
                     </div>
-                    <div class="cart__body__name">
-                      <p>Inokim Quick 4</p>
+                    <div class="cart__body__name full flex justify-between">
+                      <span> Producto: </span>
+                      Inokim Quick 4
                     </div>
                   </div>
-                  <div class="in-xs-12 in-md-2">$180.000</div>
-                  <div class="in-xs-12 in-md-2">1</div>
-                  <div class="in-xs-12 in-md-2">$180.000</div>
+                  <div class="in-xs-12 in-md-2 flex justify-between">
+                    <span> Precio: </span> $180.000
+                  </div>
+                  <div class="in-xs-12 in-md-2 flex justify-between">
+                    <span> Cantidad: </span> 1
+                  </div>
+                  <div class="in-xs-12 in-md-2 flex justify-between">
+                    <span> Total: </span> $180.000
+                  </div>
                 </div>
               </div>
             </div>
@@ -175,12 +187,13 @@
                   href=""
                   class="button button-primary full text-center border-radius-big"
                 >
-                  proceder con el pago
+                  <span> finalizar compra </span>
                 </a>
               </div>
             </div>
           </div>
         </div>
+        <div class="divider"></div>
       </section>
     </main>
     <!-- Footer Section -->

@@ -18,5 +18,7 @@ jQuery(".close").click(() => {
 });
 
 jQuery("#inoRange").on(" input change", function () {
-  $("#value").html($("#inoRange").val());
+  $("#value").html(
+    "$" + String($("#inoRange").val()).replace(/(.)(?=(\d{3})+$)/g, "$1.")
+  );
 });

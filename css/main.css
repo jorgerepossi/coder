@@ -2296,7 +2296,7 @@ header {
 
 .floatNav {
   position: fixed;
-  right: 2rem;
+  right: 0.5rem;
   top: 50vh;
   width: 3rem;
   z-index: 9;
@@ -2603,6 +2603,16 @@ main #hero-heading {
 main #hero-heading .doubleHeading_subtitle {
   -webkit-animation: fadeIn 0.8s ease-in-out;
   animation: fadeIn 0.8s ease-in-out;
+}
+
+main #hero-heading .doubleHeading_body {
+  color: #dce1ef;
+}
+
+@media only screen and (min-width: 1200px) {
+  main #hero-heading .doubleHeading_body {
+    color: #000;
+  }
 }
 
 main #hero-heading h2 {

@@ -50,7 +50,13 @@ main {
       .doubleHeading_subtitle {
         animation: fadeIn 0.8s ease-in-out;
       }
+      .doubleHeading_body {
+        color: $color-bl-100;
 
+        @include mq(xl) {
+          color: $boder-color;
+        }
+      }
       h2 {
         animation: fadeIn 1s ease-in-out;
       }

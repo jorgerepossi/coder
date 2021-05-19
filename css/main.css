@@ -550,6 +550,9 @@ section {
 .infoItems {
   background-color: var(--color-white-20);
 }
+.infoItems ul li {
+  line-height: calc(1rem * 1.618);
+}
 
 .newsContentWrapper .newsContentWrapper-content {
   max-width: 34.375rem;
@@ -2918,6 +2921,24 @@ ul.center {
   .tinyImagenWrapper
   ul.tinyimagenWrapper_ul {
   padding: 20px 0;
+}
+#producto
+  #imagenContentWrapper
+  .contentWrapper
+  .tinyImagenWrapper
+  ul.tinyimagenWrapper_ul
+  li {
+  max-width: 130px;
+  max-height: 130px;
+}
+#producto
+  #imagenContentWrapper
+  .contentWrapper
+  .tinyImagenWrapper
+  ul.tinyimagenWrapper_ul
+  li
+  p {
+  font-weight: 800;
 }
 #producto #infoContentWrapper {
   background-color: var(--color-base);

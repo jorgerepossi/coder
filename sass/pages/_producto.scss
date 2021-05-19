@@ -9,6 +9,15 @@
         ul {
           &.tinyimagenWrapper_ul {
             padding: 20px 0;
+            li {
+              max-width: 130px;
+              max-height: 130px;
+            }
+            li {
+              p {
+                font-weight: 800;
+              }
+            }
           }
         }
       }

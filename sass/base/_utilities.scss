@@ -109,6 +109,9 @@
 
 .infoItems {
   background-color: var(--color-white-20);
+  ul li {
+    line-height: calc(1rem * 1.618);
+  }
 }
 
 .newsContentWrapper {

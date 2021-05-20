@@ -96,7 +96,7 @@ Redirect /consignacion.php http://autogenerali.com.ar/
 
 Redirect /gen_contacto.php http://autogenerali.com.ar/contacto
 Redirect /gen_promo.php http://autogenerali.com.ar/contacto
-Redirect /contacto.html http://autogenerali.com.ar/contacto
+Redirect  http://autogenerali.com.ar/contacto
 
 Redirect /fiat_plan.html http://autogenerali.com.ar/fiat-plan
 

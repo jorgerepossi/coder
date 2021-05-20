@@ -26,7 +26,6 @@ main {
 
     @include mq(xs) {
       background-position: top right;
-
       width: 100%;
       height: 690px;
       background-size: cover;
@@ -50,6 +49,7 @@ main {
       .doubleHeading_subtitle {
         animation: fadeIn 0.8s ease-in-out;
       }
+
       .doubleHeading_body {
         color: $color-bl-100;
 
@@ -57,12 +57,15 @@ main {
           color: $boder-color;
         }
       }
+
       h2 {
         animation: fadeIn 1s ease-in-out;
       }
+
       p {
         animation: fadeIn 1.2s ease-in-out;
       }
+
       a {
         animation: fadeIn 1.4s ease-in-out;
       }
@@ -213,6 +216,10 @@ main {
   #about {
     position: relative;
     background-color: $color-white-10;
+
+    .wrapper-content {
+      max-width: 35rem;
+    }
 
     .sectionContent_wrapper {
       place-items: center;

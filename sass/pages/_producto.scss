@@ -2,7 +2,6 @@
 #producto {
   #imagenContentWrapper {
     width: 100%;
-    max-width: 760px;
 
     .contentWrapper {
       .tinyImagenWrapper {
@@ -28,9 +27,16 @@
     background-color: var(--color-base);
     width: 100%;
 
-    .contentWrapper-title {
-      .title {
-        font-size: var(--fs-h2);
+    .contentWrapper {
+      &__title {
+        .title {
+          font-size: var(--fs-h2);
+        }
+      }
+      &__price {
+        p {
+          font-size: var(--fs-h2);
+        }
       }
     }
   }

@@ -82,7 +82,7 @@
 
   <body>
     <!-- Header Nav Section -->
-    <header id="headerNav" class="px-6">
+    <header id="headerNav" class="px-header">
       <section
         id="headerWrapper"
         class="container mx-auto flex justify-between items-center"
@@ -206,28 +206,37 @@
                         />
                       </picture>
                     </div>
-                    <div class="cart__body__name full flex justify-between">
-                      <span> Producto: </span>
+                    <div
+                      class="cart__body__name full flex justify-between py-2"
+                    >
+                      <span class="mobileshow"> Producto: </span>
                       Inokim Quick 4
                     </div>
                   </div>
-                  <div class="in-xs-12 in-md-2 flex justify-between">
-                    <span> Precio: </span> $180.000
+                  <div class="in-xs-12 in-md-2 flex justify-between py-2">
+                    <span class="mobileshow"> Precio: </span> $180.000
                   </div>
-                  <div class="in-xs-12 in-md-2 flex justify-between">
-                    <span> Cantidad: </span>
-                    <div class="quantity flex flex-wrap items-center">
+                  <div class="in-xs-12 in-md-2 flex justify-between py-2">
+                    <span class="mobileshow"> Cantidad: </span>
+                    <div class="quantity flex items-center py-2">
                       <div class="quantity__value">
-                        <div id="quantity__number"></div>
+                        <div id="quantity__number">1</div>
                       </div>
                       <div class="buttons">
-                        <div class="buttons_plus">+</div>
-                        <div class="buttons_minus">-</div>
+                        <div class="buttons_plus">
+                          <i class="fa fa-plus"></i>
+                        </div>
+                        <div class="buttons_minus">
+                          <i class="fa fa-minus"></i>
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <div class="in-xs-12 in-md-2 flex justify-between">
-                    <span> Total: </span> $180.000
+                  <div class="in-xs-12 in-md-2 flex justify-between py-2">
+                    <span class="mobileshow"> Total: </span>
+                    <span class="pricetotal" data-price="180000">
+                      $180.000</span
+                    >
                   </div>
                 </div>
               </div>
@@ -239,10 +248,12 @@
                 <h3>Productos Total</h3>
               </div>
               <div class="cart__sub flex justify-between mb-3 pb-3">
-                <span>subtotal</span><span> $180.000</span>
+                <span>subtotal</span
+                ><span class="pricetotal" data-price="180000"> $180.000</span>
               </div>
               <div class="cart__total_check flex justify-between mb-3 pb-3">
-                <span>total</span><span> $180.000</span>
+                <span>total</span
+                ><span class="pricetotal" data-price="180000"> $180.000</span>
               </div>
               <div class="cart__button">
                 <a

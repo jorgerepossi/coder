@@ -10,13 +10,14 @@ header {
 
 .menu-icons {
   width: 9rem;
+
   @include mq(sm) {
     width: 12.5rem;
   }
 }
 
 #headerWrapper {
-  padding: 0 2em;
+  padding: 0 1em;
 
   @include mq(md) {
     padding: 0;
@@ -30,6 +31,10 @@ header {
       max-width: 120px;
     }
   }
+}
+
+.px-header {
+  padding: 0 16px;
 }
 
 .floatNav {

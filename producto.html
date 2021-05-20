@@ -51,7 +51,7 @@
 
   <body>
     <!-- Header Nav Section -->
-    <header id="headerNav" class="px-6">
+    <header id="headerNav" class="px-header">
       <section
         id="headerWrapper"
         class="container mx-auto flex justify-between items-center"
@@ -162,7 +162,7 @@
             </section>
             <section class="in-xs-12 in-md-12 in-lg-6">
               <section id="imagenContentWrapper">
-                <div class="contentWrapper">
+                <div class="contentWrapper flex-wrap flex justify-center">
                   <div class="contentWrapper-widget">
                     <div class="contentWrapper-image">
                       <picture>
@@ -225,11 +225,11 @@
                 <div class="wrapper">
                   <div class="wrapper-content">
                     <div class="contentWrapper">
-                      <div class="contentWrapper-title">
+                      <div class="contentWrapper__title">
                         <h2 class="bigTitle">Inokim Quick 4</h2>
                       </div>
-                      <div class="contentWrapper-price">
-                        <p>$ 180.000</p>
+                      <div class="contentWrapper__price">
+                        <p class=""><b> $180.000</b></p>
                       </div>
                       <div
                         class="contentWrapper-description sectionInnerContent"
@@ -254,7 +254,7 @@
                       <section class="sectionInnerContent">
                         <form action="">
                           <fieldset>
-                            <div class="">
+                            <div class="flex flex-wrap justify-between">
                               <a
                                 href="carrito.html"
                                 title="añadir al carrito "
@@ -265,6 +265,21 @@
                                   carrito</span
                                 >
                               </a>
+                              <span>
+                                <div class="quantity flex items-center py-2">
+                                  <div class="quantity__value">
+                                    <div id="quantity__number">1</div>
+                                  </div>
+                                  <div class="buttons">
+                                    <div class="buttons_plus">
+                                      <i class="fa fa-plus"></i>
+                                    </div>
+                                    <div class="buttons_minus">
+                                      <i class="fa fa-minus"></i>
+                                    </div>
+                                  </div>
+                                </div>
+                              </span>
                             </div>
                           </fieldset>
                         </form>
@@ -320,7 +335,7 @@
       </section>
       <section class="specifitacions">
         <div class="container mx-auto">
-          <h3>Especificaciones</h3>
+          <h3 class="title">Especificaciones</h3>
           <ul class="mt-6">
             <li class="flex items-center globalText">
               <strong>
@@ -379,7 +394,7 @@
       <section id="related" class="sectionContent flex">
         <section class="container mx-auto">
           <article class="sectionHeading">
-            <h3>Productos Relacionados</h3>
+            <h3 class="title">Productos Relacionados</h3>
           </article>
           <section id="productList" class="in-xs-12 in-sm-12">
             <div class="productos-wrapper-content">

@@ -3,11 +3,13 @@ input[type="password"],
 input[type="email"],
 input[type="number"],
 input[type="phone"],
-textarea {
+textarea,
+select {
   outline: none;
   border-width: 1px;
   border-color: var(--color-bluelight-200);
   border-style: solid;
+  appearance: inherit;
 }
 
 textarea {
